@@ -1,6 +1,6 @@
 # Erdős Problem #982 for small n: a computer verification up to n = 13
 
-**Status, 2 Nov 2026:** the computations are complete and checked, except run D below, which is in progress. This write-up is a first version; corrections are welcome.
+**Status, 2 Nov 2026:** the computations are complete and checked. This write-up is a first version; corrections are welcome.
 
 ## The problem
 
@@ -67,13 +67,13 @@ classes of equal distance. The search runs over these equal-distance patterns.
 |---|---|---|---|
 | B: quick (uncertified) | 211,659 | unified "at most 5 classes" cover | 1 candidate pattern |
 | C: certified | 123,680 + 87,979 | exactly-5 cover plus below-5 cover | every piece UNSAT except the same candidate |
-| D: certified | 211,659 | unified cover, independent of C | *[running — fill in]* |
+| D: certified | 211,659 | unified cover, independent of C | every piece UNSAT except the same candidate |
 
 - **Certification.**
   - The pieces run in batches of 50.
   - Each batch has a CNF file and a DRUP proof.
   - drat-trim checks each proof and emits LRAT; cake_lpr, a formally verified checker, checks the LRAT.
-  - A batch whose proof did not pass both checkers was re-run one piece at a time, each with a fresh solver and its own proof. This affected 23 below-5 batches, plus the batch containing the candidate.
+  - A batch whose proof did not pass both checkers was re-run one piece at a time, each with a fresh solver and its own proof. This affected 23 below-5 batches, plus the batch containing the candidate in each of runs C and D.
   - A script confirms that every piece of each cover is certified exactly once.
 - **The candidate pattern.**
   - The vertices' equal-distance partitions are
@@ -105,7 +105,7 @@ classes of equal distance. The search runs over these equal-distance patterns.
 - `runs/`: the shell drivers used on the Mac Studio.
 - `n8/`, `n10/`: certified runs. For each cover, `w*.done` records each batch, `manifest_w*.txt` gives the proof SHA-256
   and checker verdict, and `*.drup.gz` holds the proofs.
-- `n12/`: the n = 12 records and manifests, plus `algebra/` (the surviving pattern, `alg_sat.py`, and the certificate
+- `n12/`: the n = 12 records. Run B is in `B_quick_unified/`, run C in `C_exact/` and `C_below/`, and run D in `C_atmost/`. Each holds `w*.done` and `manifest_w*.txt`. `recert_*/` holds the per-piece re-certifications (manifests, plus the structure and blocking clause), and `logs/cover_check_*.log` the cover checks. There is also `algebra/` (the surviving pattern, `alg_sat.py`, and the certificate
   `cert_0.txt`: cofactors c_i with 1 = Σ c_i f_i). The proofs themselves are on Zenodo (see `zenodo/`).
 
 ## Reproduce

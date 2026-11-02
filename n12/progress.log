@@ -1,0 +1,283 @@
+2026-11-02T04:27:33Z run_all start pid 46558
+2026-11-02T04:27:33Z B r10 start
+2026-11-02T04:27:33Z B r14 start
+2026-11-02T04:27:33Z B r6 start
+2026-11-02T04:27:33Z B r3 start
+2026-11-02T04:27:33Z B r9 start
+2026-11-02T04:27:33Z B r13 start
+2026-11-02T04:27:33Z B r4 start
+2026-11-02T04:27:33Z B r2 start
+2026-11-02T04:27:33Z B r15 start
+2026-11-02T04:27:33Z B r8 start
+2026-11-02T04:27:33Z B r7 start
+2026-11-02T04:27:33Z B r0 start
+2026-11-02T04:27:33Z B r12 start
+2026-11-02T04:27:33Z B r1 start
+2026-11-02T04:27:33Z B r11 start
+2026-11-02T04:27:33Z B r5 start
+2026-11-02T04:31:47Z B r15 end rc=0
+2026-11-02T04:31:50Z B r8 end rc=0
+2026-11-02T04:31:56Z B r11 end rc=0
+2026-11-02T04:31:57Z B r3 end rc=0
+2026-11-02T04:31:59Z B r4 end rc=0
+2026-11-02T04:32:00Z B r6 end rc=0
+2026-11-02T04:32:02Z B r7 end rc=0
+2026-11-02T04:32:02Z B r0 end rc=0
+2026-11-02T04:32:04Z B r10 end rc=0
+2026-11-02T04:32:04Z B r2 end rc=0
+2026-11-02T04:32:04Z B r5 end rc=0
+2026-11-02T04:32:06Z B r9 end rc=0
+2026-11-02T04:32:06Z B r12 end rc=0
+2026-11-02T04:32:07Z B r1 end rc=0
+2026-11-02T04:32:08Z B r14 end rc=0
+2026-11-02T04:32:15Z B r13 end rc=0
+2026-11-02T04:32:15Z job B all workers ended
+2026-11-02T04:32:15Z C exact r2 solve start
+2026-11-02T04:32:15Z C exact r1 solve start
+2026-11-02T04:32:15Z C exact r0 solve start
+2026-11-02T04:32:15Z C exact r4 solve start
+2026-11-02T04:32:15Z C exact r5 solve start
+2026-11-02T04:32:15Z C exact r3 solve start
+2026-11-02T04:32:15Z C exact r7 solve start
+2026-11-02T04:32:15Z C exact r10 solve start
+2026-11-02T04:32:15Z C exact r8 solve start
+2026-11-02T04:32:15Z C exact r6 solve start
+2026-11-02T04:32:15Z C exact r9 solve start
+2026-11-02T04:32:15Z C exact r11 solve start
+2026-11-02T04:32:15Z C exact r12 solve start
+2026-11-02T04:32:15Z C exact r13 solve start
+2026-11-02T04:32:15Z C exact r14 solve start
+2026-11-02T04:32:15Z C exact r15 solve start
+2026-11-02T05:11:10Z C exact r11 solve end rc=0
+2026-11-02T05:11:10Z C exact r11 check start
+2026-11-02T05:11:26Z C exact r8 solve end rc=0
+2026-11-02T05:11:26Z C exact r8 check start
+2026-11-02T05:11:41Z C exact r9 solve end rc=0
+2026-11-02T05:11:41Z C exact r9 check start
+2026-11-02T05:11:41Z C exact r1 solve end rc=0
+2026-11-02T05:11:41Z C exact r1 check start
+2026-11-02T05:11:51Z C exact r3 solve end rc=0
+2026-11-02T05:11:51Z C exact r3 check start
+2026-11-02T05:11:54Z C exact r10 solve end rc=0
+2026-11-02T05:11:54Z C exact r10 check start
+2026-11-02T05:11:56Z C exact r5 solve end rc=0
+2026-11-02T05:11:56Z C exact r5 check start
+2026-11-02T05:11:57Z C exact r7 solve end rc=0
+2026-11-02T05:11:57Z C exact r7 check start
+2026-11-02T05:12:04Z C exact r12 solve end rc=0
+2026-11-02T05:12:04Z C exact r12 check start
+2026-11-02T05:12:05Z C exact r2 solve end rc=0
+2026-11-02T05:12:05Z C exact r2 check start
+2026-11-02T05:12:08Z C exact r0 solve end rc=0
+2026-11-02T05:12:08Z C exact r0 check start
+2026-11-02T05:12:14Z C exact r6 solve end rc=0
+2026-11-02T05:12:14Z C exact r6 check start
+2026-11-02T05:12:20Z C exact r13 solve end rc=0
+2026-11-02T05:12:20Z C exact r13 check start
+2026-11-02T05:12:23Z C exact r15 solve end rc=0
+2026-11-02T05:12:23Z C exact r15 check start
+2026-11-02T05:12:25Z C exact r14 solve end rc=0
+2026-11-02T05:12:25Z C exact r14 check start
+2026-11-02T05:12:28Z C exact r4 solve end rc=0
+2026-11-02T05:12:28Z C exact r4 check start
+2026-11-02T05:33:15Z C exact r11 check end rc=0
+2026-11-02T05:33:33Z C exact r8 check end rc=0
+2026-11-02T05:33:35Z C exact r11 gzipped
+2026-11-02T05:33:35Z C below r11 solve start
+2026-11-02T05:33:46Z C exact r9 check end rc=0
+2026-11-02T05:33:54Z C exact r8 gzipped
+2026-11-02T05:33:54Z C below r8 solve start
+2026-11-02T05:33:59Z C exact r1 check end rc=0
+2026-11-02T05:34:08Z C exact r9 gzipped
+2026-11-02T05:34:08Z C below r9 solve start
+2026-11-02T05:34:19Z C exact r3 check end rc=0
+2026-11-02T05:34:20Z C exact r1 gzipped
+2026-11-02T05:34:20Z C below r1 solve start
+2026-11-02T05:34:20Z C exact r10 check end rc=0
+2026-11-02T05:34:26Z C exact r7 check end rc=0
+2026-11-02T05:34:27Z C exact r5 check end rc=0
+2026-11-02T05:34:32Z C exact r0 check end rc=0
+2026-11-02T05:34:36Z C exact r12 check end rc=0
+2026-11-02T05:34:38Z C exact r2 check end rc=0
+2026-11-02T05:34:40Z C exact r6 check end rc=0
+2026-11-02T05:34:40Z C exact r3 gzipped
+2026-11-02T05:34:40Z C below r3 solve start
+2026-11-02T05:34:41Z C exact r10 gzipped
+2026-11-02T05:34:41Z C below r10 solve start
+2026-11-02T05:34:48Z C exact r7 gzipped
+2026-11-02T05:34:48Z C below r7 solve start
+2026-11-02T05:34:49Z C exact r5 gzipped
+2026-11-02T05:34:49Z C below r5 solve start
+2026-11-02T05:34:54Z C exact r0 gzipped
+2026-11-02T05:34:54Z C below r0 solve start
+2026-11-02T05:34:58Z C exact r12 gzipped
+2026-11-02T05:34:58Z C below r12 solve start
+2026-11-02T05:34:59Z C exact r2 gzipped
+2026-11-02T05:34:59Z C below r2 solve start
+2026-11-02T05:35:01Z C exact r15 check end rc=1
+2026-11-02T05:35:01Z C exact r14 check end rc=0
+2026-11-02T05:35:01Z C exact r6 gzipped
+2026-11-02T05:35:01Z C below r6 solve start
+2026-11-02T05:35:02Z C exact r13 check end rc=0
+2026-11-02T05:35:12Z C exact r4 check end rc=0
+2026-11-02T05:35:22Z C exact r15 gzipped
+2026-11-02T05:35:22Z C below r15 solve start
+2026-11-02T05:35:23Z C exact r13 gzipped
+2026-11-02T05:35:23Z C below r13 solve start
+2026-11-02T05:35:23Z C exact r14 gzipped
+2026-11-02T05:35:23Z C below r14 solve start
+2026-11-02T05:35:34Z C exact r4 gzipped
+2026-11-02T05:35:34Z C below r4 solve start
+2026-11-02T05:36:56Z C below r11 solve end rc=0
+2026-11-02T05:36:56Z C below r11 check start
+2026-11-02T05:37:26Z C below r10 solve end rc=0
+2026-11-02T05:37:26Z C below r10 check start
+2026-11-02T05:37:28Z C below r5 solve end rc=0
+2026-11-02T05:37:28Z C below r5 check start
+2026-11-02T05:37:37Z C below r0 solve end rc=0
+2026-11-02T05:37:37Z C below r0 check start
+2026-11-02T05:39:16Z C below r11 check end rc=1
+2026-11-02T05:39:19Z C below r11 gzipped
+2026-11-02T05:39:25Z C below r5 check end rc=1
+2026-11-02T05:39:27Z C below r5 gzipped
+2026-11-02T05:39:34Z C below r10 check end rc=0
+2026-11-02T05:39:36Z C below r10 gzipped
+2026-11-02T05:39:41Z C below r0 check end rc=1
+2026-11-02T05:39:43Z C below r0 gzipped
+2026-11-02T05:49:21Z C below r9 solve end rc=0
+2026-11-02T05:49:21Z C below r9 check start
+2026-11-02T05:49:57Z C below r6 solve end rc=0
+2026-11-02T05:49:57Z C below r6 check start
+2026-11-02T05:50:06Z C below r14 solve end rc=0
+2026-11-02T05:50:06Z C below r14 check start
+2026-11-02T05:50:16Z C below r8 solve end rc=0
+2026-11-02T05:50:16Z C below r8 check start
+2026-11-02T05:50:50Z C below r1 solve end rc=0
+2026-11-02T05:50:50Z C below r1 check start
+2026-11-02T05:50:52Z C below r2 solve end rc=0
+2026-11-02T05:50:52Z C below r2 check start
+2026-11-02T05:51:11Z C below r13 solve end rc=0
+2026-11-02T05:51:11Z C below r13 check start
+2026-11-02T05:51:48Z C below r12 solve end rc=0
+2026-11-02T05:51:48Z C below r12 check start
+2026-11-02T05:51:54Z C below r4 solve end rc=0
+2026-11-02T05:51:54Z C below r4 check start
+2026-11-02T05:52:56Z C below r3 solve end rc=0
+2026-11-02T05:52:56Z C below r3 check start
+2026-11-02T05:52:58Z C below r7 solve end rc=0
+2026-11-02T05:52:58Z C below r7 check start
+2026-11-02T05:55:28Z C below r15 solve end rc=0
+2026-11-02T05:55:28Z C below r15 check start
+2026-11-02T05:58:08Z C below r9 check end rc=1
+2026-11-02T05:58:19Z C below r9 gzipped
+2026-11-02T05:58:36Z C below r6 check end rc=1
+2026-11-02T05:58:45Z C below r14 check end rc=0
+2026-11-02T05:58:47Z C below r6 gzipped
+2026-11-02T05:58:55Z C below r14 gzipped
+2026-11-02T05:59:33Z C below r8 check end rc=1
+2026-11-02T05:59:44Z C below r8 gzipped
+2026-11-02T05:59:54Z C below r2 check end rc=1
+2026-11-02T06:00:04Z C below r2 gzipped
+2026-11-02T06:00:06Z C below r1 check end rc=1
+2026-11-02T06:00:13Z C below r13 check end rc=0
+2026-11-02T06:00:16Z C below r1 gzipped
+2026-11-02T06:00:23Z C below r13 gzipped
+2026-11-02T06:01:04Z C below r4 check end rc=1
+2026-11-02T06:01:15Z C below r4 gzipped
+2026-11-02T06:01:17Z C below r12 check end rc=1
+2026-11-02T06:01:28Z C below r12 gzipped
+2026-11-02T06:03:03Z C below r3 check end rc=1
+2026-11-02T06:03:10Z C below r7 check end rc=0
+2026-11-02T06:03:15Z C below r3 gzipped
+2026-11-02T06:03:22Z C below r7 gzipped
+2026-11-02T06:06:35Z C below r15 check end rc=1
+2026-11-02T06:06:47Z C below r15 gzipped
+2026-11-02T06:06:47Z job C all workers ended
+2026-11-02T06:06:47Z run_all finished
+2026-11-02T07:25:37Z recert start
+2026-11-02T07:26:08Z recert exact done
+2026-11-02T07:33:14Z recert below done
+2026-11-02T07:43:29Z job D start
+2026-11-02T07:43:29Z C atmost r0 solve start
+2026-11-02T07:43:29Z C atmost r1 solve start
+2026-11-02T07:43:29Z C atmost r3 solve start
+2026-11-02T07:43:29Z C atmost r2 solve start
+2026-11-02T07:43:29Z C atmost r4 solve start
+2026-11-02T07:43:29Z C atmost r5 solve start
+2026-11-02T07:43:29Z C atmost r6 solve start
+2026-11-02T07:43:29Z C atmost r7 solve start
+2026-11-02T07:43:29Z C atmost r8 solve start
+2026-11-02T07:43:29Z C atmost r9 solve start
+2026-11-02T07:43:29Z C atmost r10 solve start
+2026-11-02T07:43:29Z C atmost r11 solve start
+2026-11-02T07:43:29Z C atmost r12 solve start
+2026-11-02T07:43:29Z C atmost r13 solve start
+2026-11-02T07:43:29Z C atmost r14 solve start
+2026-11-02T07:43:29Z C atmost r15 solve start
+2026-11-02T08:30:43Z C atmost r10 solve end rc=0
+2026-11-02T08:30:43Z C atmost r10 check start
+2026-11-02T08:30:45Z C atmost r4 solve end rc=0
+2026-11-02T08:30:45Z C atmost r4 check start
+2026-11-02T08:30:54Z C atmost r15 solve end rc=0
+2026-11-02T08:30:54Z C atmost r15 check start
+2026-11-02T08:31:00Z C atmost r6 solve end rc=0
+2026-11-02T08:31:00Z C atmost r6 check start
+2026-11-02T08:31:04Z C atmost r12 solve end rc=0
+2026-11-02T08:31:04Z C atmost r12 check start
+2026-11-02T08:31:10Z C atmost r1 solve end rc=0
+2026-11-02T08:31:10Z C atmost r1 check start
+2026-11-02T08:31:14Z C atmost r2 solve end rc=0
+2026-11-02T08:31:14Z C atmost r2 check start
+2026-11-02T08:31:14Z C atmost r0 solve end rc=0
+2026-11-02T08:31:14Z C atmost r0 check start
+2026-11-02T08:31:16Z C atmost r8 solve end rc=0
+2026-11-02T08:31:16Z C atmost r8 check start
+2026-11-02T08:31:21Z C atmost r3 solve end rc=0
+2026-11-02T08:31:21Z C atmost r3 check start
+2026-11-02T08:31:24Z C atmost r9 solve end rc=0
+2026-11-02T08:31:24Z C atmost r9 check start
+2026-11-02T08:31:25Z C atmost r5 solve end rc=0
+2026-11-02T08:31:25Z C atmost r5 check start
+2026-11-02T08:31:30Z C atmost r7 solve end rc=0
+2026-11-02T08:31:30Z C atmost r7 check start
+2026-11-02T08:31:35Z C atmost r14 solve end rc=0
+2026-11-02T08:31:35Z C atmost r14 check start
+2026-11-02T08:31:39Z C atmost r11 solve end rc=0
+2026-11-02T08:31:39Z C atmost r11 check start
+2026-11-02T08:31:56Z C atmost r13 solve end rc=0
+2026-11-02T08:31:56Z C atmost r13 check start
+2026-11-02T08:58:30Z C atmost r10 check end rc=1
+2026-11-02T08:58:47Z C atmost r4 check end rc=0
+2026-11-02T08:58:55Z C atmost r10 gzipped
+2026-11-02T08:59:00Z C atmost r15 check end rc=0
+2026-11-02T08:59:12Z C atmost r12 check end rc=0
+2026-11-02T08:59:13Z C atmost r4 gzipped
+2026-11-02T08:59:14Z C atmost r6 check end rc=0
+2026-11-02T08:59:24Z C atmost r2 check end rc=0
+2026-11-02T08:59:24Z C atmost r15 gzipped
+2026-11-02T08:59:25Z C atmost r0 check end rc=0
+2026-11-02T08:59:29Z C atmost r3 check end rc=0
+2026-11-02T08:59:30Z C atmost r1 check end rc=0
+2026-11-02T08:59:31Z C atmost r8 check end rc=0
+2026-11-02T08:59:37Z C atmost r12 gzipped
+2026-11-02T08:59:39Z C atmost r6 gzipped
+2026-11-02T08:59:44Z C atmost r5 check end rc=0
+2026-11-02T08:59:46Z C atmost r7 check end rc=0
+2026-11-02T08:59:48Z C atmost r9 check end rc=0
+2026-11-02T08:59:50Z C atmost r2 gzipped
+2026-11-02T08:59:51Z C atmost r0 gzipped
+2026-11-02T08:59:54Z C atmost r3 gzipped
+2026-11-02T08:59:54Z C atmost r11 check end rc=0
+2026-11-02T08:59:55Z C atmost r1 gzipped
+2026-11-02T08:59:56Z C atmost r8 gzipped
+2026-11-02T09:00:08Z C atmost r14 check end rc=0
+2026-11-02T09:00:09Z C atmost r5 gzipped
+2026-11-02T09:00:11Z C atmost r7 gzipped
+2026-11-02T09:00:14Z C atmost r9 gzipped
+2026-11-02T09:00:20Z C atmost r11 gzipped
+2026-11-02T09:00:33Z C atmost r14 gzipped
+2026-11-02T09:00:34Z C atmost r13 check end rc=0
+2026-11-02T09:00:59Z C atmost r13 gzipped
+2026-11-02T09:00:59Z job D all workers ended
+2026-11-02T09:01:40Z job D recert done
+2026-11-02T09:01:42Z job D finished
