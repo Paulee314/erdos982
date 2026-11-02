@@ -10,7 +10,7 @@
 n-gon has a vertex with at least k distinct distances to the other vertices. Erdős conjectured f(n) = ⌊n/2⌋. The
 regular n-gon shows f(n) ≤ ⌊n/2⌋.
 
-Published lower bounds:
+Known lower bounds:
 
 | Bound | Source |
 |---|---|
