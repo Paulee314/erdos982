@@ -126,6 +126,6 @@ deterministic, so a re-run writes byte-identical proofs, which can be compared a
 
 ## Credits and AI use
 
-This work was carried out with substantial assistance from AI tools, which were used for the computations and code,
-for the independent reviews and audits, and for drafting this note. I directed the work and take full responsibility
+AI tools were used for the computations and code, for the independent reviews and audits, and for drafting this
+note. I directed the work and take full responsibility
 for its content. Corrections are welcome as GitHub issues.
