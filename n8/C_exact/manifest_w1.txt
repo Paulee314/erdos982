@@ -1,0 +1,2 @@
+exact w1 b0 pieces 1..115 n_pieces 50 clauses 82117 vars 1460 proof_bytes 288887 sha256 f2ec2311b31d5606847b18a856d61d6ded1056233b20061dadc81f04cf1ebe1a final_unsat True checker ACCEPT check_s 0.5
+exact w1 b1 pieces 121..295 n_pieces 29 clauses 77700 vars 1489 proof_bytes 192252 sha256 1fc53bb6f239165ba9cb1a538f917cf3d13cc83f20da289c97d8485c5ac64948 final_unsat True checker ACCEPT check_s 0.3

@@ -1,0 +1,10 @@
+c parsing input formula with 48301 variables and 322023 clauses
+c WARNING: deleted clause on proof line 356613 does not occur: [0] -6 48139 0
+c finished parsing
+c detected empty clause; start verification via backward checking
+c 4159 of 322023 clauses in core                            
+c 3414 of 15341 lemmas in core using 177050 resolution steps
+c 0 RAT lemmas in core; 0 redundant literals in core lemmas
+s VERIFIED
+c verification time: 0.387 seconds
+cake_lpr heap 2000 MB: s VERIFIED UNSAT

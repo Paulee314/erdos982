@@ -1,0 +1,1 @@
+pattern 0: std(I) = {1}; saturation pairs []; certificate g^0 = sum c_i f_i with g = prod d_ij^2 over those pairs: VERIFIED (2355 cofactor terms, 2.8s)

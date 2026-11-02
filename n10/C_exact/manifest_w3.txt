@@ -1,0 +1,14 @@
+exact w3 b0 pieces 3..303 n_pieces 50 clauses 333663 vars 3555 proof_bytes 3384425 sha256 1ec69e2d0bd66260d90eb0512f371377b9f85daaf7cfcdc05463e8b843b86291 final_unsat True checker ACCEPT check_s 1.2
+exact w3 b1 pieces 309..609 n_pieces 50 clauses 332619 vars 3605 proof_bytes 3312711 sha256 741875450bd4f1d9b5ecdb558f20c81bf948d919e99892ba16595821ea465140 final_unsat True checker ACCEPT check_s 1.3
+exact w3 b2 pieces 615..927 n_pieces 50 clauses 333537 vars 3655 proof_bytes 3405296 sha256 66bd30cf8381a3a93d78118ae20cfb3b034e4d1e2e7d8efdfe3acc1807f2ab65 final_unsat True checker ACCEPT check_s 1.2
+exact w3 b3 pieces 933..1263 n_pieces 50 clauses 331917 vars 3705 proof_bytes 5993096 sha256 a00dfaf65162d48f043e78ced22a0816ba56dcde92ccbf91e0db7c6a47af4db0 final_unsat True checker ACCEPT check_s 1.5
+exact w3 b4 pieces 1275..1629 n_pieces 50 clauses 331197 vars 3755 proof_bytes 5438926 sha256 8fc97b557869a1d0f6bc8d32a3760c13a1a04402e92eb91ba731f10f61dc5d1b final_unsat True checker ACCEPT check_s 1.6
+exact w3 b5 pieces 1635..1995 n_pieces 50 clauses 331629 vars 3805 proof_bytes 3945326 sha256 21c86723f0d72d60a3416a520a565581db84bfc669f160ccdbebc64d43fdc7ff final_unsat True checker ACCEPT check_s 1.2
+exact w3 b6 pieces 2001..2391 n_pieces 50 clauses 331629 vars 3855 proof_bytes 4423368 sha256 b36f64d4f5ec2289a54b9355fcede256b7623dfea58c12db3c57540b87c6b703 final_unsat True checker ACCEPT check_s 1.2
+exact w3 b7 pieces 2409..2799 n_pieces 50 clauses 331431 vars 3905 proof_bytes 4230544 sha256 445583c97ee850402d9115d11437bd4ef8eae0ad700833ee3e00f81aea5895d5 final_unsat True checker ACCEPT check_s 1.3
+exact w3 b8 pieces 2805..3291 n_pieces 50 clauses 331359 vars 3955 proof_bytes 5704117 sha256 4cea79104e47152598d5afff965144be49f2744fbcd89d36d31252c52da09925 final_unsat True checker ACCEPT check_s 1.4
+exact w3 b9 pieces 3297..3753 n_pieces 50 clauses 330999 vars 4005 proof_bytes 1239141 sha256 1e5bf8d79bea08e1985716e3305ccd60f6cae38f3259994a1f0dab41060eac7b final_unsat True checker ACCEPT check_s 1.1
+exact w3 b10 pieces 3777..4407 n_pieces 50 clauses 330657 vars 4055 proof_bytes 4888793 sha256 17ad9e18a70d7c7641ab11e9b28c315c5b70c9e84d4dbbbbfba2737456369636 final_unsat True checker ACCEPT check_s 1.3
+exact w3 b11 pieces 4413..5259 n_pieces 50 clauses 330135 vars 4105 proof_bytes 3174542 sha256 b66c8c64cdc450288a1a552c1d299ab83d75654bba76f155923540fe430fcd67 final_unsat True checker ACCEPT check_s 1.2
+exact w3 b12 pieces 5265..6393 n_pieces 50 clauses 329343 vars 4155 proof_bytes 849584 sha256 d54758ac502ca506f7770c91ac678124e3b5943fa13cb7b105891fb06fb925a7 final_unsat True checker ACCEPT check_s 1.0
+exact w3 b13 pieces 6399..7149 n_pieces 10 clauses 314781 vars 4165 proof_bytes 13576 sha256 754ab6e940a7ac432b3d1e1d120b382f253341de02e894ba857cbd0b83da245c final_unsat True checker ACCEPT check_s 0.7

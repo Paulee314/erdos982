@@ -1,0 +1,1 @@
+below w1 b0 pieces 1..49 n_pieces 16 clauses 75213 vars 2450 proof_bytes 8448 sha256 8a348f83aefa74a3b3ab269dc827cc84a2b12cbc5d4af9e33c4afe536fcef548 final_unsat True checker ACCEPT check_s 0.3

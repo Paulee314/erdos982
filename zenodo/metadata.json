@@ -1,0 +1,9 @@
+{"metadata": {
+  "title": "Erdős Problem #982, n = 12: DRUP proofs for the certified SAT search",
+  "upload_type": "dataset",
+  "description": "DRUP proofs (gzipped) for the certified computer search showing that no strictly convex 12-gon has at most 5 distinct distances from every vertex (Erdős Problem #982). One proof per 50-piece batch of each cover (exactly-5, below-5, unified at-most-5), plus per-piece proofs for re-certified batches. Every proof was checked by drat-trim and, via LRAT, by the formally verified checker cake_lpr. Code, manifests (with the SHA-256 of every proof) and the algebraic certificate are in the GitHub repository https://github.com/Paulee314/erdos982. The proofs can also be regenerated deterministically with that code. Reassemble each archive with: cat NAME.tar.part* | tar xf -",
+  "creators": [{"name": "Lee, Paul J."}],
+  "keywords": ["Erdős problems", "distinct distances", "convex polygons", "SAT", "DRAT", "proof certificates"],
+  "license": "cc-by-4.0",
+  "related_identifiers": [{"identifier": "https://github.com/Paulee314/erdos982", "relation": "isSupplementTo", "resource_type": "software"}]
+}}

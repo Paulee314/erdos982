@@ -1,0 +1,9 @@
+c parsing input formula with 42813 variables and 327351 clauses
+c finished parsing
+c detected empty clause; start verification via backward checking
+c 3713 of 327351 clauses in core                            
+c 3773 of 77564 lemmas in core using 164627 resolution steps
+c 0 RAT lemmas in core; 0 redundant literals in core lemmas
+s VERIFIED
+c verification time: 0.512 seconds
+cake_lpr heap 2000 MB: s VERIFIED UNSAT

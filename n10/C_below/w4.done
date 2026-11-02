@@ -1,0 +1,6 @@
+batch 0 pieces 4..304 (50) structures 0 final_unsat True clauses 327441 vars 11455 proof_lines 12889 wall 0.26 cpu=0.26 hwmMB 151 2026-11-02T07:54:09Z
+batch 1 pieces 316..652 (50) structures 0 final_unsat True clauses 327441 vars 19605 proof_lines 18628 wall 0.44 cpu=0.43 hwmMB 194 2026-11-02T07:54:09Z
+batch 2 pieces 658..1060 (50) structures 0 final_unsat True clauses 327441 vars 27755 proof_lines 25139 wall 0.69 cpu=0.68 hwmMB 222 2026-11-02T07:54:10Z
+batch 3 pieces 1072..1540 (50) structures 0 final_unsat True clauses 327441 vars 35905 proof_lines 22661 wall 0.43 cpu=0.43 hwmMB 229 2026-11-02T07:54:10Z
+batch 4 pieces 1546..2206 (50) structures 0 final_unsat True clauses 327441 vars 44055 proof_lines 22180 wall 0.70 cpu=0.69 hwmMB 251 2026-11-02T07:54:11Z
+batch 5 pieces 2212..3124 (31) structures 0 final_unsat True clauses 321114 vars 49108 proof_lines 14311 wall 0.51 cpu=0.51 hwmMB 253 2026-11-02T07:54:11Z
