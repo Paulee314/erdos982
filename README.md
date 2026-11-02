@@ -20,7 +20,7 @@ Published lower bounds:
 | f(n) ≥ (13/36 + 1/22701)n − O(1) | Nivasch–Pach–Pinchasi–Zerbib |
 
 These bounds settle the conjecture for n ≤ 7 and n = 9. As far as I could find, nothing in print covers n = 8 or any
-n ≥ 10. Fishburn's 1997 survey chapter may cover n = 8, but I have not been able to read it.
+n ≥ 10. Fishburn's 1997 survey chapter may cover n = 8, but I have not yet been able to source a copy.
 
 ## Results
 
