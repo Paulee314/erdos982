@@ -1,6 +1,6 @@
 # Erdős Problem #982 for small n: a computer verification up to n = 13
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23880466.svg)](https://doi.org/10.5281/zenodo.23880466) (n = 12 proofs)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23880465.svg)](https://doi.org/10.5281/zenodo.23880465) (n = 12 proofs)
 
 **Status, 2 Nov 2026:** the computations are complete and checked. This write-up is a first version; corrections are welcome.
 
@@ -108,7 +108,7 @@ classes of equal distance. The search runs over these equal-distance patterns.
 - `n8/`, `n10/`: certified runs. For each cover, `w*.done` records each batch, `manifest_w*.txt` gives the proof SHA-256
   and checker verdict, and `*.drup.gz` holds the proofs.
 - `n12/`: the n = 12 records. Run B is in `B_quick_unified/`, run C in `C_exact/` and `C_below/`, and run D in `C_atmost/`. Each holds `w*.done` and `manifest_w*.txt`. `recert_*/` holds the per-piece re-certifications (manifests, plus the structure and blocking clause), and `logs/cover_check_*.log` the cover checks. There is also `algebra/` (the surviving pattern, `alg_sat.py`, and the certificate
-  `cert_0.txt`: cofactors c_i with 1 = Σ c_i f_i). The proofs themselves are on Zenodo: [10.5281/zenodo.23880466](https://doi.org/10.5281/zenodo.23880466). The scripts that packed and uploaded them are in `zenodo/`.
+  `cert_0.txt`: cofactors c_i with 1 = Σ c_i f_i). The proofs themselves are on Zenodo: [10.5281/zenodo.23880465](https://doi.org/10.5281/zenodo.23880465). The scripts that packed and uploaded them are in `zenodo/`.
 
 ## Reproduce
 
