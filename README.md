@@ -39,6 +39,8 @@ Since f(n+1) ≥ f(n) (delete a vertex), the cases that need computing are n = 8
 | 12 | no 12-gon has ≤ 5 distances at every vertex | SAT search with the order rules, DRUP proofs checked by drat-trim and cake_lpr; one candidate pattern, ruled out by an exact certificate | certified |
 | 13 | follows from n = 12 | — | — |
 
+**Update (2 Nov 2026).** The single n = 12 pattern that survives the search now also has a short hand proof. Two general results come with it: (i) in a strictly convex two-ring (bi-regular) polygon, accidental distance coincidences never happen at both the outer and the inner vertices; (ii) a strictly convex polygon in which every vertex sees equal distances clockwise and counterclockwise is regular or two-ring. Together they rule out the whole family of "merged two-ring" patterns, the main obstruction to the search method, for every n. See [`theory/two_ring_and_local_symmetry.md`](theory/two_ring_and_local_symmetry.md); these proofs have been reviewed but not refereed.
+
 ## How it works
 
 A counterexample with n vertices has, at every vertex c, the other n − 1 vertices split into at most K = ⌊n/2⌋ − 1
@@ -108,6 +110,7 @@ classes of equal distance. The search runs over these equal-distance patterns.
 - `runs/`: the shell drivers used on the Mac Studio.
 - `n8/`, `n10/`: certified runs. For each cover, `w*.done` records each batch, `manifest_w*.txt` gives the proof SHA-256
   and checker verdict, and `*.drup.gz` holds the proofs.
+- `theory/`: hand proofs (the two-ring coincidence theorem, rigidity of locally symmetric polygons, and the n = 12 survivor).
 - `n12/`: the n = 12 records. Run B is in `B_quick_unified/`, run C in `C_exact/` and `C_below/`, and run D in `C_atmost/`. Each holds `w*.done` and `manifest_w*.txt`. `recert_*/` holds the per-piece re-certifications (manifests, plus the structure and blocking clause), and `logs/cover_check_*.log` the cover checks. There is also `algebra/` (the surviving pattern, `alg_sat.py`, and the certificate
   `cert_0.txt`: cofactors c_i with 1 = Σ c_i f_i). The proofs themselves are on Zenodo: [10.5281/zenodo.23880465](https://doi.org/10.5281/zenodo.23880465). The scripts that packed and uploaded them are in `zenodo/`.
 
