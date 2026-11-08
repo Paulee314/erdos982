@@ -1,0 +1,3 @@
+C4 n=9 bound=36: 199301 clauses, 7336 vars, preloaded 0; 0.3s
+  LP-FEASIBLE model #1 (sum t = 36): 01233210 00123321 01102332 01221033 01233210 00123321 01102332 01221033 01233210
+RESULT C4 n=9 bound=36: UNSAT; learned 1224, feasible 1, it 7, tiers {1: 3, 2: 2, 3: 0, 'delta': 0, 'sigma': 0}, 112.4s (sat 104s, lp 8s)

@@ -1,0 +1,4 @@
+2026-11-03T15:31:20Z start_ap12.sh W=12 (done so far:        0)
+2026-11-03T16:35:54Z start_ap12.sh W=8 (done so far:     5185)
+2026-11-03T17:55:55Z start_ap12.sh W=16 (done so far:     7970)
+2026-11-05T19:20:33Z v1 STOPPED (16 workers) for the switch to v2 (apex_v2.py, G+X+O+Lambda, CONF_BUDGET=2000000, frozen list ap12_L7_v2/pieces_todo.txt md5 c65a8ac4b6c62ffc40db43b4a477af4f, 249317 pieces = 265391 - 16074 distinct v1 pieces). ap12_L7/ is now the closed v1 record; v2 output in ap12_L7_v2/; started by ./start_ap12_v2.sh 16

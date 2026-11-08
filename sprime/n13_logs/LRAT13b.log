@@ -1,0 +1,8 @@
+start 2026-11-07T16:29:13Z
+clean CNF: kept 1918483 dropped tautologies 234 deduplicated 156
+drat-trim:  2026-11-07T22:56:45Z
+cake_lpr: s VERIFIED UNSAT 2026-11-07T23:12:40Z
+455e289ef1d2ac4e8ae4d6703b2ab50d589132a45eb45094b5dc6b7d4e531ab8  fc13fix_final_clean.cnf
+3a826523642ec9b74539ee45a23aadac01d8b714a1bf2ad9dfd4d6bf351832f3  fc13fix_final_clean.lrat
+LRAT files deleted after VERIFIED (sha256 kept)
+DONE 2026-11-07T23:13:46Z

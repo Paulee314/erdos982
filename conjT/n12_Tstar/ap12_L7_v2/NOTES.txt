@@ -1,0 +1,17 @@
+T* n=12 (L=7) -- switch from v1 (apex_pieces.py v13, ap12_L7/) to v2 (apex_v2.py), 5 Nov 2026. Approved by Paul (via coordinator).
+19:20:24Z  16 v1 workers stopped (pkill "$T/apex_pieces.py 12 "); S' jobs (5) untouched.
+           Frozen list pieces_todo.txt = 265,391 kept pieces - 16,074 DISTINCT v1 pieces = 249,317 pieces;
+           md5 c65a8ac4b6c62ffc40db43b4a477af4f (pieces_todo.md5); made once by make_piecelist.py ap12_L7.
+19:20:34Z  ./start_ap12_v2.sh 16 -> 16 workers, worker r takes list[r::16] (15,582-15,583 each), skips anything in w*.done here.
+Driver: apex_v2.py = v13 encoding (apex_pieces_v1.py, byte-identical to apex_pieces.py) + G, X, O (angle_fams2.py via fams_v2.py)
+        + lazy Lambda (lambda_v2.py; equality rows first, exact Farkas certificates in w<r>.lambda) before the unchanged Singular path.
+        tag v2[G+X+O+LAM]md5=70af391df465 on every .done/.models/.cores/.lambda record (.big/.surv: sidecar .ver files).
+Settings: APEX_L=7, CONF_BUDGET=2000000 (cloud test: cubed pieces 2.4-3.0x faster, no cubing), TSTAR_FAMS=G,X,O, TSTAR_LAMBDA=1,
+        python agent_runs/tests_abc/venv (numpy 2.0.2, scipy 1.13.1, python-sat 1.9.dev); under guard.sh theory2 via ../run.sh.
+Why: v1 RESPLIT race (workers read w*.done at different times) -> 4,958 duplicated pieces (~638k CPU-s) and unassigned residues;
+        v2 benchmark (v2_bench/tstar_v2/): ~16x same-machine, ~250x vs Studio records on production streams, stuck tail pieces
+        solved in minutes; regression: same outcome on every tested piece; families validated on 10k true 12-gons.
+Referee: Wonder, v2_bench/wonder_GXO_referee.txt -- "G/X/O SOUND for T*" (NB, R3 not used: unrefereed, no measured gain).
+Audit at the end: check_run_v7.py 12 ap12_L7_v2 7 --v1dir ap12_L7 --piecelist ap12_L7_v2/pieces_todo.txt
+        (coverage over v1+v2; Lambda kills re-verified by check_lambda_certs.py; trusted lemmas listed; FAIL on unrefereed families).
+v1 record ap12_L7/ left untouched apart from one line appended to ap12_L7/restarts.log.

@@ -1,0 +1,15 @@
+compC, 5 Nov 2026. Per-vertex kite-degree conjecture H2 -- REFUTED (checked exactly).
+
+Definitions: w(ab) = #vertices on the perpendicular bisector of ab (in {0,1,2} for strictly convex P).
+Z = sum_{pairs} w <= C(n,2) + #W2, W2 = pairs with w = 2 ("kite diagonals").
+kdeg(a) = #{b : w(ab) = 2}.  H2 claimed kdeg(a) <= n/2 + O(1); it would have implied Z <= 3n^2/4 + O(n).
+
+Counterexample family: centre O plus the points of a regular N-gon (N > 4*2^K) at positions
+c + {0, +-1, +-2, +-4, ..., +-2^K} (all within an open semicircle, so O is a strictly convex vertex).
+For a = v_c and b = v_{c +- 2^k} (k >= 1), the line through O and v_{c +- 2^(k-1)} is the perpendicular
+bisector of ab and contains two vertices, so w(ab) = 2. Hence kdeg(a) >= 2K = n - 4 (n = 2K+3).
+Exact check (integer chord classes, harness.py): K=3,4,5 -> n=10,12,14, kdeg(mid)=6,8,10.
+So any per-vertex route must be averaged: the needed statement is sum_a kdeg(a) = 2#W2 <= n^2/2 + O(n).
+
+Scan of all subsets of regular N-gons (N <= 30, n <= 11, with/without centre, within a combinatorial cap):
+max #W2 for n=5..11: 3,6,8,12,14,20,22 (all < n^2/4); max Z equals the known I_conv values 12,20,29,38,50 and 64 (n=10), 77 (n=11).

@@ -1,0 +1,4 @@
+n=6 T0=20 T=20 N=60 pieces 32 (worker 0/1: 32); clauses 11713; fams {'GXONK': 1258}; tag v2[G+X+O+LAM]md5=b69c115a126a; build 0.0s
+  REALISED obj=20 Z=20 T_sets=14 (model cnt 20) piece 0: 00000 01023 01102 00110 01022 01203
+piece 0 00000: 1 models, cpu 0.3s; T=20; {'models': 1, 'newcores': 0, 'big': 0, 'surv': 0, 'hits': 0, 'lam': 0, 'real': 1}; lib 0; wall 0s
+DONE worker 0: final T=20 (UNSAT at T for all my pieces if no survivors); {'models': 1, 'newcores': 0, 'big': 0, 'surv': 0, 'hits': 0, 'lam': 0, 'real': 1}; wall 0s

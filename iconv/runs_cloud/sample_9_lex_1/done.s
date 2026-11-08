@@ -1,0 +1,12 @@
+1234 01020304 41 0 25.21 ver=v2[G+X+O+LAM]md5=b69c115a126a cover=lex
+1920 01120331 41 0 4.44 ver=v2[G+X+O+LAM]md5=b69c115a126a cover=lex
+120 00011223 41 0 5.07 ver=v2[G+X+O+LAM]md5=b69c115a126a cover=lex
+2916 01213320 41 0 3.83 ver=v2[G+X+O+LAM]md5=b69c115a126a cover=lex
+1198 01020102 41 0 1.39 ver=v2[G+X+O+LAM]md5=b69c115a126a cover=lex
+218 00100112 41 0 0.74 ver=v2[G+X+O+LAM]md5=b69c115a126a cover=lex
+704 00122223 41 0 2.44 ver=v2[G+X+O+LAM]md5=b69c115a126a cover=lex
+495 00112331 41 0 4.75 ver=v2[G+X+O+LAM]md5=b69c115a126a cover=lex
+2023 01122034 41 0 17.16 ver=v2[G+X+O+LAM]md5=b69c115a126a cover=lex
+2945 01213421 41 0 3.37 ver=v2[G+X+O+LAM]md5=b69c115a126a cover=lex
+1178 01012345 41 0 84.35 ver=v2[G+X+O+LAM]md5=b69c115a126a cover=lex
+2095 01123021 41 0 7.74 ver=v2[G+X+O+LAM]md5=b69c115a126a cover=lex

@@ -1,0 +1,11 @@
+n=10 T0=65 T=65 N=360 pieces 10743 (worker 6/12: 895); clauses 338400; fams {'GXONK': 28020}; tag v2[G+X+O+LAM]md5=b69c115a126a; build 0.5s
+piece 6 000000101: 0 models, cpu 1.1s; T=65; {'models': 0, 'newcores': 0, 'big': 0, 'surv': 0, 'hits': 0, 'lam': 0, 'real': 0}; lib 0; wall 2s
+piece 1253 001020343: 0 models, cpu 15.2s; T=65; {'models': 0, 'newcores': 0, 'big': 0, 'surv': 0, 'hits': 0, 'lam': 0, 'real': 0}; lib 0; wall 971s
+piece 2589 001203445: 0 models, cpu 177.6s; T=65; {'models': 0, 'newcores': 0, 'big': 0, 'surv': 0, 'hits': 0, 'lam': 0, 'real': 0}; lib 0; wall 3881s
+piece 3995 001234224: 0 models, cpu 32.8s; T=65; {'models': 0, 'newcores': 0, 'big': 0, 'surv': 0, 'hits': 0, 'lam': 0, 'real': 0}; lib 0; wall 12519s
+piece 5596 010201132: 0 models, cpu 12.5s; T=65; {'models': 0, 'newcores': 0, 'big': 0, 'surv': 0, 'hits': 0, 'lam': 0, 'real': 0}; lib 0; wall 18935s
+piece 7301 010234334: 0 models, cpu 15.7s; T=65; {'models': 0, 'newcores': 0, 'big': 0, 'surv': 0, 'hits': 0, 'lam': 0, 'real': 0}; lib 0; wall 28217s
+piece 9397 011213132: 0 models, cpu 4.6s; T=65; {'models': 0, 'newcores': 0, 'big': 0, 'surv': 0, 'hits': 0, 'lam': 0, 'real': 0}; lib 0; wall 31174s
+piece 11775 012023450: 0 models, cpu 65.9s; T=65; {'models': 0, 'newcores': 0, 'big': 0, 'surv': 0, 'hits': 0, 'lam': 0, 'real': 0}; lib 0; wall 34214s
+piece 14896 012210123: 0 models, cpu 0.5s; T=65; {'models': 0, 'newcores': 0, 'big': 0, 'surv': 0, 'hits': 0, 'lam': 0, 'real': 0}; lib 0; wall 35168s
+DONE worker 6: final T=65 (UNSAT at T for all my pieces if no survivors); {'models': 0, 'newcores': 0, 'big': 0, 'surv': 0, 'hits': 0, 'lam': 0, 'real': 0}; wall 35204s

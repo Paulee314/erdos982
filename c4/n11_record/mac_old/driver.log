@@ -1,0 +1,116 @@
+13:44:44 start n=11 fams=FGXOADKN slots=6 sub-cases=100 pending=100
+13:44:44 slot 0: search 5,5
+13:44:44 slot 3: search 5,4
+13:44:44 slot 2: search 4,5
+13:44:44 slot 5: search 6,5
+13:44:44 slot 1: search 5,6
+13:44:44 slot 4: search 3,5
+13:44:51 slot 4: 3,5 search UNSAT in 6s; certifying
+13:45:04 slot 4: 3,5 -> VERIFIED
+13:45:04 slot 4: search 4,4
+13:47:53 slot 4: 4,4 search UNSAT in 169s; certifying
+13:52:10 slot 4: 4,4 -> VERIFIED
+13:52:10 slot 4: search 4,6
+13:59:37 slot 2: 4,5 search UNSAT in 892s; certifying
+14:09:09 slot 4: 4,6 search UNSAT in 1019s; certifying
+15:01:53 slot 2: 4,5 -> VERIFIED
+15:01:53 slot 2: search 5,3
+15:09:54 slot 2: 5,3 search UNSAT in 481s; certifying
+15:14:17 slot 2: 5,3 -> VERIFIED
+15:14:17 slot 2: search 5,7
+15:42:17 slot 3: 5,4 search UNSAT in 7053s; certifying
+16:07:16 slot 4: 4,6 -> VERIFIED
+16:07:16 slot 4: search 6,4
+17:51:18 slot 1: 5,6 search UNSAT in 14794s; certifying
+18:21:17 slot 3: 5,4 -> FAILED_R1
+18:21:17 slot 3: search 6,6
+18:21:17 slot 2: search 7,5
+18:21:19 slot 3: search 2,5
+18:21:19 slot 2: search 3,4
+18:21:21 slot 3: search 3,6
+18:21:21 slot 2: search 4,3
+18:21:23 slot 3: search 4,7
+18:21:23 slot 2: search 5,2
+18:21:24 slot 3: search 5,8
+18:21:25 slot 2: search 6,3
+18:21:26 slot 3: search 6,7
+18:21:27 slot 2: search 7,4
+18:21:28 slot 3: search 7,6
+18:21:29 slot 2: search 8,5
+18:21:30 slot 3: search 1,5
+18:21:31 slot 2: search 2,4
+18:21:32 slot 3: search 2,6
+18:21:33 slot 2: search 3,3
+18:21:34 slot 3: search 3,7
+18:21:35 slot 2: search 4,2
+18:21:36 slot 3: search 4,8
+18:21:37 slot 2: search 5,1
+18:21:38 slot 3: search 5,9
+18:21:39 slot 2: search 6,2
+18:21:40 slot 3: search 6,8
+18:21:41 slot 2: search 7,3
+18:21:42 slot 3: search 7,7
+18:21:43 slot 2: search 8,4
+18:21:44 slot 3: search 8,6
+18:21:45 slot 2: search 9,5
+18:21:47 slot 3: search 1,4
+18:21:47 slot 2: search 1,6
+18:21:48 slot 3: search 2,3
+18:21:49 slot 2: search 2,7
+18:21:50 slot 3: search 3,2
+18:21:51 slot 2: search 3,8
+18:21:52 slot 3: search 4,1
+18:21:53 slot 2: search 4,9
+18:21:54 slot 3: search 5,10
+18:21:55 slot 2: search 6,1
+18:21:56 slot 3: search 6,9
+18:21:57 slot 2: search 7,2
+18:21:58 slot 3: search 7,8
+18:21:59 slot 2: search 8,3
+18:22:00 slot 3: search 8,7
+18:22:01 slot 2: search 9,4
+18:22:02 slot 3: search 9,6
+18:22:03 slot 2: search 10,5
+18:22:04 slot 3: search 1,3
+18:22:04 slot 2: search 1,7
+18:22:06 slot 3: search 2,2
+18:22:06 slot 2: search 2,8
+18:22:08 slot 3: search 3,1
+18:22:08 slot 2: search 3,9
+18:22:10 slot 3: search 4,10
+18:22:10 slot 2: search 6,10
+18:22:12 slot 3: search 7,1
+18:22:12 slot 2: search 7,9
+18:22:14 slot 3: search 8,2
+18:22:14 slot 2: search 8,8
+18:22:15 slot 3: search 9,3
+18:22:16 slot 2: search 9,7
+18:22:17 slot 3: search 10,4
+18:22:18 slot 2: search 10,6
+18:22:19 slot 3: search 1,2
+18:22:20 slot 2: search 1,8
+18:22:21 slot 3: search 2,1
+18:22:22 slot 2: search 2,9
+18:22:23 slot 3: search 3,10
+18:22:24 slot 2: search 7,10
+18:22:25 slot 3: search 8,1
+18:22:26 slot 2: search 8,9
+18:22:27 slot 3: search 9,2
+18:22:27 slot 2: search 9,8
+18:22:29 slot 3: search 10,3
+18:22:29 slot 2: search 10,7
+18:22:31 slot 3: search 1,1
+18:22:31 slot 2: search 1,9
+18:22:33 slot 3: search 2,10
+18:22:33 slot 2: search 8,10
+18:22:35 slot 3: search 9,1
+18:22:35 slot 2: search 9,9
+18:22:37 slot 3: search 10,2
+18:22:37 slot 2: search 10,8
+18:22:39 slot 3: search 1,10
+18:22:39 slot 2: search 9,10
+18:22:41 slot 3: search 10,1
+18:22:41 slot 2: search 10,9
+18:22:42 slot 3: search 10,10
+18:42:19 slot 1: 5,6 -> FAILED_R1
+20:52:24 DONE: 5/100 sub-cases VERIFIED

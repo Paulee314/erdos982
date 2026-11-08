@@ -1,0 +1,12 @@
+pieces kept 45963; done 45963; missing 0; extra 0; duplicates 0; python cpu 781896s
+library: 111 distinct cores; by k: Counter({6: 109, 5: 2})
+k=5: 2 cores, 2 VERIFIED
+k=6: 109 cores, 109 VERIFIED
+k=7: 18 cores, 18 VERIFIED
+big patterns: 47 recorded, 47 in big_all.txt, 47 VERIFIED
+models logged: 178 (pieces interrupted and redone leave extra lines); sum over done files 178; pieces with fewer logged models than recorded: 0; kinds {'new': 131, 'big': 47}; blocked by unknown core or survivor: 0; blocked by a core/pattern without VERIFIED certificate: 0
+AUDIT PASS
+
+real	0m0.505s
+user	0m0.484s
+sys	0m0.018s

@@ -1,0 +1,9 @@
+n=8 T0=36 T=36 N=168 pieces 468 (worker 0/1: 468); clauses 79156; fams {'GXONK': 6384}; tag v2[G+X+O+LAM]md5=b69c115a126a; build 0.1s
+  REALISED Z=36 (model cnt 36) piece 0: 0000000 0102345 0110234 0011023 0102230 0120343 0123455 0123045
+  REALISED Z=38 (model cnt 38) piece 0: 0000000 0102345 0112034 0012103 0123321 0102320 0120344 0123405
+piece 0 0000000: 29 models, cpu 2.4s; T=39; {'models': 29, 'newcores': 0, 'big': 0, 'surv': 0, 'hits': 0, 'lam': 27, 'real': 2}; lib 0; wall 3s
+piece 107 0011122: 0 models, cpu 0.0s; T=39; {'models': 29, 'newcores': 0, 'big': 0, 'surv': 0, 'hits': 0, 'lam': 27, 'real': 2}; lib 0; wall 22s
+piece 227 0100210: 0 models, cpu 0.1s; T=39; {'models': 29, 'newcores': 0, 'big': 0, 'surv': 0, 'hits': 0, 'lam': 27, 'real': 2}; lib 0; wall 58s
+piece 378 0110210: 0 models, cpu 0.0s; T=39; {'models': 29, 'newcores': 0, 'big': 0, 'surv': 0, 'hits': 0, 'lam': 27, 'real': 2}; lib 0; wall 76s
+piece 589 0121013: 0 models, cpu 0.0s; T=39; {'models': 29, 'newcores': 0, 'big': 0, 'surv': 0, 'hits': 0, 'lam': 27, 'real': 2}; lib 0; wall 79s
+DONE worker 0: final T=39 (UNSAT at T for all my pieces if no survivors); {'models': 29, 'newcores': 0, 'big': 0, 'surv': 0, 'hits': 0, 'lam': 27, 'real': 2}; wall 79s

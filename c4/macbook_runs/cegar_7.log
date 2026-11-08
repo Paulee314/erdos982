@@ -1,0 +1,2 @@
+C4 n=7 bound=20: 41567 clauses, 2534 vars, preloaded 0; 0.1s
+RESULT C4 n=7 bound=20: UNSAT; learned 0, feasible 0, it 1, tiers {1: 0, 2: 0, 3: 0, 'delta': 0, 'sigma': 0}, 0.2s (sat 0s, lp 0s)

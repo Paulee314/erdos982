@@ -1,0 +1,19 @@
+T* n = 12 (L = 7) Studio run -- rate measurement, 3 Nov 2026 (agent)
+command: theory2/start_ap12.sh W   (apex_pieces.py == v13, APEX_L=7, CONF_BUDGET=50000, RESPLIT=1; 265,391 kept pieces)
+progress: theory2/progress_ap12.sh   (pieces done, models/big/surv, CPU, workers running)
+
+measured on the Studio:
+  15:31:20Z-16:35:54Z  12 workers   5,185 pieces   44,099 CPU-s   (8.5 CPU-s/piece)
+  16:35:54Z-17:55:51Z   8 workers   2,785 pieces   35,909 CPU-s   (12.9 CPU-s/piece; 94% CPU utilisation)
+  17:55:51Z-18:08:45Z  16 workers     850 pieces   10,638 CPU-s   (12.5 CPU-s/piece)
+  at 18:08:45Z: 8,820 / 265,391 pieces (3.3%), 0 models, 90,646 CPU-s in done pieces
+  ~5% of pieces exhaust the 50k conflict budget and are cubed on vertex 1 (529,189 cubes; typically 60-90 CPU-s each)
+early pieces are cheaper than average (at n = 11 the cost per piece peaks in the middle third of the piece order),
+so the early rate underestimates the total.
+
+uniform random sample (cloud, same code/settings, 51 of the 265,391 pieces, sample12.py, seed 20261103):
+  mean 130 cloud-CPU-s/piece (median 5.7, max 1,520; bootstrap 90% interval 77-195)
+  cloud/Studio speed ratio ~2.8 (2.0-3.8 on 3 identical pieces)  -> ~46 Studio-CPU-s/piece
+  total ~12M CPU-s ~ 3,400 CPU-h -> ~10 days on 16 workers (range ~4-21 days)
+budget test (cloud, pieces 3444/3456/3468): CONF_BUDGET 5,000,000 instead of cubing took 266/222/125 s vs 225/219/159 s
+with cubing -> the cubed pieces are genuinely hard; a larger budget does not help.

@@ -1,0 +1,9 @@
+Tue Nov  3 15:30:30 UTC 2026
+(1) certificates re-expanded: 131, identity holds: 131, failures: 0; total cofactor terms 251055; by k {5: 2, 6: 109, 7: 18, 8: 2}
+(2)+(3) models: 131 blocked by library cores, 47 big; each contains a certified core (embedding found, certificate re-expanded): 178; failures 0
+(4) done records: 45963, distinct pieces 45963, duplicated 0
+INDEPENDENT CHECK PASS
+
+real	0m18.147s
+user	0m18.039s
+sys	0m0.086s

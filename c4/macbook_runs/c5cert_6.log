@@ -1,0 +1,9 @@
+C5 mode: 1 pattern-blocking axioms from runs/c5_6.jsonl.feasible
+C4 n=6 bound=15: 0 distinct learned clauses (with images) [0s]
+runs/c5cert_6_r1: UNSAT [0s]
+drat-trim: ['s VERIFIED'] [0s]
+core uses 0 learned clauses [0s]
+exact certificates: 0 ok, 0 failed [0s]
+runs/c5cert_6_final: UNSAT [0s]
+drat-trim: ['s VERIFIED'] [0s]
+FINAL C4 n=6 bound=15: VERIFIED UNSAT with 0 certified learned clauses [0s]

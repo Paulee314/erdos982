@@ -1,0 +1,10 @@
+C5 mode: 1 pattern-blocking axioms from runs/c5_8.jsonl.feasible
+C4 n=8 bound=28: 448 distinct learned clauses (with images) [0s]
+runs/c5cert_8_r1: UNSAT [5s]
+drat-trim: ['s VERIFIED'] [8s]
+core uses 18 learned clauses [8s]
+exact certificates: 18 ok, 0 failed [8s]
+checker: n=8 runs/c5cert_8_lambda.jsonl: 18 certificates verified exactly, 0 failed  [8s]
+runs/c5cert_8_final: UNSAT [13s]
+drat-trim: ['s VERIFIED'] [16s]
+FINAL C4 n=8 bound=28: VERIFIED UNSAT with 18 certified learned clauses [16s]

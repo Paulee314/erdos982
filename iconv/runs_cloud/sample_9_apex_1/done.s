@@ -1,0 +1,12 @@
+2340 01201210 41 0 8.80 ver=v2[G+X+O+LAM]md5=b69c115a126a cover=apex
+627 00121223 41 0 8.51 ver=v2[G+X+O+LAM]md5=b69c115a126a cover=apex
+1017 01002330 41 0 6.01 ver=v2[G+X+O+LAM]md5=b69c115a126a cover=apex
+3169 01222230 41 0 13.58 ver=v2[G+X+O+LAM]md5=b69c115a126a cover=apex
+2649 01210301 41 0 7.15 ver=v2[G+X+O+LAM]md5=b69c115a126a cover=apex
+1766 01111213 41 0 4.00 ver=v2[G+X+O+LAM]md5=b69c115a126a cover=apex
+60 00010022 41 0 0.74 ver=v2[G+X+O+LAM]md5=b69c115a126a cover=apex
+1414 01023004 41 0 27.06 ver=v2[G+X+O+LAM]md5=b69c115a126a cover=apex
+610 00121123 41 0 7.13 ver=v2[G+X+O+LAM]md5=b69c115a126a cover=apex
+2625 01210123 41 0 18.39 ver=v2[G+X+O+LAM]md5=b69c115a126a cover=apex
+108 00011123 41 0 3.32 ver=v2[G+X+O+LAM]md5=b69c115a126a cover=apex
+359 00110012 41 0 1.49 ver=v2[G+X+O+LAM]md5=b69c115a126a cover=apex

@@ -1,0 +1,52 @@
+compC (Erdős #982, isosceles count Z), 5-6 Nov 2026. Status labels: PROVED (checked by agent) / PROVED MODULO CITED THEOREM / MODEL CLAIM / REFUTED.
+
+Notation: P strictly convex n-gon; w(ab) = #vertices on the perpendicular bisector of ab, in {0,1,2}; Z = sum w.
+K = #W2 = #{pairs with w = 2} = #kites (p,a,q,b), where b is the mirror of a across the vertex-line pq.
+Z = #W1 + 2K <= C(n,2) + K. NPPZ's "good" pairs are exactly the non-W2 pairs, so NPPZ = (K <= ~0.4165 n^2).
+Target: K <= n^2/4 + O(n) gives Z <= 3n^2/4 + O(n) and 5n/12 for #982.
+
+PROVED (checked by agent)
+L1  s(l) <= min(L,R): the mirror pairs across a vertex-line l number at most the smaller side count.
+L2  kappa(p) := #kites with apex p <= floor((n-2)^2/4). Order the others around p; the line p v_i has i-1 and m-i vertices
+    on its two sides (m = n-1); sum min(i-1, m-i) = floor((m-1)^2/4). (Fable; sharpened by Wonder)
+L3  Kites cross: the cyclic order is p,a,q,b. Polygon edges are never W2. (Fable P1)
+L4  Triple lemma: a non-collinear triple lies in at most one distance class over all centres, so sum over all classes
+    of C(m,3) <= C(n,3), and there are O(delta^-3) (centre, class) pairs of size >= delta n. (Fable P3)
+THM A' (Fable's Theorem A, extended by the agent; also confirmed independently by Wonder, S2):
+    If all but k vertices lie on one circle Gamma, then K <= n^2/4 + O(kn), hence Z <= 3n^2/4 + O(kn).
+    Proof: pairs meeting an exceptional vertex: <= kn. For a,b on Gamma the bisector passes through the centre c.
+    If c is a vertex, c is on the bisector line, and that line meets the boundary only at the two apices, so c is an
+    apex and the count is <= kappa(c) <= n^2/4 by L2. Otherwise the apices are an antipodal pair on Gamma
+    (<= n/2 lines, each <= n/2 mirror pairs), or the line is c-x for an exceptional x (<= k lines, each <= n/2).
+    Covers: fans, near-fans, all subsets of regular N-gons with or without the centre, and the H2 counterexample.
+OBS (agent): if all vertices lie on r circles concentric at c, the mirror pairs across lines through c are exactly the
+    same-shell pairs, at most n^2/4 + O(n) in total. Every vertex-line not through c has s(l) <= 2r^2.
+
+PROVED MODULO CITED THEOREM (Raz-Sharir-de Zeeuw 2016 / Elekes-Szabo; argument by Fable, checked by the agent at the level of the argument)
+THM B: if all but k vertices lie on r circles with a common centre, then
+    K <= n^2/4 + (2r+1)kn + O(n) + O(r^3 n^{11/6}),  so Z <= 3n^2/4 + o(n^2) for r = O(1), k = o(n).
+    Cross-shell kites are bounded by triples (p,a,b) on shells k,i,j (i != j) with |pa| = |pb|. In unit-circle
+    coordinates this is F = r_k(r_j y - r_i z)(x^2 - yz) + (r_i^2 - r_j^2)xyz = 0, which is irreducible (the
+    discriminant computation was checked) and not special (in angle coordinates f_X/f_Y = 1/g'(w) - 1 has a pole,
+    so it is not of the form Ce^{lambda w}). RSdZ then gives O(n^{11/6}) triples per shell triple.
+    Caveat: the non-speciality step is a sketch (it relies on analytic continuation along the irreducible surface).
+    A referee-level write-up is still needed.
+
+REFUTED
+H2  "kdeg(a) <= n/2 + O(1)" (per-vertex kite degree): centre plus N-gon points at c +- 2^k gives kdeg = n-4 (exact check; H2_refutation.txt).
+W-dir  "kite pairs use <= n/2 + O(1) directions" (Wonder): in a fan the direction of chord v_i v_j depends on i+j, giving ~n directions.
+W-b  "K_o <= (1/4) sum over shells of m_i^2" (Wonder): two-radius fan (Fable), with K_o ~ n^2/4 vs n^2/8.
+S3/B2  "two heavy axes meet at a hub" (Fable): an ellipse with both symmetry axes; circles about the centre meet the ellipse in <= 4 points (Wonder).
+S4/B4  "kappa(p) >= (1/4 - delta)n^2 forces one big circle about p": the same two-radius fan (both models).
+"K = O(nt) when all distance classes have size <= t": the regular 2m-gon has t = 2 and K = n(n-2)/4 (Fable P5).
+Exterior-angle charge per kite / non-crossing axes / acyclic axis map: local counterexamples from Wonder (checked by reasoning).
+
+NUMERICS
+Subsets of regular N-gons (N <= 30, n <= 11, with or without the centre): max K for n = 5..11 is 3,6,8,12,14,20,22 (< n^2/4); max Z reproduces 12,20,29,38,50,64,77.
+Two interleaved concentric regular m-gons, scanning the radius: max K = n(n-2)/4, Z = 2K (no cross-ring kites). sqrt7 octagon: Z = 32, K = 12.
+
+OPEN / MOST PROMISING
+- General beta < 0.4165: not achieved. Both models conclude that class-size counting cannot do it and a genuinely convex/angular global input is needed.
+- Route: hub decomposition. Big shells of different centres meet in <= 2 points (an almost-linear hypergraph, by L4). Theorem A'/B handle a
+  single hub. The missing piece is the "light" kites, where every apex sees a,b in a class of size < delta n.
+- Concentric class: K_cross = O_r(n) is expected (Fable) but unproved. Centrally symmetric case: open (Fable says it is as hard as the general case).

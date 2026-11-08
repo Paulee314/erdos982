@@ -1,0 +1,635 @@
+{
+"5,5": {
+"state": "SEARCH_PROBLEM",
+"start": 1793907884.748568,
+"search": 20527.881293058395
+},
+"5,4": {
+"state": "FAILED_R1",
+"start": 1793907884.7496479,
+"search": 7053.0,
+"result": "RESULT C4 n=11 bound=54 cube=0:5,1:4: UNSAT; learned 0, feasible 0, it 1, tiers {1: 0, 2: 0, 3: 0, 'delta': 0, 'sigma': 0}, 7052.2s (sat 7051s, lp 0s)",
+"cert": {
+"n": 11,
+"bound": 54,
+"fams": "ADFGKNOX",
+"cube": "0:5,1:4",
+"ver": "a03209f5d055f7a2905b091cc649cd2a",
+"r1": {
+"solve": 9527.90947508812
+},
+"status": "FAILED_R1",
+"wall": 9536.1
+},
+"end": 1793924477.359057
+},
+"4,5": {
+"state": "VERIFIED",
+"start": 1793907884.750143,
+"search": 892.3,
+"result": "RESULT C4 n=11 bound=54 cube=0:4,1:5: UNSAT; learned 0, feasible 0, it 1, tiers {1: 0, 2: 0, 3: 0, 'delta': 0, 'sigma': 0}, 891.9s (sat 891s, lp 0s)",
+"cert": {
+"n": 11,
+"bound": 54,
+"fams": "ADFGKNOX",
+"cube": "0:4,1:5",
+"ver": "a03209f5d055f7a2905b091cc649cd2a",
+"r1": {
+"solve": 1030.0,
+"drat": 2690.0,
+"proof_bytes": 377919727,
+"proof_sha256": "b6a4b5d5ad10e39bf402cb894b2631bf9e17d69ccba18f1229b26bd445ba9ad9",
+"cnf_sha256": "4176de6614a2658a9b666d9f1dc4d3c6cf616f60ee1aeaaad4f2a7006ed73df1"
+},
+"core_learned": 0,
+"cert_failed": 0,
+"checker_rejected": 0,
+"status": "VERIFIED",
+"wall": 3734.9
+},
+"end": 1793912513.3460631
+},
+"6,5": {
+"state": "SEARCH_PROBLEM",
+"start": 1793907884.75157,
+"search": 25659.851902008057
+},
+"5,6": {
+"state": "FAILED_R1",
+"start": 1793907884.752937,
+"search": 14793.8,
+"result": "RESULT C4 n=11 bound=54 cube=0:5,1:6: UNSAT; learned 0, feasible 0, it 1, tiers {1: 0, 2: 0, 3: 0, 'delta': 0, 'sigma': 0}, 14792.9s (sat 14792s, lp 0s)",
+"cert": {
+"n": 11,
+"bound": 54,
+"fams": "ADFGKNOX",
+"cube": "0:5,1:6",
+"ver": "8e5eb4ea938a506011f1b79e5e5dcc0b",
+"r1": {
+"solve": 3042.36590218544
+},
+"status": "FAILED_R1",
+"wall": 3056.6
+},
+"end": 1793925739.942888
+},
+"3,5": {
+"state": "VERIFIED",
+"start": 1793907884.7542489,
+"search": 6.4,
+"result": "RESULT C4 n=11 bound=54 cube=0:3,1:5: UNSAT; learned 0, feasible 0, it 1, tiers {1: 0, 2: 0, 3: 0, 'delta': 0, 'sigma': 0}, 6.0s (sat 5s, lp 0s)",
+"cert": {
+"n": 11,
+"bound": 54,
+"fams": "ADFGKNOX",
+"cube": "0:3,1:5",
+"ver": "a03209f5d055f7a2905b091cc649cd2a",
+"r1": {
+"solve": 5.8,
+"drat": 2.8,
+"proof_bytes": 2820471,
+"proof_sha256": "12c8287d924f16eeb1a3994c7bc7c41c56ac9c01895d1679deb8de8cdc51b8aa",
+"cnf_sha256": "8c8ccede0838b0010cb3f037d07a3353c2b7663238db474232d2918eb686ffce"
+},
+"core_learned": 0,
+"cert_failed": 0,
+"checker_rejected": 0,
+"status": "VERIFIED",
+"wall": 12.9
+},
+"end": 1793907904.585112
+},
+"4,4": {
+"state": "VERIFIED",
+"start": 1793907904.5855622,
+"search": 168.9,
+"result": "RESULT C4 n=11 bound=54 cube=0:4,1:4: UNSAT; learned 0, feasible 0, it 1, tiers {1: 0, 2: 0, 3: 0, 'delta': 0, 'sigma': 0}, 168.4s (sat 167s, lp 0s)",
+"cert": {
+"n": 11,
+"bound": 54,
+"fams": "ADFGKNOX",
+"cube": "0:4,1:4",
+"ver": "a03209f5d055f7a2905b091cc649cd2a",
+"r1": {
+"solve": 154.1,
+"drat": 97.9,
+"proof_bytes": 81837388,
+"proof_sha256": "d66be1fd0db8ea358297042198e607961806cb8a3d5dc2f8044f9756b9345077",
+"cnf_sha256": "41d77fc8546b810e18b834ae865c3b5cb9bd7521ab2bc18137c3550b9087b721"
+},
+"core_learned": 0,
+"cert_failed": 0,
+"checker_rejected": 0,
+"status": "VERIFIED",
+"wall": 256.5
+},
+"end": 1793908330.525322
+},
+"4,6": {
+"state": "VERIFIED",
+"start": 1793908330.5257862,
+"search": 1019.4,
+"result": "RESULT C4 n=11 bound=54 cube=0:4,1:6: UNSAT; learned 0, feasible 0, it 1, tiers {1: 0, 2: 0, 3: 0, 'delta': 0, 'sigma': 0}, 1018.9s (sat 1018s, lp 0s)",
+"cert": {
+"n": 11,
+"bound": 54,
+"fams": "ADFGKNOX",
+"cube": "0:4,1:6",
+"ver": "a03209f5d055f7a2905b091cc649cd2a",
+"r1": {
+"solve": 3569.9,
+"drat": 3499.1,
+"proof_bytes": 506749864,
+"proof_sha256": "90764a63415fda15ae033443f9d499c616dd9472e0b80ab3200e92f0269c7b9d",
+"cnf_sha256": "6d8bf224b7920afe5cfa118095845b241c979030a42c33ae17f694c8c3e2b2d2"
+},
+"core_learned": 0,
+"cert_failed": 0,
+"checker_rejected": 0,
+"status": "VERIFIED",
+"wall": 7084.7
+},
+"end": 1793916436.055889
+},
+"5,3": {
+"state": "VERIFIED",
+"start": 1793912513.347481,
+"search": 480.8,
+"result": "RESULT C4 n=11 bound=54 cube=0:5,1:3: UNSAT; learned 0, feasible 0, it 1, tiers {1: 0, 2: 0, 3: 0, 'delta': 0, 'sigma': 0}, 478.5s (sat 473s, lp 0s)",
+"cert": {
+"n": 11,
+"bound": 54,
+"fams": "ADFGKNOX",
+"cube": "0:5,1:3",
+"ver": "a03209f5d055f7a2905b091cc649cd2a",
+"r1": {
+"solve": 147.6,
+"drat": 96.6,
+"proof_bytes": 59837826,
+"proof_sha256": "4158d8fe97ef06e8a80e7590ab09a4df3d9e1dd3030458aedcdade29225b3f49",
+"cnf_sha256": "bb90cb021a05d2c283124df09213a0e6b47872acce10acebd1c556a3145b967c"
+},
+"core_learned": 0,
+"cert_failed": 0,
+"checker_rejected": 0,
+"status": "VERIFIED",
+"wall": 260.9
+},
+"end": 1793913257.246342
+},
+"5,7": {
+"state": "SEARCH_PROBLEM",
+"start": 1793913257.247812,
+"search": 11220.519220352173
+},
+"6,4": {
+"state": "SEARCH_PROBLEM",
+"start": 1793916436.069024,
+"search": 10552.14575791359
+},
+"6,6": {
+"state": "SEARCH_PROBLEM",
+"start": 1793924477.361276,
+"search": 1.7763400077819824
+},
+"7,5": {
+"state": "SEARCH_PROBLEM",
+"start": 1793924477.7779222,
+"search": 2.0046629905700684
+},
+"2,5": {
+"state": "SEARCH_PROBLEM",
+"start": 1793924479.150125,
+"search": 1.9905521869659424
+},
+"3,4": {
+"state": "SEARCH_PROBLEM",
+"start": 1793924479.785703,
+"search": 1.7131321430206299
+},
+"3,6": {
+"state": "SEARCH_PROBLEM",
+"start": 1793924481.172939,
+"search": 1.8697831630706787
+},
+"4,3": {
+"state": "SEARCH_PROBLEM",
+"start": 1793924481.50223,
+"search": 1.8729569911956787
+},
+"4,7": {
+"state": "SEARCH_PROBLEM",
+"start": 1793924483.052324,
+"search": 1.8539750576019287
+},
+"5,2": {
+"state": "SEARCH_PROBLEM",
+"start": 1793924483.377952,
+"search": 1.9172859191894531
+},
+"5,8": {
+"state": "SEARCH_PROBLEM",
+"start": 1793924484.911415,
+"search": 1.9705331325531006
+},
+"6,3": {
+"state": "SEARCH_PROBLEM",
+"start": 1793924485.305184,
+"search": 2.059238910675049
+},
+"6,7": {
+"state": "SEARCH_PROBLEM",
+"start": 1793924486.885447,
+"search": 1.929171085357666
+},
+"7,4": {
+"state": "SEARCH_PROBLEM",
+"start": 1793924487.369993,
+"search": 2.123830795288086
+},
+"7,6": {
+"state": "SEARCH_PROBLEM",
+"start": 1793924488.822376,
+"search": 1.8263561725616455
+},
+"8,5": {
+"state": "SEARCH_PROBLEM",
+"start": 1793924489.5091991,
+"search": 1.8685858249664307
+},
+"1,5": {
+"state": "SEARCH_PROBLEM",
+"start": 1793924490.6613948,
+"search": 2.03417706489563
+},
+"2,4": {
+"state": "SEARCH_PROBLEM",
+"start": 1793924491.391022,
+"search": 2.009655237197876
+},
+"2,6": {
+"state": "SEARCH_PROBLEM",
+"start": 1793924492.699015,
+"search": 1.8397538661956787
+},
+"3,3": {
+"state": "SEARCH_PROBLEM",
+"start": 1793924493.405941,
+"search": 2.2606101036071777
+},
+"3,7": {
+"state": "SEARCH_PROBLEM",
+"start": 1793924494.546814,
+"search": 2.1549391746520996
+},
+"4,2": {
+"state": "SEARCH_PROBLEM",
+"start": 1793924495.67698,
+"search": 1.96470308303833
+},
+"4,8": {
+"state": "SEARCH_PROBLEM",
+"start": 1793924496.705497,
+"search": 2.0356640815734863
+},
+"5,1": {
+"state": "SEARCH_PROBLEM",
+"start": 1793924497.64715,
+"search": 1.9264559745788574
+},
+"5,9": {
+"state": "SEARCH_PROBLEM",
+"start": 1793924498.7546592,
+"search": 2.0247292518615723
+},
+"6,2": {
+"state": "SEARCH_PROBLEM",
+"start": 1793924499.577316,
+"search": 2.1608710289001465
+},
+"6,8": {
+"state": "SEARCH_PROBLEM",
+"start": 1793924500.7917309,
+"search": 1.8382229804992676
+},
+"7,3": {
+"state": "SEARCH_PROBLEM",
+"start": 1793924501.744927,
+"search": 1.677189826965332
+},
+"7,7": {
+"state": "SEARCH_PROBLEM",
+"start": 1793924502.6524742,
+"search": 2.2376880645751953
+},
+"8,4": {
+"state": "SEARCH_PROBLEM",
+"start": 1793924503.431381,
+"search": 2.0922679901123047
+},
+"8,6": {
+"state": "SEARCH_PROBLEM",
+"start": 1793924504.893916,
+"search": 2.0972647666931152
+},
+"9,5": {
+"state": "SEARCH_PROBLEM",
+"start": 1793924505.528977,
+"search": 2.1462080478668213
+},
+"1,4": {
+"state": "SEARCH_PROBLEM",
+"start": 1793924506.996564,
+"search": 1.7925822734832764
+},
+"1,6": {
+"state": "SEARCH_PROBLEM",
+"start": 1793924507.6794019,
+"search": 1.7586040496826172
+},
+"2,3": {
+"state": "SEARCH_PROBLEM",
+"start": 1793924508.805225,
+"search": 2.0479140281677246
+},
+"2,7": {
+"state": "SEARCH_PROBLEM",
+"start": 1793924509.450714,
+"search": 2.009204864501953
+},
+"3,2": {
+"state": "SEARCH_PROBLEM",
+"start": 1793924510.859732,
+"search": 1.8991000652313232
+},
+"3,8": {
+"state": "SEARCH_PROBLEM",
+"start": 1793924511.46595,
+"search": 1.9845688343048096
+},
+"4,1": {
+"state": "SEARCH_PROBLEM",
+"start": 1793924512.7634501,
+"search": 1.84409499168396
+},
+"4,9": {
+"state": "SEARCH_PROBLEM",
+"start": 1793924513.466174,
+"search": 1.7234280109405518
+},
+"5,10": {
+"state": "SEARCH_PROBLEM",
+"start": 1793924514.6131861,
+"search": 2.087049961090088
+},
+"6,1": {
+"state": "SEARCH_PROBLEM",
+"start": 1793924515.194463,
+"search": 1.9763460159301758
+},
+"6,9": {
+"state": "SEARCH_PROBLEM",
+"start": 1793924516.718497,
+"search": 1.9979712963104248
+},
+"7,2": {
+"state": "SEARCH_PROBLEM",
+"start": 1793924517.1917582,
+"search": 2.1079320907592773
+},
+"7,8": {
+"state": "SEARCH_PROBLEM",
+"start": 1793924518.7227,
+"search": 2.112053871154785
+},
+"8,3": {
+"state": "SEARCH_PROBLEM",
+"start": 1793924519.3103921,
+"search": 1.9357597827911377
+},
+"8,7": {
+"state": "SEARCH_PROBLEM",
+"start": 1793924520.8550642,
+"search": 1.9118947982788086
+},
+"9,4": {
+"state": "SEARCH_PROBLEM",
+"start": 1793924521.264053,
+"search": 1.8574588298797607
+},
+"9,6": {
+"state": "SEARCH_PROBLEM",
+"start": 1793924522.776751,
+"search": 1.729294776916504
+},
+"10,5": {
+"state": "SEARCH_PROBLEM",
+"start": 1793924523.1485472,
+"search": 1.737104892730713
+},
+"1,3": {
+"state": "SEARCH_PROBLEM",
+"start": 1793924524.532049,
+"search": 1.813626766204834
+},
+"1,7": {
+"state": "SEARCH_PROBLEM",
+"start": 1793924524.889951,
+"search": 1.885664701461792
+},
+"2,2": {
+"state": "SEARCH_PROBLEM",
+"start": 1793924526.364953,
+"search": 1.941605806350708
+},
+"2,8": {
+"state": "SEARCH_PROBLEM",
+"start": 1793924526.79014,
+"search": 1.939749002456665
+},
+"3,1": {
+"state": "SEARCH_PROBLEM",
+"start": 1793924528.3189068,
+"search": 1.8324170112609863
+},
+"3,9": {
+"state": "SEARCH_PROBLEM",
+"start": 1793924528.747082,
+"search": 1.9368579387664795
+},
+"4,10": {
+"state": "SEARCH_PROBLEM",
+"start": 1793924530.172817,
+"search": 2.000077724456787
+},
+"6,10": {
+"state": "SEARCH_PROBLEM",
+"start": 1793924530.702858,
+"search": 1.9519999027252197
+},
+"7,1": {
+"state": "SEARCH_PROBLEM",
+"start": 1793924532.194925,
+"search": 1.8399598598480225
+},
+"7,9": {
+"state": "SEARCH_PROBLEM",
+"start": 1793924532.663858,
+"search": 1.8637712001800537
+},
+"8,2": {
+"state": "SEARCH_PROBLEM",
+"start": 1793924534.0495071,
+"search": 1.709385871887207
+},
+"8,8": {
+"state": "SEARCH_PROBLEM",
+"start": 1793924534.5323288,
+"search": 1.8539271354675293
+},
+"9,3": {
+"state": "SEARCH_PROBLEM",
+"start": 1793924535.76561,
+"search": 2.1864330768585205
+},
+"9,7": {
+"state": "SEARCH_PROBLEM",
+"start": 1793924536.3919518,
+"search": 2.1248769760131836
+},
+"10,4": {
+"state": "SEARCH_PROBLEM",
+"start": 1793924537.958687,
+"search": 1.9649162292480469
+},
+"10,6": {
+"state": "SEARCH_PROBLEM",
+"start": 1793924538.5296268,
+"search": 2.0105409622192383
+},
+"1,2": {
+"state": "SEARCH_PROBLEM",
+"start": 1793924539.931495,
+"search": 1.7469921112060547
+},
+"1,8": {
+"state": "SEARCH_PROBLEM",
+"start": 1793924540.5515,
+"search": 1.9597928524017334
+},
+"2,1": {
+"state": "SEARCH_PROBLEM",
+"start": 1793924541.6936069,
+"search": 2.0477840900421143
+},
+"2,9": {
+"state": "SEARCH_PROBLEM",
+"start": 1793924542.519607,
+"search": 1.7813868522644043
+},
+"3,10": {
+"state": "SEARCH_PROBLEM",
+"start": 1793924543.753202,
+"search": 1.849247932434082
+},
+"7,10": {
+"state": "SEARCH_PROBLEM",
+"start": 1793924544.310386,
+"search": 1.8572969436645508
+},
+"8,1": {
+"state": "SEARCH_PROBLEM",
+"start": 1793924545.6108649,
+"search": 1.8483343124389648
+},
+"8,9": {
+"state": "SEARCH_PROBLEM",
+"start": 1793924546.183851,
+"search": 1.7644400596618652
+},
+"9,2": {
+"state": "SEARCH_PROBLEM",
+"start": 1793924547.472372,
+"search": 2.139526128768921
+},
+"9,8": {
+"state": "SEARCH_PROBLEM",
+"start": 1793924547.958851,
+"search": 2.0146591663360596
+},
+"10,3": {
+"state": "SEARCH_PROBLEM",
+"start": 1793924549.617175,
+"search": 1.8843259811401367
+},
+"10,7": {
+"state": "SEARCH_PROBLEM",
+"start": 1793924549.9827788,
+"search": 1.7450311183929443
+},
+"1,1": {
+"state": "SEARCH_PROBLEM",
+"start": 1793924551.51327,
+"search": 1.9477729797363281
+},
+"1,9": {
+"state": "SEARCH_PROBLEM",
+"start": 1793924551.742539,
+"search": 1.844167709350586
+},
+"2,10": {
+"state": "SEARCH_PROBLEM",
+"start": 1793924553.4840991,
+"search": 1.900465965270996
+},
+"8,10": {
+"state": "SEARCH_PROBLEM",
+"start": 1793924553.596342,
+"search": 2.0271010398864746
+},
+"9,1": {
+"state": "SEARCH_PROBLEM",
+"start": 1793924555.398907,
+"search": 1.8272550106048584
+},
+"9,9": {
+"state": "SEARCH_PROBLEM",
+"start": 1793924555.634309,
+"search": 1.680591106414795
+},
+"10,2": {
+"state": "SEARCH_PROBLEM",
+"start": 1793924557.236195,
+"search": 1.9414668083190918
+},
+"10,8": {
+"state": "SEARCH_PROBLEM",
+"start": 1793924557.327563,
+"search": 1.9341709613800049
+},
+"1,10": {
+"state": "SEARCH_PROBLEM",
+"start": 1793924559.187548,
+"search": 1.931321144104004
+},
+"9,10": {
+"state": "SEARCH_PROBLEM",
+"start": 1793924559.278282,
+"search": 2.0895588397979736
+},
+"10,1": {
+"state": "SEARCH_PROBLEM",
+"start": 1793924561.139159,
+"search": 1.735563039779663
+},
+"10,9": {
+"state": "SEARCH_PROBLEM",
+"start": 1793924561.380011,
+"search": 1.8538107872009277
+},
+"10,10": {
+"state": "SEARCH_PROBLEM",
+"start": 1793924562.8822432,
+"search": 1.7225730419158936
+}
+}

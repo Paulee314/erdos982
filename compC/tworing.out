@@ -1,0 +1,6 @@
+sqrt7 octagon: convex True Z,W2,w0 = (32, 12, 8)
+two-ring n=8: max W2=12 (n^2/4=16) Z=24 at r=0.8010
+two-ring n=12: max W2=30 (n^2/4=36) Z=60 at r=0.8670
+two-ring n=16: max W2=56 (n^2/4=64) Z=112 at r=0.9240
+two-ring n=20: max W2=90 (n^2/4=100) Z=180 at r=0.9520
+two-ring n=24: max W2=132 (n^2/4=144) Z=264 at r=0.9660

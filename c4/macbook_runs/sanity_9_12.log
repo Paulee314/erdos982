@@ -1,0 +1,30 @@
+R_9: t-seq [4, 4, 4, 4, 4, 4, 4, 4, 4] sum 36 (C(n,2)=36); SAT@bound=36: True; SAT@bound=35: False; Lambda refutes: False; Delta refutes: False -> OK
+random#0: t-seq [8, 8, 8, 8, 8, 8, 8, 8, 8] sum 72 (C(n,2)=36); SAT@bound=72: True; SAT@bound=71: False; Lambda refutes: False; Delta refutes: False -> OK
+random#1: t-seq [8, 8, 8, 8, 8, 8, 8, 8, 8] sum 72 (C(n,2)=36); SAT@bound=72: True; SAT@bound=71: False; Lambda refutes: False; Delta refutes: False -> OK
+random#2: t-seq [8, 8, 8, 8, 8, 8, 8, 8, 8] sum 72 (C(n,2)=36); SAT@bound=72: True; SAT@bound=71: False; Lambda refutes: False; Delta refutes: False -> OK
+random#3: t-seq [8, 8, 8, 8, 8, 8, 8, 8, 8] sum 72 (C(n,2)=36); SAT@bound=72: True; SAT@bound=71: False; Lambda refutes: False; Delta refutes: False -> OK
+random#4: t-seq [8, 8, 8, 8, 8, 8, 8, 8, 8] sum 72 (C(n,2)=36); SAT@bound=72: True; SAT@bound=71: False; Lambda refutes: False; Delta refutes: False -> OK
+ALL OK
+A_10: t-seq [4, 5, 4, 5, 4, 5, 4, 5, 4, 5] sum 45 (C(n,2)=45); SAT@bound=45: True; SAT@bound=44: False; Lambda refutes: False; Delta refutes: False -> OK
+R_10: t-seq [5, 5, 5, 5, 5, 5, 5, 5, 5, 5] sum 50 (C(n,2)=45); SAT@bound=50: True; SAT@bound=49: False; Lambda refutes: False; Delta refutes: False -> OK
+random#0: t-seq [9, 9, 9, 9, 9, 9, 9, 9, 9, 9] sum 90 (C(n,2)=45); SAT@bound=90: True; SAT@bound=89: False; Lambda refutes: False; Delta refutes: False -> OK
+random#1: t-seq [9, 9, 9, 9, 9, 9, 9, 9, 9, 9] sum 90 (C(n,2)=45); SAT@bound=90: True; SAT@bound=89: False; Lambda refutes: False; Delta refutes: False -> OK
+random#2: t-seq [9, 9, 9, 9, 9, 9, 9, 9, 9, 9] sum 90 (C(n,2)=45); SAT@bound=90: True; SAT@bound=89: False; Lambda refutes: False; Delta refutes: False -> OK
+random#3: t-seq [9, 9, 9, 9, 9, 9, 9, 9, 9, 9] sum 90 (C(n,2)=45); SAT@bound=90: True; SAT@bound=89: False; Lambda refutes: False; Delta refutes: False -> OK
+random#4: t-seq [9, 9, 9, 9, 9, 9, 9, 9, 9, 9] sum 90 (C(n,2)=45); SAT@bound=90: True; SAT@bound=89: False; Lambda refutes: False; Delta refutes: False -> OK
+ALL OK
+R_11: t-seq [5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5] sum 55 (C(n,2)=55); SAT@bound=55: True; SAT@bound=54: False; Lambda refutes: False; Delta refutes: False -> OK
+random#0: t-seq [10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10] sum 110 (C(n,2)=55); SAT@bound=110: True; SAT@bound=109: False; Lambda refutes: False; Delta refutes: False -> OK
+random#1: t-seq [10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10] sum 110 (C(n,2)=55); SAT@bound=110: True; SAT@bound=109: False; Lambda refutes: False; Delta refutes: False -> OK
+random#2: t-seq [10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10] sum 110 (C(n,2)=55); SAT@bound=110: True; SAT@bound=109: False; Lambda refutes: False; Delta refutes: False -> OK
+random#3: t-seq [10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10] sum 110 (C(n,2)=55); SAT@bound=110: True; SAT@bound=109: False; Lambda refutes: False; Delta refutes: False -> OK
+random#4: t-seq [10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10] sum 110 (C(n,2)=55); SAT@bound=110: True; SAT@bound=109: False; Lambda refutes: False; Delta refutes: False -> OK
+ALL OK
+A_12: t-seq [5, 6, 5, 6, 5, 6, 5, 6, 5, 6, 5, 6] sum 66 (C(n,2)=66); SAT@bound=66: True; SAT@bound=65: False; Lambda refutes: False; Delta refutes: False -> OK
+R_12: t-seq [6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6] sum 72 (C(n,2)=66); SAT@bound=72: True; SAT@bound=71: False; Lambda refutes: False; Delta refutes: False -> OK
+random#0: t-seq [11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11] sum 132 (C(n,2)=66); SAT@bound=132: True; SAT@bound=131: False; Lambda refutes: False; Delta refutes: False -> OK
+random#1: t-seq [11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11] sum 132 (C(n,2)=66); SAT@bound=132: True; SAT@bound=131: False; Lambda refutes: False; Delta refutes: False -> OK
+random#2: t-seq [11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11] sum 132 (C(n,2)=66); SAT@bound=132: True; SAT@bound=131: False; Lambda refutes: False; Delta refutes: False -> OK
+random#3: t-seq [11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11] sum 132 (C(n,2)=66); SAT@bound=132: True; SAT@bound=131: False; Lambda refutes: False; Delta refutes: False -> OK
+random#4: t-seq [11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11] sum 132 (C(n,2)=66); SAT@bound=132: True; SAT@bound=131: False; Lambda refutes: False; Delta refutes: False -> OK
+ALL OK

@@ -1,0 +1,7 @@
+start 2026-11-07T02:19:01Z
+drat-trim:  2026-11-07T06:13:59Z
+-rw-r--r--@ 1 paullee  staff  21315066733 Nov  7 00:13 fc13fix_final.lrat
+cake_lpr: c Checking failed at line: 478. Reason: clause not empty or singleton after reduction 2026-11-07T06:14:01Z
+3526593ce6c9e85d6a43a6db50701aea92974f935691b388b412e140a57adf75  fc13fix_final.cnf
+42fa76235d102877c9d8391b9060548be6fc5338caa630c68aa3fe361669b53a  fc13fix_final.lrat
+DONE 2026-11-07T06:14:51Z

@@ -1,0 +1,6 @@
+n=6 T0=17 T=17 N=60 pieces 32 (worker 0/1: 32); clauses 11713; fams {'GXONK': 1258}; tag v2[G+X+O+LAM]md5=b69c115a126a; build 0.0s
+  REALISED Z=17 (model cnt 17) piece 0: 00000 00123 00120 01232 01233 01023
+  REALISED Z=19 (model cnt 19) piece 0: 00000 00123 00102 01220 01022 01203
+  REALISED Z=20 (model cnt 20) piece 0: 00000 01023 01102 00110 01022 01203
+piece 0 00000: 3 models, cpu 0.7s; T=21; {'models': 3, 'newcores': 0, 'big': 0, 'surv': 0, 'hits': 0, 'lam': 0, 'real': 3}; lib 0; wall 1s
+DONE worker 0: final T=21 (UNSAT at T for all my pieces if no survivors); {'models': 3, 'newcores': 0, 'big': 0, 'surv': 0, 'hits': 0, 'lam': 0, 'real': 3}; wall 1s

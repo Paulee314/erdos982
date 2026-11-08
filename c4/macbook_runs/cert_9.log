@@ -1,0 +1,8 @@
+C4 n=9 bound=35: 0 distinct learned clauses (with images) [0s]
+runs/cert_9_r1: UNSAT [68s]
+drat-trim: ['s VERIFIED'] [130s]
+core uses 0 learned clauses [130s]
+exact certificates: 0 ok, 0 failed [130s]
+runs/cert_9_final: UNSAT [196s]
+drat-trim: ['s VERIFIED'] [257s]
+FINAL C4 n=9 bound=35: VERIFIED UNSAT with 0 certified learned clauses [257s]

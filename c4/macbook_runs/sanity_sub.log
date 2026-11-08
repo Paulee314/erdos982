@@ -1,0 +1,93 @@
+A_8: t-seq [3, 4, 3, 4, 3, 4, 3, 4] sum 28 (C(n,2)=28); SAT@bound=28: True; SAT@bound=27: False; Lambda refutes: False; Delta refutes: False -> OK
+R_8: t-seq [4, 4, 4, 4, 4, 4, 4, 4] sum 32 (C(n,2)=28); SAT@bound=32: True; SAT@bound=31: False; Lambda refutes: False; Delta refutes: False -> OK
+R_9-1: t-seq [4, 4, 4, 4, 4, 4, 4, 4] sum 32 (C(n,2)=28); SAT@bound=32: True; SAT@bound=31: False; Lambda refutes: False; Delta refutes: False -> OK
+sub R_12 [0, 1, 2, 3, 5, 6, 7, 11]: t-seq [5, 5, 5, 4, 6, 5, 5, 6] sum 41 (C(n,2)=28); SAT@bound=41: True; SAT@bound=40: False; Lambda refutes: False; Delta refutes: False -> OK
+sub R_12 [0, 3, 5, 6, 7, 8, 10, 11]: t-seq [6, 4, 5, 6, 5, 5, 5, 5] sum 41 (C(n,2)=28); SAT@bound=41: True; SAT@bound=40: False; Lambda refutes: False; Delta refutes: False -> OK
+sub R_12 [0, 1, 2, 3, 4, 5, 6, 7]: t-seq [6, 6, 5, 4, 4, 5, 6, 6] sum 42 (C(n,2)=28); SAT@bound=42: True; SAT@bound=41: False; Lambda refutes: False; Delta refutes: False -> OK
+sub R_15 [1, 4, 6, 7, 8, 10, 11, 12]: t-seq [5, 5, 5, 5, 5, 5, 5, 6] sum 41 (C(n,2)=28); SAT@bound=41: True; SAT@bound=40: False; Lambda refutes: False; Delta refutes: False -> OK
+sub R_15 [0, 1, 3, 5, 6, 9, 10, 13]: t-seq [5, 7, 5, 5, 6, 5, 6, 5] sum 44 (C(n,2)=28); SAT@bound=44: True; SAT@bound=43: False; Lambda refutes: False; Delta refutes: False -> OK
+sub R_10 [0, 1, 2, 3, 4, 6, 7, 8]: t-seq [4, 5, 4, 5, 4, 5, 4, 5] sum 36 (C(n,2)=28); SAT@bound=36: True; SAT@bound=35: False; Lambda refutes: False; Delta refutes: False -> OK
+sub R_9 [1, 2, 3, 4, 5, 6, 7, 8]: t-seq [4, 4, 4, 4, 4, 4, 4, 4] sum 32 (C(n,2)=28); SAT@bound=32: True; SAT@bound=31: False; Lambda refutes: False; Delta refutes: False -> OK
+sub R_15 [1, 2, 5, 8, 9, 11, 12, 14]: t-seq [5, 5, 4, 5, 6, 5, 6, 4] sum 40 (C(n,2)=28); SAT@bound=40: True; SAT@bound=39: False; Lambda refutes: False; Delta refutes: False -> OK
+sub R_16 [1, 2, 4, 5, 6, 8, 11, 14]: t-seq [6, 6, 6, 5, 5, 5, 4, 5] sum 42 (C(n,2)=28); SAT@bound=42: True; SAT@bound=41: False; Lambda refutes: False; Delta refutes: False -> OK
+sub R_12 [0, 1, 2, 3, 4, 5, 9, 11]: t-seq [5, 4, 4, 5, 5, 6, 5, 6] sum 40 (C(n,2)=28); SAT@bound=40: True; SAT@bound=39: False; Lambda refutes: False; Delta refutes: False -> OK
+sub R_15 [1, 2, 4, 6, 10, 11, 13, 14]: t-seq [5, 6, 5, 4, 5, 6, 6, 6] sum 43 (C(n,2)=28); SAT@bound=43: True; SAT@bound=42: False; Lambda refutes: False; Delta refutes: False -> OK
+sub R_11 [0, 2, 3, 5, 7, 8, 9, 10]: t-seq [5, 5, 5, 4, 5, 4, 4, 5] sum 37 (C(n,2)=28); SAT@bound=37: True; SAT@bound=36: False; Lambda refutes: False; Delta refutes: False -> OK
+sub R_14 [2, 3, 4, 6, 9, 10, 12, 13]: t-seq [6, 6, 4, 5, 6, 6, 6, 5] sum 44 (C(n,2)=28); SAT@bound=44: True; SAT@bound=43: False; Lambda refutes: False; Delta refutes: False -> OK
+sub R_16 [0, 1, 4, 6, 9, 11, 13, 15]: t-seq [6, 7, 5, 5, 7, 5, 4, 6] sum 45 (C(n,2)=28); SAT@bound=45: True; SAT@bound=44: False; Lambda refutes: False; Delta refutes: False -> OK
+sub R_10 [1, 2, 3, 4, 5, 6, 8, 9]: t-seq [5, 4, 5, 5, 4, 5, 5, 5] sum 38 (C(n,2)=28); SAT@bound=38: True; SAT@bound=37: False; Lambda refutes: False; Delta refutes: False -> OK
+ALL OK
+R_9: t-seq [4, 4, 4, 4, 4, 4, 4, 4, 4] sum 36 (C(n,2)=36); SAT@bound=36: True; SAT@bound=35: False; Lambda refutes: False; Delta refutes: False -> OK
+R_10-1: t-seq [5, 5, 5, 5, 4, 5, 5, 5, 5] sum 44 (C(n,2)=36); SAT@bound=44: True; SAT@bound=43: False; Lambda refutes: False; Delta refutes: False -> OK
+sub R_17 [0, 2, 5, 7, 8, 10, 11, 14, 15]: t-seq [6, 6, 6, 7, 6, 7, 5, 7, 6] sum 56 (C(n,2)=36); SAT@bound=56: True; SAT@bound=55: False; Lambda refutes: False; Delta refutes: False -> OK
+sub R_11 [0, 1, 3, 4, 5, 6, 8, 9, 10]: t-seq [5, 5, 5, 5, 5, 5, 5, 5, 4] sum 44 (C(n,2)=36); SAT@bound=44: True; SAT@bound=43: False; Lambda refutes: False; Delta refutes: False -> OK
+sub R_12 [0, 1, 2, 3, 5, 6, 9, 10, 11]: t-seq [5, 5, 5, 6, 6, 5, 6, 5, 6] sum 49 (C(n,2)=36); SAT@bound=49: True; SAT@bound=48: False; Lambda refutes: False; Delta refutes: False -> OK
+sub R_14 [1, 2, 3, 4, 6, 7, 10, 11, 13]: t-seq [6, 6, 6, 6, 6, 5, 6, 6, 6] sum 53 (C(n,2)=36); SAT@bound=53: True; SAT@bound=52: False; Lambda refutes: False; Delta refutes: False -> OK
+sub R_15 [0, 3, 6, 7, 9, 10, 11, 12, 13]: t-seq [6, 5, 6, 7, 5, 6, 5, 5, 7] sum 52 (C(n,2)=36); SAT@bound=52: True; SAT@bound=51: False; Lambda refutes: False; Delta refutes: False -> OK
+sub R_17 [0, 1, 3, 4, 6, 9, 11, 12, 15]: t-seq [7, 7, 6, 8, 5, 5, 7, 5, 6] sum 56 (C(n,2)=36); SAT@bound=56: True; SAT@bound=55: False; Lambda refutes: False; Delta refutes: False -> OK
+sub R_13 [0, 1, 2, 3, 4, 5, 6, 7, 10]: t-seq [6, 6, 5, 5, 5, 5, 6, 6, 4] sum 48 (C(n,2)=36); SAT@bound=48: True; SAT@bound=47: False; Lambda refutes: False; Delta refutes: False -> OK
+sub R_17 [1, 2, 3, 6, 9, 10, 13, 14, 16]: t-seq [5, 7, 6, 5, 7, 6, 6, 6, 5] sum 53 (C(n,2)=36); SAT@bound=53: True; SAT@bound=52: False; Lambda refutes: False; Delta refutes: False -> OK
+sub R_12 [0, 2, 4, 5, 7, 8, 9, 10, 11]: t-seq [5, 5, 6, 6, 5, 5, 5, 6, 6] sum 49 (C(n,2)=36); SAT@bound=49: True; SAT@bound=48: False; Lambda refutes: False; Delta refutes: False -> OK
+sub R_11 [0, 1, 2, 3, 4, 5, 6, 7, 8]: t-seq [5, 5, 5, 5, 4, 5, 5, 5, 5] sum 44 (C(n,2)=36); SAT@bound=44: True; SAT@bound=43: False; Lambda refutes: False; Delta refutes: False -> OK
+sub R_11 [0, 1, 3, 4, 5, 7, 8, 9, 10]: t-seq [5, 5, 5, 4, 5, 5, 5, 5, 5] sum 44 (C(n,2)=36); SAT@bound=44: True; SAT@bound=43: False; Lambda refutes: False; Delta refutes: False -> OK
+sub R_15 [0, 1, 3, 4, 5, 6, 7, 11, 13]: t-seq [7, 6, 6, 6, 6, 6, 6, 5, 5] sum 53 (C(n,2)=36); SAT@bound=53: True; SAT@bound=52: False; Lambda refutes: False; Delta refutes: False -> OK
+sub R_11 [0, 1, 3, 4, 5, 7, 8, 9, 10]: t-seq [5, 5, 5, 4, 5, 5, 5, 5, 5] sum 44 (C(n,2)=36); SAT@bound=44: True; SAT@bound=43: False; Lambda refutes: False; Delta refutes: False -> OK
+sub R_15 [1, 3, 6, 9, 10, 11, 12, 13, 14]: t-seq [6, 6, 5, 7, 6, 5, 5, 6, 6] sum 52 (C(n,2)=36); SAT@bound=52: True; SAT@bound=51: False; Lambda refutes: False; Delta refutes: False -> OK
+sub R_16 [2, 4, 5, 8, 9, 10, 11, 13, 15]: t-seq [6, 6, 6, 7, 6, 6, 6, 6, 6] sum 55 (C(n,2)=36); SAT@bound=55: True; SAT@bound=54: False; Lambda refutes: False; Delta refutes: False -> OK
+ALL OK
+A_10: t-seq [4, 5, 4, 5, 4, 5, 4, 5, 4, 5] sum 45 (C(n,2)=45); SAT@bound=45: True; SAT@bound=44: False; Lambda refutes: False; Delta refutes: False -> OK
+R_10: t-seq [5, 5, 5, 5, 5, 5, 5, 5, 5, 5] sum 50 (C(n,2)=45); SAT@bound=50: True; SAT@bound=49: False; Lambda refutes: False; Delta refutes: False -> OK
+R_11-1: t-seq [5, 5, 5, 5, 5, 5, 5, 5, 5, 5] sum 50 (C(n,2)=45); SAT@bound=50: True; SAT@bound=49: False; Lambda refutes: False; Delta refutes: False -> OK
+sub R_20 [0, 1, 4, 6, 7, 10, 13, 14, 15, 18]: t-seq [7, 7, 6, 8, 6, 7, 8, 6, 7, 7] sum 69 (C(n,2)=45); SAT@bound=69: True; SAT@bound=68: False; Lambda refutes: False; Delta refutes: False -> OK
+sub R_13 [0, 1, 2, 3, 5, 7, 8, 9, 10, 12]: t-seq [6, 5, 5, 6, 5, 6, 6, 6, 6, 6] sum 57 (C(n,2)=45); SAT@bound=57: True; SAT@bound=56: False; Lambda refutes: False; Delta refutes: False -> OK
+sub R_13 [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]: t-seq [6, 6, 6, 6, 5, 5, 6, 6, 6, 6] sum 58 (C(n,2)=45); SAT@bound=58: True; SAT@bound=57: False; Lambda refutes: False; Delta refutes: False -> OK
+sub R_13 [0, 1, 3, 4, 6, 7, 8, 9, 10, 12]: t-seq [5, 6, 6, 6, 6, 6, 5, 6, 5, 6] sum 57 (C(n,2)=45); SAT@bound=57: True; SAT@bound=56: False; Lambda refutes: False; Delta refutes: False -> OK
+sub R_14 [0, 3, 4, 5, 6, 7, 8, 10, 11, 12]: t-seq [6, 7, 6, 6, 6, 6, 6, 7, 6, 6] sum 62 (C(n,2)=45); SAT@bound=62: True; SAT@bound=61: False; Lambda refutes: False; Delta refutes: False -> OK
+sub R_20 [0, 3, 4, 5, 7, 10, 13, 15, 16, 18]: t-seq [6, 8, 6, 7, 7, 6, 8, 7, 8, 7] sum 70 (C(n,2)=45); SAT@bound=70: True; SAT@bound=69: False; Lambda refutes: False; Delta refutes: False -> OK
+sub R_20 [1, 2, 4, 5, 9, 12, 14, 17, 18, 19]: t-seq [7, 8, 8, 7, 7, 8, 8, 7, 6, 7] sum 73 (C(n,2)=45); SAT@bound=73: True; SAT@bound=72: False; Lambda refutes: False; Delta refutes: False -> OK
+sub R_12 [0, 1, 2, 3, 5, 6, 7, 9, 10, 11]: t-seq [5, 6, 5, 6, 6, 5, 6, 6, 5, 6] sum 56 (C(n,2)=45); SAT@bound=56: True; SAT@bound=55: False; Lambda refutes: False; Delta refutes: False -> OK
+sub R_20 [2, 3, 4, 5, 8, 10, 12, 13, 14, 16]: t-seq [7, 6, 7, 7, 6, 7, 7, 6, 7, 7] sum 67 (C(n,2)=45); SAT@bound=67: True; SAT@bound=66: False; Lambda refutes: False; Delta refutes: False -> OK
+sub R_13 [0, 2, 3, 4, 5, 6, 7, 10, 11, 12]: t-seq [6, 5, 6, 6, 5, 6, 6, 6, 5, 6] sum 57 (C(n,2)=45); SAT@bound=57: True; SAT@bound=56: False; Lambda refutes: False; Delta refutes: False -> OK
+sub R_16 [1, 2, 4, 5, 6, 7, 9, 11, 12, 15]: t-seq [7, 7, 6, 6, 7, 7, 7, 6, 6, 7] sum 66 (C(n,2)=45); SAT@bound=66: True; SAT@bound=65: False; Lambda refutes: False; Delta refutes: False -> OK
+sub R_14 [1, 3, 4, 5, 7, 8, 9, 10, 11, 12]: t-seq [6, 6, 6, 7, 6, 6, 6, 6, 6, 7] sum 62 (C(n,2)=45); SAT@bound=62: True; SAT@bound=61: False; Lambda refutes: False; Delta refutes: False -> OK
+sub R_17 [2, 4, 5, 6, 7, 8, 9, 13, 14, 15]: t-seq [6, 8, 6, 6, 7, 7, 7, 7, 5, 6] sum 65 (C(n,2)=45); SAT@bound=65: True; SAT@bound=64: False; Lambda refutes: False; Delta refutes: False -> OK
+sub R_12 [0, 1, 2, 4, 6, 7, 8, 9, 10, 11]: t-seq [6, 6, 6, 5, 6, 6, 6, 5, 5, 5] sum 56 (C(n,2)=45); SAT@bound=56: True; SAT@bound=55: False; Lambda refutes: False; Delta refutes: False -> OK
+sub R_20 [4, 5, 7, 8, 12, 13, 14, 15, 17, 19]: t-seq [8, 8, 8, 7, 7, 7, 8, 8, 8, 7] sum 76 (C(n,2)=45); SAT@bound=76: True; SAT@bound=75: False; Lambda refutes: False; Delta refutes: False -> OK
+ALL OK
+R_11: t-seq [5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5] sum 55 (C(n,2)=55); SAT@bound=55: True; SAT@bound=54: False; Lambda refutes: False; Delta refutes: False -> OK
+R_12-1: t-seq [6, 6, 6, 6, 6, 5, 6, 6, 6, 6, 6] sum 65 (C(n,2)=55); SAT@bound=65: True; SAT@bound=64: False; Lambda refutes: False; Delta refutes: False -> OK
+sub R_19 [2, 6, 7, 8, 9, 10, 12, 14, 16, 17, 18]: t-seq [7, 8, 7, 6, 7, 7, 6, 7, 8, 7, 8] sum 78 (C(n,2)=55); SAT@bound=78: True; SAT@bound=77: False; Lambda refutes: False; Delta refutes: False -> OK
+sub R_13 [0, 1, 2, 3, 4, 5, 7, 8, 9, 10, 11]: t-seq [6, 6, 6, 6, 6, 6, 6, 6, 5, 6, 6] sum 65 (C(n,2)=55); SAT@bound=65: True; SAT@bound=64: False; Lambda refutes: False; Delta refutes: False -> OK
+sub R_12 [0, 1, 2, 3, 4, 6, 7, 8, 9, 10, 11]: t-seq [6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 5] sum 65 (C(n,2)=55); SAT@bound=65: True; SAT@bound=64: False; Lambda refutes: False; Delta refutes: False -> OK
+sub R_21 [0, 1, 4, 6, 7, 9, 10, 14, 15, 16, 18]: t-seq [8, 8, 8, 9, 8, 8, 8, 7, 8, 7, 7] sum 86 (C(n,2)=55); SAT@bound=86: True; SAT@bound=85: False; Lambda refutes: False; Delta refutes: False -> OK
+sub R_18 [0, 1, 2, 3, 4, 5, 8, 11, 12, 15, 17]: t-seq [8, 6, 7, 8, 7, 8, 7, 7, 8, 7, 7] sum 80 (C(n,2)=55); SAT@bound=80: True; SAT@bound=79: False; Lambda refutes: False; Delta refutes: False -> OK
+sub R_18 [0, 1, 3, 7, 9, 10, 11, 12, 13, 15, 17]: t-seq [7, 7, 7, 7, 7, 7, 6, 7, 7, 6, 7] sum 75 (C(n,2)=55); SAT@bound=75: True; SAT@bound=74: False; Lambda refutes: False; Delta refutes: False -> OK
+sub R_18 [1, 2, 3, 4, 5, 9, 10, 11, 12, 13, 16]: t-seq [8, 7, 7, 8, 8, 8, 8, 7, 7, 8, 5] sum 81 (C(n,2)=55); SAT@bound=81: True; SAT@bound=80: False; Lambda refutes: False; Delta refutes: False -> OK
+sub R_17 [0, 1, 2, 3, 6, 7, 9, 12, 13, 15, 16]: t-seq [8, 6, 7, 8, 7, 7, 6, 7, 7, 7, 6] sum 76 (C(n,2)=55); SAT@bound=76: True; SAT@bound=75: False; Lambda refutes: False; Delta refutes: False -> OK
+sub R_19 [1, 2, 3, 5, 6, 8, 10, 11, 14, 16, 17]: t-seq [8, 8, 7, 9, 7, 7, 8, 6, 7, 7, 8] sum 82 (C(n,2)=55); SAT@bound=82: True; SAT@bound=81: False; Lambda refutes: False; Delta refutes: False -> OK
+sub R_18 [0, 2, 3, 4, 6, 9, 12, 13, 14, 15, 17]: t-seq [7, 8, 7, 7, 7, 7, 7, 7, 8, 7, 7] sum 79 (C(n,2)=55); SAT@bound=79: True; SAT@bound=78: False; Lambda refutes: False; Delta refutes: False -> OK
+sub R_18 [0, 1, 3, 4, 5, 6, 7, 9, 12, 15, 17]: t-seq [7, 8, 6, 7, 7, 7, 8, 7, 6, 7, 7] sum 77 (C(n,2)=55); SAT@bound=77: True; SAT@bound=76: False; Lambda refutes: False; Delta refutes: False -> OK
+sub R_13 [0, 1, 2, 3, 4, 5, 7, 8, 9, 10, 12]: t-seq [6, 6, 5, 6, 6, 6, 6, 6, 6, 6, 6] sum 65 (C(n,2)=55); SAT@bound=65: True; SAT@bound=64: False; Lambda refutes: False; Delta refutes: False -> OK
+sub R_21 [3, 4, 5, 9, 11, 12, 13, 15, 18, 19, 20]: t-seq [8, 7, 7, 7, 7, 6, 9, 7, 8, 7, 9] sum 82 (C(n,2)=55); SAT@bound=82: True; SAT@bound=81: False; Lambda refutes: False; Delta refutes: False -> OK
+sub R_14 [0, 1, 3, 4, 5, 6, 7, 8, 10, 11, 12]: t-seq [7, 7, 7, 6, 7, 6, 7, 7, 7, 6, 7] sum 74 (C(n,2)=55); SAT@bound=74: True; SAT@bound=73: False; Lambda refutes: False; Delta refutes: False -> OK
+sub R_12 [0, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]: t-seq [6, 6, 6, 6, 6, 6, 5, 6, 6, 6, 6] sum 65 (C(n,2)=55); SAT@bound=65: True; SAT@bound=64: False; Lambda refutes: False; Delta refutes: False -> OK
+ALL OK
+A_12: t-seq [5, 6, 5, 6, 5, 6, 5, 6, 5, 6, 5, 6] sum 66 (C(n,2)=66); SAT@bound=66: True; SAT@bound=65: False; Lambda refutes: False; Delta refutes: False -> OK
+R_12: t-seq [6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6] sum 72 (C(n,2)=66); SAT@bound=72: True; SAT@bound=71: False; Lambda refutes: False; Delta refutes: False -> OK
+R_13-1: t-seq [6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6] sum 72 (C(n,2)=66); SAT@bound=72: True; SAT@bound=71: False; Lambda refutes: False; Delta refutes: False -> OK
+sub R_20 [0, 3, 4, 5, 7, 8, 10, 11, 12, 15, 16, 18]: t-seq [8, 8, 7, 8, 8, 8, 8, 8, 9, 8, 8, 8] sum 96 (C(n,2)=66); SAT@bound=96: True; SAT@bound=95: False; Lambda refutes: False; Delta refutes: False -> OK
+sub R_21 [0, 1, 3, 4, 5, 9, 11, 13, 14, 15, 19, 20]: t-seq [10, 8, 9, 8, 9, 7, 8, 8, 8, 8, 9, 8] sum 100 (C(n,2)=66); SAT@bound=100: True; SAT@bound=99: False; Lambda refutes: False; Delta refutes: False -> OK
+sub R_21 [0, 1, 2, 6, 7, 10, 12, 13, 14, 15, 16, 20]: t-seq [8, 8, 9, 8, 7, 8, 9, 8, 7, 8, 9, 9] sum 98 (C(n,2)=66); SAT@bound=98: True; SAT@bound=97: False; Lambda refutes: False; Delta refutes: False -> OK
+sub R_15 [0, 2, 3, 4, 5, 6, 8, 9, 10, 11, 12, 14]: t-seq [7, 7, 7, 6, 7, 7, 7, 7, 6, 7, 7, 7] sum 82 (C(n,2)=66); SAT@bound=82: True; SAT@bound=81: False; Lambda refutes: False; Delta refutes: False -> OK
+sub R_23 [0, 2, 3, 4, 10, 12, 15, 17, 18, 19, 21, 22]: t-seq [9, 8, 8, 9, 8, 9, 9, 9, 8, 8, 8, 7] sum 100 (C(n,2)=66); SAT@bound=100: True; SAT@bound=99: False; Lambda refutes: False; Delta refutes: False -> OK
+sub R_18 [0, 1, 2, 3, 4, 5, 8, 9, 10, 11, 12, 17]: t-seq [9, 7, 7, 9, 8, 7, 9, 9, 7, 7, 9, 9] sum 97 (C(n,2)=66); SAT@bound=97: True; SAT@bound=96: False; Lambda refutes: False; Delta refutes: False -> OK
+sub R_19 [0, 1, 3, 6, 9, 10, 12, 13, 14, 15, 16, 17]: t-seq [8, 9, 7, 7, 8, 8, 9, 7, 7, 8, 7, 7] sum 92 (C(n,2)=66); SAT@bound=92: True; SAT@bound=91: False; Lambda refutes: False; Delta refutes: False -> OK
+sub R_15 [0, 1, 3, 4, 5, 6, 7, 8, 9, 11, 12, 13]: t-seq [7, 7, 7, 7, 7, 6, 7, 6, 7, 7, 6, 7] sum 81 (C(n,2)=66); SAT@bound=81: True; SAT@bound=80: False; Lambda refutes: False; Delta refutes: False -> OK
+sub R_18 [1, 2, 3, 5, 6, 7, 9, 10, 11, 12, 13, 14]: t-seq [8, 8, 8, 9, 7, 7, 8, 8, 8, 8, 7, 9] sum 95 (C(n,2)=66); SAT@bound=95: True; SAT@bound=94: False; Lambda refutes: False; Delta refutes: False -> OK
+sub R_16 [0, 1, 2, 3, 4, 5, 7, 9, 11, 12, 14, 15]: t-seq [6, 7, 7, 8, 8, 7, 7, 7, 8, 8, 7, 7] sum 87 (C(n,2)=66); SAT@bound=87: True; SAT@bound=86: False; Lambda refutes: False; Delta refutes: False -> OK
+sub R_22 [0, 3, 4, 10, 11, 12, 13, 14, 15, 16, 17, 19]: t-seq [9, 8, 8, 9, 9, 9, 7, 8, 8, 8, 9, 8] sum 100 (C(n,2)=66); SAT@bound=100: True; SAT@bound=99: False; Lambda refutes: False; Delta refutes: False -> OK
+sub R_14 [1, 2, 3, 4, 5, 7, 8, 9, 10, 11, 12, 13]: t-seq [7, 7, 6, 7, 7, 6, 7, 7, 6, 7, 7, 6] sum 80 (C(n,2)=66); SAT@bound=80: True; SAT@bound=79: False; Lambda refutes: False; Delta refutes: False -> OK
+sub R_17 [0, 1, 3, 4, 5, 7, 8, 10, 12, 13, 14, 15]: t-seq [7, 8, 8, 6, 7, 8, 8, 7, 8, 8, 7, 7] sum 89 (C(n,2)=66); SAT@bound=89: True; SAT@bound=88: False; Lambda refutes: False; Delta refutes: False -> OK
+sub R_13 [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 12]: t-seq [6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6] sum 72 (C(n,2)=66); SAT@bound=72: True; SAT@bound=71: False; Lambda refutes: False; Delta refutes: False -> OK
+sub R_21 [1, 3, 6, 8, 9, 13, 14, 16, 17, 18, 19, 20]: t-seq [8, 8, 7, 8, 9, 8, 8, 8, 9, 7, 7, 8] sum 95 (C(n,2)=66); SAT@bound=95: True; SAT@bound=94: False; Lambda refutes: False; Delta refutes: False -> OK
+ALL OK

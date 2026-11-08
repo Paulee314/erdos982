@@ -1,0 +1,4 @@
+2026-11-05 ~17:00 CT: rebalance approved by Paul ('put more on the studio'). MacBook fast-path driver (prod11f) had started nothing; stopped and restarted with list11_macbook_v2.
+Moved MacBook -> Studio (driver B, state/p11c): 0:2,1:5 0:4,1:3 0:5,1:2 0:6,1:7 0:8,1:5 0:2,1:4 0:3,1:7 0:5,1:1 0:6,1:2 0:7,1:7 0:9,1:5 0:1,1:6 0:3,1:2 0:4,1:9 0:6,1:1 0:7,1:8 0:9,1:4 0:10,1:5 0:2,1:2 0:3,1:9 0:6,1:10
+Kept on MacBook: 0:8,1:2 0:9,1:7 0:10,1:6 0:2,1:1 0:7,1:10 0:8,1:9 0:10,1:3 0:1,1:9 0:8,1:10 0:10,1:2 0:9,1:10 0:10,1:9
+Centre double-runs on Studio driver B (old-pipeline copies stay on MacBook as cross-check): 0:5,1:4 0:5,1:5 0:5,1:6 0:6,1:5 0:5,1:7 0:6,1:4

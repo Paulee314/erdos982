@@ -1,0 +1,3 @@
+C4 n=8 bound=28: 95496 clauses, 4461 vars, preloaded 0; 0.1s
+  LP-FEASIBLE model #1 (sum t = 28): 0123210 0012221 0110232 0122100 0123321 0001221 0121033 0122210
+RESULT C4 n=8 bound=28: UNSAT; learned 448, feasible 1, it 6, tiers {1: 3, 2: 1, 3: 0, 'delta': 0, 'sigma': 0}, 6.4s (sat 3s, lp 3s)

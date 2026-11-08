@@ -1,0 +1,3 @@
+n=8 T=33 mode=pieces fams=['G', 'X', 'O'] sets=True: 80544 base clauses, 29 lemma clauses (refused 0 non-lemma lines), N=56
+pieces: 468 checked, 0 not verified, 494s
+PROOF VERIFIED (drat-trim + cake_lpr)

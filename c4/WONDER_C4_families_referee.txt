@@ -1,0 +1,339 @@
+Wonder (muse-wonder-1.0, effort high) referee of the EXTRA C4 families A, D, N, angle_fams2-K, plus G/X/O/F transfer and
+lex-leader / images / cube / C5-blocking compatibility, for the Fishburn C4 encoding (c4_cegar.py). 5 Nov 2026.
+Main job 20261105-133213-2a74c6 (full verbatim generator code in context): 3,980 in / 24,520 out tokens.
+Earlier job 20261105-133042-34ec42 was sent by mistake WITHOUT the code (clause shapes in the prompt only):; its
+reply is kept below as a second, independent opinion (it marks F and base invariance UNVERIFIED for lack of code).
+VERDICT (main job): A, D, N, K SOUND; F SOUND; G/X/O SOUND for C4 (no T* dependence); dihedral invariance SOUND at the
+E/LT-projection level (notes: N emits LT(pa,pc) only for the L_p-earlier endpoint -- reflection-closed only modulo the base
+E-congruence axioms; first-of-class r(c,v) uses label order -- fine since only the count enters); learned clauses + all 2n
+images SOUND; Sigma-without-images SOUND geometrically (each clause universally valid) but breaks syntactic closure;
+cube split t(0)=a SOUND only as the complete union a=1..n-1; C5 blocked-pattern reading SOUND (canonical frame; the blocked
+list is a covering superset). No fixes required. Optional hygiene (job 34ec42): emit the LT(pb,pc) variants of N.
+
+============================== main reply (job 2a74c6, verbatim) ==============================
+**Basis.** Everything below rests on the code and definitions given in the prompt, which I read directly, and on the elementary calculations shown. I have not consulted an external source. For G/X/O I also rely on the prior verdict quoted in the prompt; independently, the clauses as reproduced contain no T*-specific hypothesis.
+
+## 1. New families
+
+### (a) A — SOUND
+
+For \(v\), put \(a=v-1,\ b=v+1\), and set \(A_v\) to its intended value “interior angle at \(v\) is \(<90^\circ\)”.
+
+If the angle at \(v\) is \(\ge 90^\circ\), then in triangle \(avb\), by the cosine law,
+\[
+|ab|^2=|av|^2+|vb|^2-2|av||vb|\cos\angle v
+\ge |av|^2+|vb|^2,
+\]
+so \(|ab|>|av|\) and \(|ab|>|vb|\) strictly. Hence both literals
+\(\mathrm{LT}(av,ab)\) and \(\mathrm{LT}(vb,ab)\) are true, satisfying both clauses regardless of \(A_v\).
+
+Conversely, if one of those LT-literals is false, the angle cannot be \(\ge90^\circ\); so the intended \(A_v\) is indeed true. At exactly \(90^\circ\), \(A_v\) is false under the intended definition, but \(ab\) is strictly longer than each leg, so both clauses are still satisfied. There is no boundary problem.
+
+AtMost3 is sound: interior angle \(<90^\circ\) iff exterior angle \(>90^\circ\). Exterior angles of a strictly convex polygon are positive and sum to \(360^\circ\). Four of them \(>90^\circ\) already sum to \(>360^\circ\), impossible. Thus at most three \(A_v\)’s are intended-true.
+
+**Verdict: A SOUND.** Reasoning/calculation only.
+
+### (b) D — SOUND, including the \(60^\circ\) boundary
+
+Set \(D_v\) to “interior angle at \(v\le 60^\circ\)”.
+
+Suppose both LT-literals in
+\[
+[\mathrm{LT}(av,ab),\ \mathrm{LT}(vb,ab),\ D_v]
+\]
+are false. Then \(|ab|\le |av|\) and \(|ab|\le |vb|\). Thus \(ab\), opposite the angle at \(v\), is a smallest side of triangle \(avb\); the angle at \(v\) is therefore \(\le\) each of the other two angles. Hence \(3\angle v\le180^\circ\), so \(\angle v\le60^\circ\), and intended \(D_v\) is true. Equivalently, if \(\angle v>60^\circ\), the clause is already satisfied by a strict LT-literal. Equality is included in \(D_v\), and the side argument above permits equality, e.g. an equilateral local triangle; this is exactly why the clause needs only non-strict conclusions from negated strict LTs.
+
+AtMost2 is sound for \(n\ge4\) (in particular \(n\ge5\)): an angle \(\le60^\circ\) has exterior angle \(\ge120^\circ\). Three such vertices contribute \(\ge360^\circ\) to the exterior sum, and every remaining vertex contributes a strictly positive exterior angle because the polygon is strictly convex. Total would exceed \(360^\circ\). At exactly \(60^\circ\) this argument still works for \(n>3\), due to the remaining positive exterior angles.
+
+For very small \(n\): \(n=3\) would be a genuine exception to AtMost2, but it is outside the stated range.
+
+**Verdict: D SOUND for \(n\ge5\).** Reasoning/calculation only.
+
+### (c) N — SOUND
+
+Fix \(p\), let \(a=L_p[i]\), \(b=L_p[j]\), \(i<j\), and let \(c\) (and \(d\)) lie strictly between them in \(L_p\). Hidden distinctness is satisfied by the code: \(p,a,b,c,d\) are distinct, and because \(c\) exists strictly between \(a\) and \(b\) along the arc not containing \(p\), \(ab\) is a diagonal, not a polygon side; hence \(p\) and \(c\) lie in opposite open half-planes bounded by line \(ab\).
+
+Assume \(\mathrm{E}(pa,pb)\), i.e. \(|pa|=|pb|=R\), and assume the escaping literal \(\mathrm{LT}(pa,pc)\) is false, i.e. \(|pc|\le R\). Place \(p\) at the origin and the bisector of \(\angle apb\) on the \(x\)-axis. Write
+\[
+a=(h,-s),\qquad b=(h,s),\qquad h=R\cos\theta,\ s=R\sin\theta,
+\]
+where \(2\theta=\angle apb<180^\circ\) (since \(a,b\) are seen from \(p\) inside its interior angle), so \(h>0\) unless the angle approaches \(180^\circ\), and in all cases \(h\ge0\) with equality impossible for an actual pair \(a,b\) at a polygon vertex. Line \(ab\) is \(x=h\); \(c\) has \(x_c>h\) strictly (opposite side from \(p\), and no three vertices are collinear), and \(|pc|\le R\).
+
+Let \(m=(h,0)\), the midpoint of \(ab\). Then
+\[
+|c-m|^2=|c|^2-2hx_c+h^2\le R^2-2hx_c+h^2
+= s^2-2h(x_c-h)\le s^2.
+\]
+So \(c\) lies in the closed disc centred at \(m\) of radius \(s\). That disc has diameter \(2s=|ab|\). Hence \(|ca|\le|ab|\) and \(|cb|\le|ab|\). Equality \(|ca|=|ab|\) would force \(c\) to be the antipode of \(a\) in that disc, namely \(b\), impossible since \(c\ne b\); similarly \(|cb|=|ab|\) would force \(c=a\). Thus \(|ca|<|ab|\) and \(|cb|<|ab|\) strictly. This proves the first two clause types.
+
+For the third clause, if also \(|pd|\le R\), the same argument puts \(d\) in the same disc, so \(|cd|\le2s=|ab|\). Equality would require \(c,d\) antipodal in the \(m\)-disc and both in the original disc \(|z|\le R\); writing an antipodal pair as \(m\pm su\) gives squared norms \(R^2\pm2sh\,u_x\), both \(\le R^2\) only if \(u_x=0\) (as \(h>0\) in the nondegenerate case), i.e. \(\{c,d\}=\{a,b\}\), impossible. Hence \(|cd|<|ab|\) strictly.
+
+Note the code uses \(\mathrm{LT}(pa,pc)\), not \(\mathrm{LT}(pb,pc)\), in both of the first two clauses for the ordered pair \((a,b)\). Under the hypothesis \(\mathrm{E}(pa,pb)\) these are equivalent via the E-congruence axioms, so this is not a soundness problem.
+
+**Verdict: N SOUND.** Calculation shown.
+
+### (d) K — SOUND, including equality on the perpendicular bisector
+
+For a chord \(\{a,b\}\), each arc list in the code is correctly ordered from \(a\) toward \(b\): the first list goes \(a+1,a+2,\dots\) modulo \(n\) up to but excluding \(b\); the second goes \(a-1,a-2,\dots\). `itertools.combinations(arc,2)` preserves list order, so in each generated clause \(x\) is strictly closer to \(a\) along that arc and \(y\) is strictly closer to \(b\).
+
+The clause is
+\[
+[\mathrm{LT}(xa,xb),\ \mathrm{LT}(yb,ya)].
+\]
+Suppose both literals are false: \(|xa|\ge|xb|\) and \(|yb|\ge|ya|\). Define \(f(z)=|z-a|^2-|z-b|^2\), an affine function whose zero set is the perpendicular bisector of \(ab\), negative on the \(a\)-side, positive on the \(b\)-side. Then \(f(a)<0\), \(f(x)\ge0\), \(f(y)\le0\), \(f(b)>0\). So along the polygonal arc from \(a\) to \(b\) through \(x,y\), the sign of \(f\) must change from negative to non-negative by \(x\), back to non-positive at \(y\), and to positive at \(b\).
+
+But the perpendicular bisector passes through the midpoint of \(ab\), hence through the polygon interior, except when \(ab\) is a side, in which case it crosses that side transversely at its midpoint and still enters the interior. A line through the interior of a convex body meets its boundary in exactly two points, one on each of the two \(a\)-to-\(b\) boundary arcs; it cannot contain a polygon edge (an edge lying on it would make the line supporting, contradicting that it crosses the interior), and no three vertices are collinear. Therefore on the arc in question the boundary crosses the bisector exactly once: vertices before the crossing are strictly on the \(a\)-side, vertices after are strictly on the \(b\)-side, and at most one vertex on the arc can lie exactly on the bisector.
+
+Hence the configuration \(f(x)\ge0\) followed later by \(f(y)\le0\) is impossible: if \(x\) is on or past the bisector, every later \(y\) is strictly on the \(b\)-side, giving \(|yb|<|ya|\); if \(y\) is on or before the bisector, every earlier \(x\) is strictly on the \(a\)-side, giving \(|xa|<|xb|\). Equality cases are included: a vertex exactly on the bisector can occur only as the unique crossing vertex of that arc, and then the other literal is strict. If \(ab\) is a polygon side, one arc is empty (no clauses), and the argument applies to the long arc.
+
+**Verdict: K SOUND.** Reasoning shown; arc direction checked against the code as read.
+
+### F — SOUND (also requested in Q2)
+
+For completeness: F says that among three angularly non-overlapping pairs \((q_{i_k},q_{j_k})\) at \(p\), at least one chord is strictly shorter than one of its two distances from \(p\). If all six literals failed for one pair, that chord would be at least both distances from \(p\); being a largest side of its triangle, the angle at \(p\) would be at least \(60^\circ\). Three such angles are disjoint sub-angles of the interior angle at \(p\), which is \(<180^\circ\) strictly, but would sum to \(\ge180^\circ\), contradiction. Equality in all three would already give exactly \(180^\circ\), also impossible. This uses only strict convexity at one vertex.
+
+**Verdict: F SOUND.**
+
+## 2. G, X, O in the C4 setting
+
+**SOUND, unchanged.** Resting on: the code reproduced in the prompt, and the prior verdict quoted there.
+
+The clauses generated by G/X/O depend only on:
+
+- the cyclic/angular order \(L_p\) at a single vertex \(p\) of a strictly convex CCW polygon;
+- comparisons and equalities among chord lengths;
+- universal Euclidean facts about angles at one vertex (e.g. three disjoint angles \(\ge60^\circ\) cannot fit inside \(<180^\circ\); \(>90^\circ\) implies \(\ge60^\circ\); nested angular intervals have smaller angle).
+
+Nothing in the generated clauses references the T* hypothesis, the global bound on \(\sum_c t(c)\), a violator/MEC assumption, or any distinguished vertex. The surrounding constraints in C4 (the cardinality bound, A/D, etc.) are additional conjuncts; adding conjuncts cannot make a universally true geometric clause false. I cannot re-examine the text of the earlier T* proof itself (it is not reproduced here, only its verdict), but at the level of the clause families—which is what was asked—no T*-specific premise is present in the code. If the earlier argument had secretly used an extra hypothesis, that would be a defect of that argument, not something visible in, or needed by, these clauses.
+
+**Verdict: G/X/O confirmed SOUND for C4; no T* dependence in the families.**
+
+## 3. Symmetry breaking
+
+### (a) Dihedral invariance — SOUND, with one syntactic subtlety
+
+The relabelling \(\pi(v)=r+ov\pmod n\), \(o=\pm1\), permutes chords, hence permutes the E/LT variables. The base order axioms are universally quantified over all chord pairs, so they are invariant. (Caveat: the full base code F1/F2/etc. is described but not reproduced in the prompt; I am taking its universal quantification as stated. This is the one place where I cannot verify the implementation from the text given.)
+
+Family by family, as constraints on E/LT modulo renaming of auxiliaries:
+
+- **A, D:** quantified over all \(v\); neighbours map to neighbours (with \(a,b\) swapped under reflection, but both A-clauses are present as a pair, and D's clause is symmetric in the two LT-literals). The AtMost constraints range over all \(v\), hence are permuted. Invariant.
+- **F, G, X, O, K:** quantified over all centres/triples/arcs. Under reflection \(L_p\) is reversed, but every family enumerates *all* intervals/pairs/triples in that order, and the auxiliaries \(g,t,o\) are keyed by arguments sorted under the local order, i.e. they encode unordered pairs at \(p\). A short check: in O, a triple \((x,y,z)\) in \(L_c\)-order maps to \((z',y',x')\) in the reflected order, and since \(o\)'s outer arguments are sorted by the key, the same auxiliary results. In K, a CCW arc from \(a\) to \(b\) maps to the CW arc from \(\pi a\) to \(\pi b\), which is the second enumerated arc, with \(x\)-before-\(y\) preserved relative to \(\pi a\). Invariant.
+- **N:** syntactically asymmetric—it uses \(\mathrm{LT}(pa,pc)\) with \(a\) the earlier endpoint in \(L_p\). Under reflection the “earlier” endpoint swaps, so a reflected clause is not literally among the emitted clauses. However, modulo the base E-congruence axioms it *is* present in effect: the reflected clause differs only by replacing \(\mathrm{LT}(pa,pc)\) with \(\mathrm{LT}(pb,pc)\) under the guard \(\neg\mathrm{E}(pa,pb)\), and when \(\mathrm{E}(pa,pb)\) holds these two literals are equivalent by congruence, while when it fails both clauses are satisfied by the guard literal. So the *projection* onto E/LT of base+N is dihedral-invariant. This is a “sound with a note,” not a defect, but it means a naive syntactic check of clause-set closure would flag N.
+- **Representatives \(r(c,v)\) and the cardinality bound:** the label order used to choose the first-of-class representative is *not* preserved by \(\pi\), and the \(r\)-clauses are not syntactically invariant under the naive renaming \(r(c,v)\mapsto r(\pi c,\pi v)\). This is **not** a problem, because only the count enters. For any fixed E-assignment, the \(r\)-clauses force exactly one true \(r(c,v)\) per distance class at \(c\) (the earliest in whatever total order is used): the earliest class member is forced true by the empty disjunction case, and every later member is forced false by the implication \(r(c,v)\to\neg e(c,u,v)\) applied to the earliest member \(u\). Hence \(\sum_v r(c,v)\) equals the number of distance classes at \(c\), independent of the order. Given a satisfying assignment, its \(\pi\)-image on E/LT can be extended by defining \(r\) afresh (first-in-label-order for the permuted labels); the per-centre counts are the class counts of the permuted model, whose total equals that of the original because \(\pi\) bijects centres and classes. So the cardinality constraint’s projection is invariant, and aux-renaming need not be the pointwise image of \(r\). (This is exactly the “auxiliaries may be renamed” allowance, used in a slightly E-dependent way; equivalently, argue geometrically: a relabelled polygon is still a strictly convex polygon and satisfies every sound family with *some* aux witness.)
+
+Since the lex-leader clauses only constrain the \(e\)-variables in the frames \(\mathrm{vec}(v,o)\), and every geometric polygon has all \(2n\) dihedral relabellings again geometric, the lex-minimal relabelling of any putative counterexample satisfies lex-leader plus all sound families plus the cardinality bound. So lex-leader cannot remove the last representative of a real polygon.
+
+**Verdict (a): SOUND (projection-level invariance holds; note the N syntactic asymmetry and the representative-redefinition point).**
+
+### (b) CEGAR images and the Sigma exception — SOUND
+
+Adding a learned clause together with all \(2n\) dihedral images makes the learned set syntactically closed under \(D_n\), so the invariance needed for abstract lex-leader reasoning is preserved. Each image is also geometrically valid, since relabelling a polygon preserves all length relations (the literal mapping in the prompt sends relations to the same relations on image chords, preserving strictness).
+
+The Sigma exception—adding a clause *without* its images—is still sound **for the purpose of refuting a geometric polygon**, under the stated premise that each such clause is individually valid for every strictly convex polygon: the lex-minimal relabelling of a hypothetical counterexample is itself a strictly convex polygon (in the canonical frame), so it satisfies the Sigma clause as well. What is lost is only the abstract statement “the full CNF is \(D_n\)-invariant as a constraint set on arbitrary E/LT assignments”; a purely model-theoretic lex-leader argument that goes through arbitrary SAT assignments (rather than through geometric realisability) would no longer apply, and any certificate checker that *assumes* closure under images would be wrong to do so. But UNSAT of the resulting CNF still excludes geometric counterexamples, because every clause in it is satisfied by every geometric realisation (with intended aux values). One caveat: if a Sigma clause mentioned one-way auxiliaries, “individually valid” must mean valid under their intended/witness assignments; on the stated premise (E/LT-type learned literals) this is fine.
+
+**Verdict (b): SOUND; images-version also preserves syntactic invariance, Sigma preserves geometric soundness only.**
+
+### (c) Cube split \(t(0)=a\) — SOUND as a union over \(a\)
+
+For any labelled strictly convex \(n\)-gon, \(t(0)\) is the number of distinct distances from vertex \(0\) to the other \(n-1\) vertices, so \(1\le t(0)\le n-1\). The \(r(0,v)\) clauses make \(\sum_v r(0,v)=t(0)\) exactly, so a seqcounter equality to \(a\) (PySAT’s equality encoding, taken as standard; I have not re-verified PySAT internals) encodes \(t(0)=a\) exactly.
+
+The subtlety: an individual cube \(t(0)=a\) plus lex-leader is *not* dihedral-invariant, and it would be fallacious to argue “take any counterexample, relabel it canonically, it lands in cube \(a\)” for a *fixed* \(a\) unless \(a\) is read off **after** canonicalisation. But the split is over all \(a=1,\dots,n-1\): any counterexample’s lex-canonical relabelling has some value \(a^\*=t(\text{canonical }0)\in[1,n-1]\), and that relabelling satisfies cube \(a^\*\). Hence if every cube instance is UNSAT, no counterexample exists. UNSAT of one cube alone only rules out counterexamples whose canonical frame has that \(t(0)\).
+
+**Verdict (c): SOUND as a complete case split; not sound if a single cube were interpreted in isolation.**
+
+### (d) C5 mode — CORRECT, as a covering statement
+
+The blocking clause for a model’s full local pattern \(P\) (all \(e(c,u,v)\) values) is the disjunction of the complementary literals, so it excludes exactly the assignments agreeing with \(P\) on all local variables. If the final CNF (base + lex + families + bound \(\sum t\le\binom n2\) + blocking clauses) is UNSAT, then there is no assignment satisfying everything except possibly violating some blocking clause; i.e. every assignment satisfying the non-blocking part must violate at least one blocking clause, i.e. must coincide on all local \(e\)-variables with at least one blocked pattern.
+
+Now let \(Q\) be a strictly convex \(n\)-gon with \(T=\binom n2\) exactly; it satisfies the \(\le\) bound. Its lex-canonical dihedral relabelling satisfies base + lex + all sound families + the bound, with suitable auxiliaries (by §§1–3). Therefore, by the previous paragraph, its local pattern violates some blocking clause, i.e. **equals one of the blocked LP-feasible patterns**, in that canonical frame. So the quoted reading is correct, provided it is understood as:
+
+- “in some dihedral frame” = specifically the lex-leader canonical frame \((0,+1)\), not every frame or the original labelling;
+- the blocked list is a **covering superset** of the local patterns of extremal polygons; UNSAT does not assert that every blocked pattern is geometrically realised (patterns arising from models with \(T<\binom n2\), or merely LP-feasible but non-realisable patterns, may also be in the list).
+
+**Verdict (d): SOUND with those two qualifications.**
+
+## Verdict table
+
+| Item | Verdict |
+|---|---|
+| A (angle \(<90^\circ\), AtMost3) | **SOUND** |
+| D (angle \(\le60^\circ\), AtMost2) | **SOUND** |
+| N (circular segment) | **SOUND** |
+| K (bisector cut) | **SOUND** |
+| F | **SOUND** |
+| G, X, O in C4 | **SOUND** (no T* dependence) |
+| 3(a) Dihedral invariance incl. label-order representatives | **SOUND** (projection-level; N only modulo E-congruence, \(r\) only via count) |
+| 3(b) Learned clauses with all images | **SOUND** |
+| 3(b) Sigma clause without images | **SOUND** geometrically, given per-clause universal validity; breaks syntactic invariance |
+| 3(c) Cube split \(t(0)=a,\ a=1..n-1\) | **SOUND** as a union; not per-cube alone |
+| 3(d) C5 blocked-pattern reading | **SOUND** (canonical frame; covering superset) |
+
+C4 extra families: SOUND
+
+
+============================== earlier reply without code (job 34ec42, verbatim) ==============================
+## Basis
+
+In the material actually supplied to me, the generator code is not reproduced beyond the clause shapes quoted in the question and the prior-verdict summary. The conclusions below therefore rest on mathematical proof from those stated shapes, not on an independent reading of code lines. Where a definition needed for a code-level verdict is absent, I mark it unverified rather than infer it.
+
+## 1. New families
+
+### (a) A: acute-angle indicators
+
+Clause shapes, with \(a=v-1,\ b=v+1\):
+\[
+[LT(av,ab),A_v],\qquad [LT(vb,ab),A_v],\qquad \operatorname{AtMost3}(A_v).
+\]
+
+**SOUND — proof.** In triangle \(avb\), if the interior angle at \(v\) is \(\ge 90^\circ\), then \(ab\) is strictly the longest side: \(|av|<|ab|\) and \(|vb|<|ab|\). Hence, setting \(A_v\) true exactly when the angle at \(v\) is \(<90^\circ\) satisfies both source clauses: if the angle is acute, \(A_v\) is true; if it is \(\ge90^\circ\), both \(LT\) literals are true. Equality \(90^\circ\) is safe: then the \(LT\) literals are true and \(A_v\) is false.
+
+For \(\operatorname{AtMost3}\): an acute interior angle has exterior turning angle \(>90^\circ\). Exterior turning angles of a strictly convex polygon are positive and sum to \(360^\circ\), so four acute angles are impossible. At most three can occur.
+
+Hidden assumptions: \(a,v,b\) are distinct, which holds for \(n\ge5\), and no three vertices are collinear.
+
+### (b) D: angles at most \(60^\circ\)
+
+Clause shape:
+\[
+[LT(av,ab),LT(vb,ab),D_v],\qquad \operatorname{AtMost2}(D_v),
+\]
+with \(D_v\) intended as angle at \(v\le60^\circ\).
+
+**SOUND for \(n\ge5\) — proof.** Let \(x=|av|\), \(y=|vb|\), \(z=|ab|\), and let \(\theta\) be the angle at \(v\). If \(\theta>60^\circ\), the cosine law gives
+\[
+z^2=x^2+y^2-2xy\cos\theta
+   >x^2+y^2-xy\ge \min(x,y)^2 .
+\]
+Thus \(z>\min(x,y)\), so at least one of \(LT(av,ab)\), \(LT(vb,ab)\) is true. Contrapositively, if both \(LT\) literals are false, then \(\theta\le60^\circ\). Setting \(D_v\) exactly for \(\theta\le60^\circ\) therefore satisfies the clause. Equality \(\theta=60^\circ\) is correctly included: \(D_v\) is true then, regardless of the strict \(LT\) literals.
+
+For \(\operatorname{AtMost2}\): an angle \(\le60^\circ\) has exterior angle \(\ge120^\circ\). Three such vertices already contribute at least \(360^\circ\) of exterior turning, and for \(n\ge5\) the remaining positive exterior angles would make the total exceed \(360^\circ\). Boundary equality cannot rescue this when \(n\ge5\).
+
+Small-\(n\) caveat: for \(n=3\), an equilateral triangle would violate \(\operatorname{AtMost2}\). That case is outside the stated \(n\ge5\) range.
+
+### (c) N
+
+Shapes:
+\[
+\begin{aligned}
+&[-E(pa,pb),LT(pa,pc),LT(ca,ab)],\\
+&[-E(pa,pb),LT(pa,pc),LT(cb,ab)],\\
+&[-E(pa,pb),LT(pa,pc),LT(pa,pd),LT(cd,ab)] .
+\end{aligned}
+\]
+
+**SOUND, conditional on the stated meaning of \(L_p\)** — namely that \(L_p\) lists the other vertices in boundary/angular order from \(p\), so “\(c\) strictly between \(a\) and \(b\) in \(L_p\)” means \(c\) lies on the boundary chain from \(a\) to \(b\) not containing \(p\).
+
+**Proof.** Assume \(|pa|=|pb|\) and \(|pc|\le |pa|\) (otherwise the relevant \(LT(pa,pc)\) literal already satisfies the clause). For a chord \(ab\) of a strictly convex polygon, \(p\) and \(c\) lie on opposite open sides of line \(ab\), because they are on opposite boundary chains between \(a\) and \(b\).
+
+Choose coordinates with \(p=(0,0)\), line \(ab\) as \(Y=h>0\), \(a=(-w,h)\), \(b=(w,h)\), \(w>0\). Then \(|pa|^2=w^2+h^2=R^2\). Since \(c=(x,Y)\) is on the opposite side of \(ab\) from \(p\), \(Y>h\). From \(|pc|\le R\),
+\[
+x^2+Y^2\le w^2+h^2,
+\]
+which implies \(|x|<w\) and
+\[
+(Y-h)^2\le w^2-x^2-2h(Y-h).
+\]
+Therefore
+\[
+|ca|^2=(x+w)^2+(Y-h)^2
+\le 2w(w+x)-2h(Y-h)<4w^2=|ab|^2 .
+\]
+So \(LT(ca,ab)\) holds. The same estimate with \(w-x\) gives \(LT(cb,ab)\).
+
+For \(c,d\) both satisfying the distance assumptions, both lie in the cap \(\{|q-p|\le R,\ Y\ge h\}\) with \(h>0\). For \(C=(x_c,Y_c)\), \(D=(x_d,Y_d)\) in that cap,
+\[
+C\!\cdot\! D > h^2-w^2,
+\]
+because \(Y_cY_d>h^2\) and \(x_cx_d>-w^2\). Hence
+\[
+|cd|^2=|C|^2+|D|^2-2C\!\cdot\!D
+<2R^2-2(h^2-w^2)=4w^2=|ab|^2 .
+\]
+Thus \(LT(cd,ab)\) holds.
+
+Hidden assumptions: \(c,d\) are distinct from \(a,b,p\) and from each other for the third clause; \(L_p\) is the boundary/angular chain, not some other ordering such as distance order. If \(L_p\) had a different meaning in the missing code, this verdict would need revisiting.
+
+### (d) K: bisector cut
+
+For a chord \(\{a,b\}\), on each boundary arc from \(a\) to \(b\), for \(x\) before \(y\):
+\[
+[LT(xa,xb),LT(yb,ya)] .
+\]
+
+**SOUND — proof.** The clause fails only if
+\[
+|xa|\ge |xb|\quad\text{and}\quad |yb|\ge |ya|,
+\]
+i.e. \(x\) is on the \(b\)-side of, or on, the perpendicular bisector \(\ell\) of \(ab\), while the later \(y\) is on the \(a\)-side or on \(\ell\). Meanwhile \(a\) itself is strictly on the \(a\)-side and \(b\) strictly on the \(b\)-side.
+
+Thus along this one boundary arc there are sign transitions \(a\to x\), \(x\to y\), and \(y\to b\); if one of \(x,y\) lies exactly on \(\ell\), use that vertex together with a transition on the remainder of the same arc and a transition on the other arc. In every case, including the equality cases, one obtains three distinct points of \(\ell\) on the boundary of the strictly convex polygon. That is impossible: a line meets such a boundary in at most two points, unless it contains a polygon side, and the side case is also impossible here because \(a\) and \(b\) lie strictly on opposite sides of \(\ell\).
+
+So the stated code directions matter and are correct as described: the \(m(a+i)\) list walks one arc from \(a\) toward \(b\), and the \(m(a-i)\) list walks the other arc from \(a\) toward \(b\); in both lists “before” means closer to \(a\) along that walk. Equality on the bisector is sound; a single arc cannot contain first a bisector-or-\(b\)-side vertex and later a bisector-or-\(a\)-side vertex.
+
+Hidden assumption: pairs \((x,y)\) are drawn only from the same arc list, with \(x\) strictly before \(y\), and \(x,y\notin\{a,b\}\). Pairing across arcs would not be justified by this proof.
+
+## 2. Transfer of G, X, O, and F
+
+**G/X/O: SOUND in the C4 setting, on the stated basis.** The prior verdict, as summarised, checked the same generated clause shapes for every strictly convex polygon with no violator/MEC hypothesis and with a witness assignment for the one-way indicators. That kind of argument depends only on universal geometric truth of the clauses, not on any surrounding cardinality bound or lex-leader constraint. Adding those surrounding constraints does not make a universally true clause false, and for each actual polygon the intended indicator assignment remains available.
+
+Nothing in the supplied summary indicates that the earlier G/X/O argument used the \(T^*\) setting. If it had secretly used a global hypothesis, the transfer would fail, but the context explicitly says it did not.
+
+**F: UNVERIFIED from the supplied material.** No clause shapes for F are given here, so I cannot honestly confirm it.
+
+## 3. Symmetry breaking
+
+### (a) \(D_n\)-invariance
+
+At the geometric/projected level, any family whose clauses are true for every strictly convex polygon is compatible with relabelling: a dihedral relabelling of a convex \(n\)-gon is still a convex \(n\)-gon, so its lex-minimal orbit representative still satisfies those clauses.
+
+More specifically, from the shapes described:
+
+- **A:** invariant. Rotation sends neighbours to neighbours; reflection swaps the two source clauses for a vertex. \(\operatorname{AtMost3}\) is symmetric in the \(A_v\).
+- **D:** invariant. Its source clause is symmetric in \(a,b\); \(\operatorname{AtMost2}\) is symmetric in the \(D_v\).
+- **K:** invariant as described. Rotation preserves each arc direction; reflection exchanges the two arcs but the image of an \(a\to b\) walk is still an \(a'\to b'\) walk with the same “before” relation.
+- **N:** geometrically sound, but there is a syntactic reflection subtlety. Reflection reverses \(L_p\). The image of a clause containing \(LT(pa,pc)\) is the analogous clause with \(LT(pb,pc)\). If the generator enumerates only \(i<j\) in \(L_p\), that reflected clause is not literally generated. It is equivalent modulo the usual \(E/LT\) congruence axioms because, under \(E(pa,pb)\), \(|pa|<|pc|\) iff \(|pb|<|pc|\). If strict syntactic closure of the clause set is required, the fix is to also emit the \(LT(pb,pc)\) variants, or equivalently enumerate both orientations. This is a **FIX for syntactic invariance**, not a soundness problem for N itself.
+- **Cardinality on \(\sum_c t(c)\), with \(t(c)\) the number of first-of-class indicators \(r(c,v)\) under label order:** the label order is not preserved by rotations with wrap-around or by reflections, so the naive renaming \(r(c,v)\mapsto r(\phi c,\phi v)\) need not map the \(r\)-definition clauses to themselves. That is **not** a problem for the projected constraint, because only the count \(t(c)\) enters. For any total order used to choose representatives, the number of chosen representatives equals the number of distance classes from \(c\). Under a dihedral map, distance classes at \(c\) biject with distance classes at \(\phi c\), so \(t(c)=t(\phi c)\), and \(\sum_c t(c)\) is unchanged. Auxiliaries for the transformed assignment can be chosen as the genuine first representatives for that transformed labelling.
+- **Base, F, G, X, O as syntactic clause sets:** not fully checkable from the material supplied. Their geometric projections are invariant if the clauses are universally sound, but I have not seen the generator loops needed to certify literal clause-set closure.
+
+### (b) CEGAR-learned clauses and the Sigma exception
+
+Adding a learned clause **together with all \(2n\) dihedral images** preserves \(D_n\)-closure, provided the clause set before addition was closed. It therefore keeps the usual lex-leader argument intact. Each image of a geometrically sound clause is again geometrically sound, by relabelling the polygon.
+
+Adding a clause **without** its images (the Sigma exception) is still sound for the geometric conclusion **provided the premise holds**: the clause is individually valid for every strictly convex polygon. Then every dihedral image of a polygon still satisfies the clause, including the lex-minimal representative, so no geometric model is lost. The caveat is important: if a Sigma clause were valid only after fixing a frame, only inside one cube branch, or only under an extra branch assumption, adding it globally without images would not be justified. I cannot verify from the supplied material that every actual Sigma clause meets the universal-validity premise.
+
+### (c) Cube split on \(t(0)=a\)
+
+**SOUND as a case split, with two encoding caveats.** The lex-leader already distinguishes frame vertex \(0\). Splitting the lex-normalised instances by the value of \(t(0)\) does not need each branch to be \(D_n\)-invariant; it needs only exhaustiveness. If \(r(0,v)\) ranges over the \(n-1\) vertices \(v\ne0\), then \(t(0)\), the number of distinct distances from vertex \(0\) to the others, lies between \(1\) and \(n-1\). Hence branches \(a=1,\dots,n-1\) cover all possibilities. If every branch, each with the same lex-leader clauses, is UNSAT, then there is no lex-normalised model and therefore no convex polygon model.
+
+Caveats: the sequence-counter must encode \(\sum_v r(0,v)=a\) exactly, and the range must match the actual index set of \(r(0,\cdot)\). If \(r\) included \(v=0\) itself, the stated range \(1,\dots,n-1\) would be wrong. That index range is not visible in the supplied material.
+
+### (d) C5 uniqueness reading
+
+**The reading is correct, under the stated assumptions.** Let \(P\) be any strictly convex \(n\)-gon with \(T=C(n,2)\) in the intended sense, so it satisfies the encoded bound \(\sum t\le C(n,2)\) with its intended auxiliaries. Among the finitely many dihedral relabellings of \(P\), choose one minimising the lex vector; ties do not matter, since the lex-leader requires \(\le\) for every frame. That relabelled polygon gives a model of the base families, the bound, and the lex-leader clauses with some exact local pattern of all \(e(c,u,v)\) literals.
+
+Each blocking clause
+\[
+[-x\text{ if }x\text{ true else }x\ \text{for }x\text{ in local literals}]
+\]
+excludes exactly one previously seen local pattern. If the chosen relabelling of \(P\) matched none of the blocked patterns, it would satisfy all blocking clauses too, contradicting UNSAT. Therefore the chosen relabelling — in particular, some dihedral frame of \(P\) — has one of the blocked local patterns. This argument does not require the blocked LP-feasible models themselves to be geometrically realisable; only that every real polygon has an extending assignment for the sound families and that the lex-leader frames are complete.
+
+## Verdict table
+
+| Item | Verdict |
+|---|---|
+| A sources + AtMost3 | SOUND |
+| D source + AtMost2, \(n\ge5\) | SOUND |
+| N soundness, given \(L_p\) = boundary/angular chain | SOUND |
+| N syntactic reflection closure | FIX: add \(LT(pb,pc)\) variants, unless \(E/LT\) congruence modulo base is accepted |
+| K bisector cut, including equality cases | SOUND |
+| G/X/O transfer to C4 | SOUND, based on prior no-hypothesis check |
+| F in C4 | UNVERIFIED — no clause shapes supplied |
+| Base family invariance | UNVERIFIED — no clause shapes supplied |
+| \(t(c)\) label-order representatives in cardinality | SOUND at projected/count level; naive \(r\)-renaming not syntactically invariant |
+| CEGAR clause + all dihedral images | SOUND |
+| Sigma clause without images | SOUND if universally valid for all convex polygons; otherwise unjustified |
+| Cube split \(t(0)=a,\ a=1..n-1\) | SOUND if \(r(0,\cdot)\) ranges over \(v\ne0\) and seqcounter is exact |
+| C5 uniqueness reading under lex-leader | SOUND |
+
+C4 extra families: SOUND for A, D, N and K as geometric families; FIX only for N if literal syntactic \(D_n\)-closure (rather than invariance modulo \(E/LT\) congruence) is demanded; F remains unverified from the material supplied.
+

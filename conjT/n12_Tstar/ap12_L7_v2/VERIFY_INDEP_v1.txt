@@ -1,0 +1,5 @@
+(1) certificates re-expanded: 9, identity holds: 9, failures: 0; total cofactor terms 10798; by k {5: 1, 6: 8}
+(2)+(3) models: 4 blocked by library cores, 0 big; each contains a certified core (embedding found, certificate re-expanded): 4; failures 0
+(4) done records: 21919, distinct pieces 16074, duplicated 4960
+INDEPENDENT CHECK PASS
+rc=0

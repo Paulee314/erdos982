@@ -1,0 +1,24 @@
+# iconv runs/n10 summary, taken on 2026-11-08T02:04Z
+n10 pieces done: 10743 of 10743
+n10 models: 0
+n10 survivors: 0
+n10 realised: 0
+n10 lambda records: 0
+n10 workers with DONE line: 12 of 12
+n9 proof workers finished: 6 of 6; PROOF VERIFIED: 6; FAIL lines: 0
+
+per worker (done lines):
+  done.w0 896
+  done.w1 896
+  done.w10 895
+  done.w11 895
+  done.w2 896
+  done.w3 895
+  done.w4 895
+  done.w5 895
+  done.w6 895
+  done.w7 895
+  done.w8 895
+  done.w9 895
+
+test_n7 (smoke test): done 117, models 3, realised 1

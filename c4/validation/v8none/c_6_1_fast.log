@@ -1,0 +1,6 @@
+C4 n=8 bound=27 fams=eno cube=0:6,1:1: 88477 base clauses + 84 learned (ids 88478..88561) [0s]
+cadical ['s UNSATISFIABLE'] in 0.0s [0s]
+checker: s VERIFIED UNSAT in 0.1s [0s]
+proof references 4 learned clauses (rat=False) [0s]
+cert checker: n=8 /Users/paullee/AI-workspace/Claude-Projects/Erdos/agent_runs/c4_studio/state/val/v8none/c_6_1_lambda.jsonl: 4 certificates verified exactly, 0 failed [1s]
+FINAL {"n": 8, "bound": 27, "fams": "eno", "cube": "0:6,1:1", "ver": "8e5eb4ea938a506011f1b79e5e5dcc0b", "pipeline": "fast-lrat", "checker": "cake_lpr", "cnf_sha256": "46403fc859060b0b701ffd18087f9c1e684ddc0d934160ce820018bae8bb42c4", "learned_in_cnf": 84, "solve": 0.0, "proof_bytes": 94910, "proof_sha256": "b0bf530100fd7cbb2f68fd17195112455c0fed88e0caa492b6d51997083bfe76", "check": 0.1, "checker_out": "s VERIFIED UNSAT", "core_learned": 4, "rat_steps": false, "cert_checker": "n=8 /Users/paullee/AI-workspace/Claude-Projects/Erdos/agent_runs/c4_studio/state/val/v8none/c_6_1_lambda.jsonl: 4 certificates verified exactly, 0 failed", "cert_failed": 0, "checker_rejected": 0, "status": "VERIFIED", "wall": 0.6} [1s]

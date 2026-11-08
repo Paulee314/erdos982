@@ -1,0 +1,17 @@
+I_conv Studio runs (started 2026-11-06 02:27Z / 04:33Z), all under guard.sh iconv, run.sh, nice 10.
+Dir: /Users/paullee/AI-workspace/Claude-Projects/Erdos/agent_runs/iconv   (code in code/, data in runs/)
+
+1) n=10, Z objective, lex cover, T0=65 (certified best 64), 12 workers
+   logs: iconv/n10_w0.out .. n10_w11.out ; data: iconv/runs/n10/{done,models,surv,realised,lambda,blocks}.w*
+   finished worker prints: "DONE worker r: final T=..."  (crash => no DONE line; Python traceback at end of .out)
+   RESULT: if all 12 say DONE with final T=65, runs/n10/surv.w* empty and realised.w* empty => Z>=65 UNSAT, I_conv(10)=64 (solver-only).
+   If realised.w* has a line => a polygon with Z>=65 was found numerically (FLAG; needs exact certification).
+   If surv.w* non-empty with cnt>=final T => bound NOT established.
+   Lambda certs: python code/lib/check_lambda_certs.py 10 runs/n10/lambda.wR
+2) n=9, Z>=51 DRUP->LRAT re-check (drat-trim + cake_lpr), lex pieces, 6 workers
+   logs: iconv/n9proof_w0.out .. n9proof_w5.out ; final line "PROOF VERIFIED (drat-trim + cake_lpr)" or "PROOF FAILED"
+   (lines "piece i ...: FAIL..." list failing pieces).
+(n=8 Z and T re-checks already VERIFIED on cloud; not running here.)
+
+Progress (one line, run in iconv/):
+cd /Users/paullee/AI-workspace/Claude-Projects/Erdos/agent_runs/iconv && echo "n10 done $(cat runs/n10/done.w* | wc -l)/10743 models $(cat runs/n10/models.w* | wc -l) surv $(cat runs/n10/surv.w* | wc -l) realised $(cat runs/n10/realised.w* | wc -l) DONE $(grep -l DONE n10_w*.out | wc -l)/12; n9proof finished $(grep -l PROOF n9proof_w*.out | wc -l)/6 verified $(grep -l 'PROOF VERIFIED' n9proof_w*.out | wc -l) fails $(grep -h FAIL n9proof_w*.out | wc -l)"

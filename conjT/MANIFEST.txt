@@ -1,0 +1,60 @@
+# Files left out of conjT/ (sha256, bytes, original path relative to Erdos/agent_runs/theory2/).
+# Per-piece done records of the T* n = 12 run (one line per piece: piece id, verdict, CPU) and the v1 run,
+# the 4 whole-model algebraic certificates of v1_algpass (748 MB), and the n = 11 and n = 10 per-piece records.
+
+## ap12_L7_v2 (v2 run, 249,317 pieces)
+70dce97fefee9e1aff65c56618b6255a75408ca10eed62f522e922b3155fe012       1024234  ap12_L7_v2/w0.done
+02db4a3f24c191d480f718482223a4a001bb414cd9f9a4ae1aea5d9c44d1258d       1024242  ap12_L7_v2/w1.done
+f44fa3138ca1223a3333f02fd868640af56352826a3856586729e2c31141abba       1024176  ap12_L7_v2/w10.done
+15e71c3b49c87a155410e43f13903b8c6bd94d6d791c756a4fff3df2ea0ee0e9       1024181  ap12_L7_v2/w11.done
+bf2d7db622c0eefb69d8f5b454542a8b66e65ac9c550b264d8ed5f380ecabea1       1024175  ap12_L7_v2/w12.done
+a2d71b1bd1e2c2bf61a05696d0dabfe4e42b07524957766f29b00ce54f5cc439       1024160  ap12_L7_v2/w13.done
+7ed11120132ca34778ff9518d266ce9d03057cc42746a866c6e331d6d0f251bf       1024173  ap12_L7_v2/w14.done
+b80b55ac3373635b370862485c5b0011d08bd2ff4cf20e162f6718e273eab6ab       1024180  ap12_L7_v2/w15.done
+a2703e313410a94497d7e019a691dd9381e1564b1c789cc7da5ca28c39faecfe       1024227  ap12_L7_v2/w2.done
+2ab3b081e07afaea536edcc87472cf205212420319166771983a1da02255349d       1024245  ap12_L7_v2/w3.done
+abac196187964892f867e63fdfb2ce18e547a2c0b1df1282621ab01c7f40e4fb       1024235  ap12_L7_v2/w4.done
+4ea063f4e7400c3b6940550b1d050a4dbd6689c45cc1e2e7116c133d12f65158       1024166  ap12_L7_v2/w5.done
+aeccc12a1d410779cbf8d7b7a270e9a4bfef54ff69eafe57b2d8a08338c10e8d       1024181  ap12_L7_v2/w6.done
+1c9ef546fb4e80bdf9518f4458718f0edb00a71f0b6ef174c72202c56ea70b2e       1024175  ap12_L7_v2/w7.done
+85df63eb798013f8a5090999638d9b08d8a028327114df1df1b0d6e27fda1307       1024178  ap12_L7_v2/w8.done
+f18fef3622dfcb2c5bd6d47ce69551633fb70adac122091c86d69b2c1ac639d9       1024171  ap12_L7_v2/w9.done
+5fb4ad9163426afdaab7a9eabe7ec84e013693e6c9ae73373ec570f7575cefed       1676153  ap12_L7_v2/pieces_todo.txt
+
+## ap12_L7_v2/v1_algpass/certs (whole-model certificates for the 4 v1 models; the 9 core certificates ARE in the repo)
+10b31937823221e63d4a04345deaf6c505c1a2c7c87adafd0d3bbc8846512a89      58988427  ap12_L7_v2/v1_algpass/certs/cert_0.txt
+bedf0e39f9a3645463b4e41cd34a3c7db0d4f5278b6310f8fbb3a508538d51bc       9171713  ap12_L7_v2/v1_algpass/certs/cert_1.txt
+e0a69f85510d000852e4ccd6abbd75d0688749d25fcaf4dcbb4d37c44685b5b6     715769434  ap12_L7_v2/v1_algpass/certs/cert_2.txt
+646ab3edc2edb1349de8e98ed2d8fd416d0d80137d077beef1d53de2c4eac932        138122  ap12_L7_v2/v1_algpass/certs/cert_3.txt
+
+## ap12_L7 (v1 run, 21,919 done records = 16,074 distinct pieces)
+c324ca92954033e62d0d4e2a3cee509b52d67b6677951d727fe801f597284236         49003  ap12_L7/w0.done
+a8f70112084e69afc0b006908e6f70fdce9cbc48c266489479f36a3abf904b82         51994  ap12_L7/w1.done
+bd12899f454ab60f7bbe9fa7a344dff2c63a7cc223a74b56fe026c171ecb070a         41295  ap12_L7/w10.done
+e3f9402a5747c793211a1448e5e42cde91e8544f99cea4afee20bec5de7a931f         40486  ap12_L7/w11.done
+eced61c5a5026f24a180a847bfda6eca1c1c035e41b5502d7c639b24f9ca168b         27814  ap12_L7/w12.done
+4e8a46d4b7f39509b1bce2ee30e3dfa1f0a5832b1a4ae83259647623bf6eb85b         27818  ap12_L7/w13.done
+6908294f7bef7301e21b14bd3eeea0213c68af70734388f97dad4311520a876c         26203  ap12_L7/w14.done
+941ce0371a4f136a8c8616ee135d1662e856a850ad4a84ed23d75cab7db97930         28140  ap12_L7/w15.done
+f25c0d29eb272fe4180a9268bed938b116d23cad57006aca23aad13ac459c3e4         49162  ap12_L7/w2.done
+8a65d88d60bfff507a2d088b57f8cbd741e6cd03f79cf2cff0f385d822d99d1d         47793  ap12_L7/w3.done
+a1cea4fe2985019d9ccb21cb5336877b25d4e70fedfbead4462678528f34f04b         52236  ap12_L7/w4.done
+f4dc1f02684bfe65a8af3ec77964aa9cd1484293e981260fb87030fea8762fc5         51503  ap12_L7/w5.done
+26d94f8ded014af4fdb9a7d3bd0cb500777c58ea43a519932ed25538fc6d46b3         53108  ap12_L7/w6.done
+11259346f53c8d6e9e6e401fe6eaef1a14db0bde028702f3f6ad88a044a1c43f         51440  ap12_L7/w7.done
+40b2883b6584d3b5c3beb89048e5711389ace4a3a44d6b765c4c7625ef581d46         38351  ap12_L7/w8.done
+89d4a1695d4893fedbfff9b122eebf47ec9c97e3e41237abfaea4f166b333bb9         39882  ap12_L7/w9.done
+6e6bd29d32c44725c782bd2b038324fc7547f3b94c17843cd179b0a47fff5574          1161  ap12_L7/w1.cores
+ad7b23b3e12c4167c44f6d41dbeac0efc0e78cc6f0e748ca090e542109c75735          1161  ap12_L7/w11.cores
+e0837fb434c3cb02e52fd0cf639ea216fef58c794bc1805f7f894be6c66a8ee2           723  ap12_L7/w3.cores
+d9e3766598fc7671e2fb5b6c67cdb63ce241ab106ae0ef81542bf37a195fc23f           241  ap12_L7/w5.cores
+e331e93d6d0b16b238c920cb6ced5da8dfe7067c052f837d894da07a919ab577           482  ap12_L7/w7.cores
+f01ba3ba08af319fdc7bc6be9f0c3712a561841219e0428a4fdbb206b81ec740           843  ap12_L7/w3.models
+b9f57f4073efd69b103bdea41c11223efa51a708318c026f83599bf5693cad3a           281  ap12_L7/w5.models
+53f9f5fc2c1ab24281192045b8b165821db66bf3ed5c094bd9870cf69e727ef1          1008  ap12_L7/w12.big
+
+## ap11_L6 (Conjecture T, n = 11): per-piece records and certificates (sizes only)
+-                                                                     55324672  ap11_L6/ (whole folder, bytes)
+
+## ap10 (Conjecture T, n = 10): per-piece records and certificates (sizes only)
+-                                                                  12521881600  ap10/ (whole folder, bytes)

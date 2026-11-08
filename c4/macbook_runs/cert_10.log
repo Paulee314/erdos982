@@ -1,0 +1,6 @@
+C4 n=10 bound=44: 290 distinct learned clauses (with images) [0s]
+runs/cert_10_r1: UNSAT [2393s]
+drat-trim: ['s VERIFIED'] [4233s]
+core uses 25 learned clauses [4233s]
+exact certificates: 25 ok, 0 failed [4233s]
+checker: n=10 runs/cert_10_lambda.jsonl: 25 certificates verified exactly, 0 failed  [4233s]

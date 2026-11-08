@@ -1,0 +1,6 @@
+C4 n=8 bound=27 fams=eno cube=0:4,1:4: 84 learned clauses (with images) [0s]
+/Users/paullee/AI-workspace/Claude-Projects/Erdos/agent_runs/c4_studio/state/val/v8none/c_4_4X_r1: cadical ['s UNSATISFIABLE'] in 1s, proof 0.00 GB [1s]
+drat-trim ['s VERIFIED'] in 1s [1s]
+core uses 11 learned clauses [2s]
+checker: n=8 /Users/paullee/AI-workspace/Claude-Projects/Erdos/agent_runs/c4_studio/state/val/v8none/c_4_4X_lambda.jsonl: 11 certificates verified exactly, 0 failed  [2s]
+FINAL {"n": 8, "bound": 27, "fams": "eno", "cube": "0:4,1:4", "ver": "8e5eb4ea938a506011f1b79e5e5dcc0b", "r1": {"solve": 0.8, "drat": 0.5, "proof_bytes": 1388630, "proof_sha256": "3ef4329c85603f3c704d070f5a28bdf17cd76de34df06b2fb41a2a37e7c79860", "cnf_sha256": "8b3de450de014cece87b80d7bdc1c47848cdfe2548c6639e34505d3385278bb8"}, "checker": "n=8 /Users/paullee/AI-workspace/Claude-Projects/Erdos/agent_runs/c4_studio/state/val/v8none/c_4_4X_lambda.jsonl: 11 certificates verified exactly, 0 failed", "core_learned": 11, "cert_failed": 0, "checker_rejected": 0, "status": "VERIFIED", "wall": 1.9} [2s]

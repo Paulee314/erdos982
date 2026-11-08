@@ -1,0 +1,4 @@
+imports ok 1.3.0 1.13.1
+sigma records 152
+n=12 state/sig152_check.jsonl: 152 certificates verified exactly, 0 failed
+nated string starting at: line 1 column 5901 (char 5900)

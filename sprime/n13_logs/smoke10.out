@@ -1,0 +1,3 @@
+n=10 fams=BF: 356364 clauses, preloaded 0; 0s
+  it 5: learned 680 (last 5 lits, 0 support), feasible 0, shared 0, 6s (sat 4s, lp 2s)
+RESULT n=10 fams=BF: UNSAT; learned 1000, feasible 0, it 9, 13.4s

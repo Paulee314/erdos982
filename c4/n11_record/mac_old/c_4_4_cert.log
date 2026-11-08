@@ -1,0 +1,5 @@
+C4 n=11 bound=54 fams=ADFGKNOX cube=0:4,1:4: 0 learned clauses (with images) [1s]
+/Users/paul.lee/c4/prod11/c_4_4_r1: cadical ['s UNSATISFIABLE'] in 154s, proof 0.08 GB [156s]
+drat-trim ['s VERIFIED'] in 98s [253s]
+core uses 0 learned clauses [256s]
+FINAL {"n": 11, "bound": 54, "fams": "ADFGKNOX", "cube": "0:4,1:4", "ver": "a03209f5d055f7a2905b091cc649cd2a", "r1": {"solve": 154.1, "drat": 97.9, "proof_bytes": 81837388, "proof_sha256": "d66be1fd0db8ea358297042198e607961806cb8a3d5dc2f8044f9756b9345077", "cnf_sha256": "41d77fc8546b810e18b834ae865c3b5cb9bd7521ab2bc18137c3550b9087b721"}, "core_learned": 0, "cert_failed": 0, "checker_rejected": 0, "status": "VERIFIED", "wall": 256.5} [256s]

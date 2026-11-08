@@ -1,0 +1,18 @@
+TRUSTED LEMMAS (the UNSAT verdicts are relative to these; the audit cannot check them):
+  v1 encoding: E transitivity, class-count bound, F1, F2, strict total preorder axioms, F2-order, chord monotonicity,
+               four-in-a-class gap clause, dihedral lex-leader cover (sym_compact), T* cardinality (Z_p >= L);
+  v2 adds:     G ('angle >= 60' sources/closure/3-disjoint budget), X ('> 60' sources, triangle sums, isosceles
+               coupling), O (middle of an equidistant triple is > 90; budgets) -- angle_fams2.py via fams_v2.py;
+               valid in every strictly convex polygon (no S'-violator hypothesis); Wonder referee in
+               v2_bench/wonder_GXO_referee*.txt; empirical check v2_bench/tstar_v2/val_10k.log.
+  Lambda clauses are NOT trusted: each is re-verified here from its exact Farkas certificate.
+  Lambda: 0 model lines, 0 records; re-verified 0, failed 0; pieces with fewer records than lambda kills: 0
+[ap12_L7_v2] done 249317 distinct (249317 lines, duplicates 0); python cpu 150811s; library 0; big patterns 0 listed / 0 VERIFIED; models 0 kinds {}; bad 0; uncertified 0; short 0; untagged v2 lines 0; tags {'v2[G+X+O+LAM]md5=70af391df465': 249317}
+  UNCERTIFIED core new ((0, 1, 2), (0, 1, 3), (0, 4, 5), (2, 3, 4), (3, 4, 5), (4, 0, 2), (4, 1, 3), (5, 0, 1), (5, 1, 4))
+  UNCERTIFIED core new ((0, 1, 2), (0, 1, 3), (0, 4, 5), (1, 4, 5), (2, 1, 4), (4, 1, 3), (4, 2, 5), (5, 0, 3), (5, 0, 4))
+  UNCERTIFIED core new ((0, 1, 2), (0, 1, 3), (0, 4, 5), (1, 0, 2), (1, 2, 4), (2, 0, 5), (3, 2, 5), (4, 2, 3), (5, 0, 3))
+  UNCERTIFIED core new ((0, 1, 2), (0, 1, 3), (0, 4, 5), (2, 0, 1), (3, 1, 4), (3, 2, 5), (4, 1, 5), (5, 2, 3), (5, 3, 4))
+[ap12_L7] done 16074 distinct (21919 lines, duplicates 4960); python cpu 2676014s; library 9; big patterns 0 listed / 0 VERIFIED; models 4 kinds {'new': 4}; bad 0; uncertified 4; short 0
+coverage: kept 265391; v1 16074; v2 249317; overlap 0; union 265391; missing 0; extra 0
+piece list ap12_L7_v2/pieces_todo.txt: 249317 pieces, not done 0
+AUDIT FAIL

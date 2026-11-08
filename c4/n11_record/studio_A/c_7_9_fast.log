@@ -1,0 +1,5 @@
+C4 n=11 bound=54 fams=ADFGKNOX cube=0:7,1:9: 706619 base clauses + 0 learned (ids 706620..706619) [1s]
+cadical ['s UNSATISFIABLE'] in 427.8s [429s]
+checker: s VERIFIED UNSAT in 35.7s [466s]
+proof references 0 learned clauses (rat=False) [494s]
+FINAL {"n": 11, "bound": 54, "fams": "ADFGKNOX", "cube": "0:7,1:9", "ver": "8e5eb4ea938a506011f1b79e5e5dcc0b", "pipeline": "fast-lrat", "checker": "cake_lpr", "cnf_sha256": "817b173ff6c82d9fc77e8c4d3d29534fc6442fdbffa84fbfc494fb5dc0c63f5f", "learned_in_cnf": 0, "solve": 427.8, "proof_bytes": 1015864535, "proof_sha256": "880723d5a5b33eb73f6afa3bf639057ebecd52212d408e62c2355e1a92a0dcdd", "check": 35.7, "checker_out": "s VERIFIED UNSAT", "core_learned": 0, "rat_steps": false, "cert_failed": 0, "checker_rejected": 0, "status": "VERIFIED", "wall": 493.9} [494s]

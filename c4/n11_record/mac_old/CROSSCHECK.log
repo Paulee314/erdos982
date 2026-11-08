@@ -1,0 +1,5 @@
+18:21:20 STOPPED old-pipeline copies of (5,4) [in CERT] and (5,7) [in SEARCH]: Studio fast-path copies VERIFIED at 18:02 / 18:12 (approved cross-check stop)
+18:42:22 STOPPED old-pipeline copy of (5,6) [in CERT; its search was UNSAT in 14794 s]: Studio fast-path copy VERIFIED
+19:03:10 STOPPED old-pipeline copy of (6,4) [in SEARCH]: Studio fast-path copy VERIFIED
+19:26:54 STOPPED old-pipeline copy of (5,5) [in SEARCH, ~5.7 h]: Studio fast-path copy VERIFIED. (Old-driver entries 5,4 / 5,6 FAILED_R1 / NO_SUMMARY and 5,7 / 6,4 / 5,5 search FAILED are these approved stops, not errors.)
+20:52:27 STOPPED old-pipeline copy of (6,5) [in SEARCH, ~7 h]: Studio fast-path copy VERIFIED 20:44

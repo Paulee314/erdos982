@@ -1,0 +1,15 @@
+n=9 T0=41 T=41 N=84 pieces 1424 (worker 0/2: 712); clauses 171180; fams {'GXONK': 13650}; tag v2[G+X+O+LAM]md5=b69c115a126a; build 0.5s
+piece 0 00000000: 0 models, cpu 0.0s; T=41; {'models': 0, 'newcores': 0, 'big': 0, 'surv': 0, 'hits': 0, 'lam': 0, 'real': 0}; lib 0; wall 1s
+piece 216 00100110: 0 models, cpu 0.2s; T=41; {'models': 0, 'newcores': 0, 'big': 0, 'surv': 0, 'hits': 0, 'lam': 0, 'real': 0}; lib 0; wall 1038s
+piece 392 00111001: 1 models, cpu 0.2s; T=41; {'models': 1, 'newcores': 0, 'big': 0, 'surv': 0, 'hits': 0, 'lam': 1, 'real': 0}; lib 0; wall 1438s
+piece 453 00112120: 0 models, cpu 7.1s; T=41; {'models': 1, 'newcores': 0, 'big': 0, 'surv': 0, 'hits': 0, 'lam': 1, 'real': 0}; lib 0; wall 1652s
+piece 752 00123031: 0 models, cpu 13.2s; T=41; {'models': 1, 'newcores': 0, 'big': 0, 'surv': 0, 'hits': 0, 'lam': 1, 'real': 0}; lib 0; wall 3662s
+piece 1122 01012103: 0 models, cpu 26.8s; T=41; {'models': 1, 'newcores': 0, 'big': 0, 'surv': 0, 'hits': 0, 'lam': 1, 'real': 0}; lib 0; wall 5543s
+piece 1582 01100223: 0 models, cpu 1.7s; T=41; {'models': 1, 'newcores': 0, 'big': 0, 'surv': 0, 'hits': 0, 'lam': 1, 'real': 0}; lib 0; wall 6717s
+piece 1626 01102001: 1 models, cpu 2.1s; T=41; {'models': 2, 'newcores': 0, 'big': 0, 'surv': 0, 'hits': 0, 'lam': 2, 'real': 0}; lib 0; wall 6755s
+piece 1744 01111012: 1 models, cpu 1.0s; T=41; {'models': 3, 'newcores': 0, 'big': 0, 'surv': 0, 'hits': 0, 'lam': 3, 'real': 0}; lib 0; wall 6886s
+piece 1752 01111110: 3 models, cpu 0.4s; T=41; {'models': 6, 'newcores': 0, 'big': 0, 'surv': 0, 'hits': 0, 'lam': 6, 'real': 0}; lib 0; wall 6891s
+piece 1763 01111210: 1 models, cpu 2.9s; T=41; {'models': 7, 'newcores': 0, 'big': 0, 'surv': 0, 'hits': 0, 'lam': 7, 'real': 0}; lib 0; wall 6896s
+piece 2036 01122130: 0 models, cpu 39.2s; T=41; {'models': 7, 'newcores': 0, 'big': 0, 'surv': 0, 'hits': 0, 'lam': 7, 'real': 0}; lib 0; wall 7386s
+piece 3074 01221123: 0 models, cpu 11.2s; T=41; {'models': 7, 'newcores': 0, 'big': 0, 'surv': 0, 'hits': 0, 'lam': 7, 'real': 0}; lib 0; wall 8773s
+DONE worker 0: final T=41 (UNSAT at T for all my pieces if no survivors); {'models': 7, 'newcores': 0, 'big': 0, 'surv': 0, 'hits': 0, 'lam': 7, 'real': 0}; wall 8963s

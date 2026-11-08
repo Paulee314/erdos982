@@ -1,0 +1,56 @@
+16:59:09 start n=11 fams=FGXOADKN slots=10 maxheavy=20 sub-cases=27 pending=27
+16:59:09 slot 0: start 0:5,1:4
+16:59:14 slot 1: start 0:5,1:5
+16:59:19 slot 2: start 0:5,1:6
+16:59:24 slot 3: start 0:6,1:5
+16:59:29 slot 4: start 0:5,1:7
+16:59:35 slot 5: start 0:6,1:4
+16:59:39 slot 6: start 0:2,1:5
+16:59:45 slot 7: start 0:4,1:3
+16:59:45 slot 6: 0:2,1:5 fast -> VERIFIED (solve 0.2s, check 0.8s)
+16:59:45 slot 6: start 0:5,1:2
+16:59:50 slot 8: start 0:6,1:7
+16:59:51 slot 6: 0:5,1:2 fast -> VERIFIED (solve 0.7s, check 0.8s)
+16:59:51 slot 6: start 0:8,1:5
+16:59:53 slot 7: 0:4,1:3 fast -> VERIFIED (solve 2.5s, check 0.9s)
+16:59:53 slot 7: start 0:2,1:4
+16:59:55 slot 9: start 0:3,1:7
+16:59:59 slot 7: 0:2,1:4 fast -> VERIFIED (solve 0.3s, check 0.8s)
+16:59:59 slot 7: start 0:5,1:1
+17:00:04 slot 7: 0:5,1:1 fast -> VERIFIED (solve 0.2s, check 0.8s)
+17:00:04 slot 7: start 0:6,1:2
+17:00:14 slot 7: 0:6,1:2 fast -> VERIFIED (solve 3.7s, check 1.1s)
+17:00:14 slot 7: start 0:7,1:7
+17:01:00 slot 9: 0:3,1:7 fast -> VERIFIED (solve 50.9s, check 6.0s)
+17:01:00 slot 9: start 0:9,1:5
+17:23:39 slot 7: 0:7,1:7 fast -> VERIFIED (solve 1252.1s, check 89.1s)
+17:23:39 slot 7: start 0:1,1:6
+17:23:44 slot 7: 0:1,1:6 fast -> VERIFIED (solve 0.2s, check 0.8s)
+17:23:44 slot 7: start 0:3,1:2
+17:23:50 slot 7: 0:3,1:2 fast -> VERIFIED (solve 0.2s, check 0.8s)
+17:23:50 slot 7: start 0:4,1:9
+17:31:05 slot 7: 0:4,1:9 fast -> VERIFIED (solve 374.4s, check 32.9s)
+17:31:05 slot 7: start 0:6,1:1
+17:31:10 slot 7: 0:6,1:1 fast -> VERIFIED (solve 0.2s, check 0.8s)
+17:31:10 slot 7: start 0:7,1:8
+17:43:57 slot 7: 0:7,1:8 fast -> VERIFIED (solve 682.6s, check 47.2s)
+17:43:57 slot 7: start 0:9,1:4
+17:53:04 slot 6: 0:8,1:5 fast -> VERIFIED (solve 2852.1s, check 203.7s)
+17:53:04 slot 6: start 0:10,1:5
+17:57:58 slot 9: 0:9,1:5 fast -> VERIFIED (solve 3034.3s, check 225.7s)
+17:57:58 slot 9: start 0:2,1:2
+17:58:03 slot 9: 0:2,1:2 fast -> VERIFIED (solve 0.1s, check 0.7s)
+17:58:03 slot 9: start 0:3,1:9
+17:58:43 slot 9: 0:3,1:9 fast -> VERIFIED (solve 29.8s, check 3.8s)
+17:58:43 slot 9: start 0:6,1:10
+17:58:48 slot 9: 0:6,1:10 fast -> VERIFIED (solve 0.1s, check 0.7s)
+18:02:41 slot 0: 0:5,1:4 fast -> VERIFIED (solve 3333.1s, check 286.2s)
+18:02:48 slot 6: 0:10,1:5 fast -> VERIFIED (solve 494.8s, check 49.9s)
+18:05:19 slot 7: 0:9,1:4 fast -> VERIFIED (solve 1091.0s, check 105.2s)
+18:06:00 slot 8: 0:6,1:7 fast -> VERIFIED (solve 3549.3s, check 249.4s)
+18:12:55 slot 4: 0:5,1:7 fast -> VERIFIED (solve 3904.7s, check 289.9s)
+18:36:47 slot 2: 0:5,1:6 fast -> VERIFIED (solve 5093.8s, check 438.1s)
+18:52:01 slot 5: 0:6,1:4 fast -> VERIFIED (solve 5828.1s, check 541.9s)
+19:03:40 slot 1: 0:5,1:5 fast -> VERIFIED (solve 6391.6s, check 634.9s)
+20:44:25 slot 3: 0:6,1:5 fast -> VERIFIED (solve 11807.8s, check 1025.8s)
+20:44:25 DONE: 27/27 sub-cases VERIFIED

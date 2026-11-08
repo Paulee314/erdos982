@@ -1,0 +1,11 @@
+model status: s SATISFIABLE assigned vars: 30737
+final clauses (distinct): 1915455
+r1 clauses: 2336588 of which also in final: 1918509
+r1 clauses violated by final model: 5
+violated clause length histogram: [(4, 3), (6, 2)]
+VIOL -792 -1192 -2443 -2944
+VIOL -1872 -1977 -2443 -2944
+VIOL -2264 -2851 -30701 -30705 -30706 -30707
+VIOL -1872 -1977 -2060 -2944
+VIOL -1860 -1907 -2520 -2520 -6402 -7151
+max var in violated: 30707

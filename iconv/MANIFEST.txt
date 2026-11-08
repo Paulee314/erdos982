@@ -1,0 +1,28 @@
+# Files left out of iconv/ (sha256, bytes, original path relative to Erdos/agent_runs/iconv/).
+# runs/n10: per-piece records of the n = 10 Studio run (12 workers). Summary counts are in RUNS_SUMMARY.txt.
+
+16c48a670e00290918cf578b1f26bce980c05308a4929be36caa4c22fb3106ce         62462  runs/n10/done.w0
+24d96ba7a6ca72530387c5cbd4bee6eab5a66f46c9ac3a9a0d514cb60ab1e922         62472  runs/n10/done.w1
+746df47f2085086fe57fd900c04f7c8d20d6be24da6fa1897cee3abb281a5927         62406  runs/n10/done.w10
+79da2ea73cedd82aa14f75e0f62683f156433350443b1ddefe0fa49e98555230         62422  runs/n10/done.w11
+5e2c48c86511fd4824c41bd36d7032e1e68807770564cc978374ee37ad5787a2         62475  runs/n10/done.w2
+5834604a0976375be6609c515d83e4be7f858a6198eaf589d4db4b5837c54c74         62399  runs/n10/done.w3
+45d1f3bc88cb5f1a0def0560de31bea3d2b8c1e55c1c343da66a57cf109ae80b         62410  runs/n10/done.w4
+6b30317d08978e1c526b06ee8cefd202ecdac159493b7b89280e437752ab6026         62416  runs/n10/done.w5
+1f809f260542eee973a5e49b2e141e28b006782cb90985eef11bdfefcb4a3f75         62383  runs/n10/done.w6
+4a6775a024727092563a5f70b67510eaa8391c09e3ebca69cc927f4cd283a245         62420  runs/n10/done.w7
+edb2419e6f18ea15814cfc410a8d62505a9ca1e2918d35f87fdb437f236189fe         62394  runs/n10/done.w8
+d7ffb3e579dcc8b88c9a6aba9808c9e98a9cabffee310f7bf3c5c875c11ff3f3         62411  runs/n10/done.w9
+
+# code/lib/ was not copied: its 10 files are byte-identical (md5) to the same-named files in conjT/code/
+# (alg_sat.py = alg_sat_v2.py, apex_pieces_v1.py = apex_pieces.py, certify.py).
+md5 0ecede5128fc728a6545fa32573a2802  code/lib/alg_sat.py
+md5 4bff3fe99f40c15d7bb440f10ecae56c  code/lib/angle_fams2.py
+md5 78bf5cf3fcb2a5168100e095ef065611  code/lib/angle_lp.py
+md5 fe341427939cdca7c97631ff04096c5f  code/lib/apex_pieces_v1.py
+md5 ff2d256e05cb6dd0fb2e350279366ba5  code/lib/certify.py
+md5 c54647d07bce63a9faede05694decadd  code/lib/check_lambda_certs.py
+md5 4782d8d55716f1de34b9c257d5c649be  code/lib/e982lib.py
+md5 00d3840766967543b0d6b3a0b7fe0e1e  code/lib/fams_v2.py
+md5 adc4864b7fda1e9099df16cddbe7c2ea  code/lib/lambda_v2.py
+md5 ba00df503eb512152118b24b034b5fe5  code/lib/numsolve.py

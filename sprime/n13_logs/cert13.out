@@ -1,0 +1,8 @@
+n=13: 523861 distinct learned clauses (with images) [9s]
+state/fc13_r1: UNSAT [21476s]
+drat-trim: ['s VERIFIED'] [38928s]
+core uses 105782 learned clauses [38929s]
+exact certificates: 105782 ok, 0 failed [40696s]
+checker: n=13 state/fc13_lambda.jsonl: 105782 certificates verified exactly, 0 failed [40836s]
+state/fc13_final: SAT [40855s]
+FINAL n=13: NOT VERIFIED with 105782 certified learned clauses [40855s]

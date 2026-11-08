@@ -1,0 +1,5 @@
+C4 n=8 bound=27 fams=eno cube=0:7,1:5: 88488 base clauses + 84 learned (ids 88489..88572) [0s]
+cadical ['s UNSATISFIABLE'] in 0.0s [0s]
+checker: s VERIFIED UNSAT in 0.1s [0s]
+proof references 0 learned clauses (rat=False) [1s]
+FINAL {"n": 8, "bound": 27, "fams": "eno", "cube": "0:7,1:5", "ver": "8e5eb4ea938a506011f1b79e5e5dcc0b", "pipeline": "fast-lrat", "checker": "cake_lpr", "cnf_sha256": "9618a7425f1f3ef02d90193b971e486d43bf2bff03750517bcf5b124030e7dbe", "learned_in_cnf": 84, "solve": 0.0, "proof_bytes": 255685, "proof_sha256": "4d0de84de2b0a8853ec1c8ec6c7ba983aa973225ee4f831a514dd03b1301b55b", "check": 0.1, "checker_out": "s VERIFIED UNSAT", "core_learned": 0, "rat_steps": false, "cert_failed": 0, "checker_rejected": 0, "status": "VERIFIED", "wall": 0.5} [1s]

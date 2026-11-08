@@ -1,0 +1,2 @@
+C4 n=10 bound=44 fams=FGXO: 385255 clauses, 11447 vars, preloaded 0; 0.6s
+RESULT C4 n=10 bound=44 cube=0:6: UNSAT; learned 290, feasible 0, it 1, tiers {1: 0, 2: 0, 3: 0, 'delta': 0, 'sigma': 0}, 509.7s (sat 509s, lp 0s)

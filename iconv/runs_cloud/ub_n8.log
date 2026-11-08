@@ -1,0 +1,7 @@
+n=8 T0=39 T=39 N=168 pieces 468 (worker 0/1: 468); clauses 79156; fams {'GXONK': 6384}; tag v2[G+X+O+LAM]md5=b69c115a126a; build 0.1s
+piece 0 0000000: 0 models, cpu 0.0s; T=39; {'models': 0, 'newcores': 0, 'big': 0, 'surv': 0, 'hits': 0, 'lam': 0, 'real': 0}; lib 0; wall 0s
+piece 107 0011122: 0 models, cpu 0.0s; T=39; {'models': 0, 'newcores': 0, 'big': 0, 'surv': 0, 'hits': 0, 'lam': 0, 'real': 0}; lib 0; wall 19s
+piece 227 0100210: 0 models, cpu 0.1s; T=39; {'models': 0, 'newcores': 0, 'big': 0, 'surv': 0, 'hits': 0, 'lam': 0, 'real': 0}; lib 0; wall 53s
+piece 378 0110210: 0 models, cpu 0.0s; T=39; {'models': 0, 'newcores': 0, 'big': 0, 'surv': 0, 'hits': 0, 'lam': 0, 'real': 0}; lib 0; wall 67s
+piece 589 0121013: 0 models, cpu 0.0s; T=39; {'models': 0, 'newcores': 0, 'big': 0, 'surv': 0, 'hits': 0, 'lam': 0, 'real': 0}; lib 0; wall 70s
+DONE worker 0: final T=39 (UNSAT at T for all my pieces if no survivors); {'models': 0, 'newcores': 0, 'big': 0, 'surv': 0, 'hits': 0, 'lam': 0, 'real': 0}; wall 70s

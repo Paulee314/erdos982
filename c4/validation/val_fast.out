@@ -1,0 +1,16 @@
+== V3 planted LRAT corruption
+cadical: ['s UNSATISFIABLE']
+genuine: (True, 's VERIFIED UNSAT')
+corrupt (a): (False, 'c Checking failed at line: 16802. Reason: clause index has no reduction sequence: 109834')
+corrupt (b): (False, 'c Checking failed at line: 11310. Reason: clause not empty or singleton after reduction')
+corrupt (c): (False, 'c Checking failed at line: 35205. Reason: pivot must be non-zero')
+PLANTED TEST PASS (all corrupted proofs rejected)
+== V1a n=8 base only (forces SAT -> CEGAR/LP fallback + two-round cert)
+16:28:09 DONE: 49/49 sub-cases VERIFIED
+== V1b n=8 full families
+16:28:33 DONE: 49/49 sub-cases VERIFIED
+== V2 n=11 reruns of verified sub-cases (3,5) (4,4) (4,5)
+FINAL {"n": 11, "bound": 54, "fams": "ADFGKNOX", "cube": "0:3,1:5", "ver": "8e5eb4ea938a506011f1b79e5e5dcc0b", "pipeline": "fast-lrat", "checker": "cake_lpr", "cnf_sha256": "8c8ccede0838b0010cb3f037d07a3353c2b7663238db474232d2918eb686ffce", "learned_in_cnf": 0, "solve": 3.9, "proof_bytes": 11272713, "proof_sha256": "08cbe70c21e6f1b19cfbd8086f7ef4c3218f6b3d497aa5c7829ab15168bc7b2b", "check": 1.0, "checker_out": "s VERIFIED UNSAT", "core_learned": 0, "rat_steps": false, "cert_failed": 0, "checker_rejected": 0, "status": "VERIFIED", "wall": 8.4} [8s]
+FINAL {"n": 11, "bound": 54, "fams": "ADFGKNOX", "cube": "0:4,1:4", "ver": "8e5eb4ea938a506011f1b79e5e5dcc0b", "pipeline": "fast-lrat", "checker": "cake_lpr", "cnf_sha256": "41d77fc8546b810e18b834ae865c3b5cb9bd7521ab2bc18137c3550b9087b721", "learned_in_cnf": 0, "solve": 96.1, "proof_bytes": 454716774, "proof_sha256": "554bcea07cafc190b1d3998827453f0d1f3c19b6b8121ee1e5ddcca1d2c031eb", "check": 13.3, "checker_out": "s VERIFIED UNSAT", "core_learned": 0, "rat_steps": false, "cert_failed": 0, "checker_rejected": 0, "status": "VERIFIED", "wall": 122.6} [123s]
+FINAL {"n": 11, "bound": 54, "fams": "ADFGKNOX", "cube": "0:4,1:5", "ver": "8e5eb4ea938a506011f1b79e5e5dcc0b", "pipeline": "fast-lrat", "checker": "cake_lpr", "cnf_sha256": "4176de6614a2658a9b666d9f1dc4d3c6cf616f60ee1aeaaad4f2a7006ed73df1", "learned_in_cnf": 0, "solve": 603.4, "proof_bytes": 2567928080, "proof_sha256": "c5c598ba2a4da5c255dcd7b021d5aa00267744982d8063460813783a17fffefb", "check": 74.5, "checker_out": "s VERIFIED UNSAT", "core_learned": 0, "rat_steps": false, "cert_failed": 0, "checker_rejected": 0, "status": "VERIFIED", "wall": 738.0} [738s]
+VALDONE

@@ -1,0 +1,2 @@
+C4 n=11 bound=54 fams=FGXOADKN: 706700 clauses, 17130 vars, preloaded 0; 1.3s
+RESULT C4 n=11 bound=54 cube=0:4,1:4: UNSAT; learned 0, feasible 0, it 1, tiers {1: 0, 2: 0, 3: 0, 'delta': 0, 'sigma': 0}, 168.4s (sat 167s, lp 0s)
