@@ -1,0 +1,16 @@
+n=8 K=3 cover exact: 301 pieces generated, 160 kept (residues all); W=2 batch size 50
+  residue 0: 2 batches, 2 certified as batches, 0 left to per-piece re-certification (1s)
+  residue 1: 2 batches, 2 certified as batches, 0 left to per-piece re-certification (1s)
+exact: 4 batches; 4 certified as whole batches (records match the regenerated CNF, checker ACCEPT, final UNSAT, 0 structures)
+exact: 0 batches re-certified per piece: 0 pieces, 0 with matching regenerated CNF (count, variables, SHA-256) and ACCEPT
+exact: kept proofs matching the manifest hash: 4; checker logs with both verdicts: 4; re-checked now with drat-trim + cake_lpr: 4
+exact: covered pieces 160 of 160 kept; covered twice 0, not covered 0, outside the kept set 0
+exact: AUDIT OK (1s)
+n=8 K=3 cover below: 64 pieces generated, 36 kept (residues all); W=2 batch size 50
+  residue 1: 1 batches, 1 certified as batches, 0 left to per-piece re-certification (0s)
+  residue 0: 1 batches, 1 certified as batches, 0 left to per-piece re-certification (0s)
+below: 2 batches; 2 certified as whole batches (records match the regenerated CNF, checker ACCEPT, final UNSAT, 0 structures)
+below: 0 batches re-certified per piece: 0 pieces, 0 with matching regenerated CNF (count, variables, SHA-256) and ACCEPT
+below: kept proofs matching the manifest hash: 2; checker logs with both verdicts: 2; re-checked now with drat-trim + cake_lpr: 2
+below: covered pieces 36 of 36 kept; covered twice 0, not covered 0, outside the kept set 0
+below: AUDIT OK (0s)

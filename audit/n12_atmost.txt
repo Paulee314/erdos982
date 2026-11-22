@@ -1,0 +1,22 @@
+n=12 K=5 cover atmost: 422005 pieces generated, 211659 kept (residues all); W=16 batch size 50
+  residue 1: 265 batches, 265 certified as batches, 0 left to per-piece re-certification (32s)
+  residue 3: 265 batches, 265 certified as batches, 0 left to per-piece re-certification (32s)
+  residue 0: 264 batches, 264 certified as batches, 0 left to per-piece re-certification (33s)
+  residue 2: 265 batches, 265 certified as batches, 0 left to per-piece re-certification (33s)
+  residue 5: 265 batches, 265 certified as batches, 0 left to per-piece re-certification (63s)
+  residue 6: 265 batches, 265 certified as batches, 0 left to per-piece re-certification (64s)
+  residue 4: 264 batches, 264 certified as batches, 0 left to per-piece re-certification (65s)
+  residue 7: 266 batches, 266 certified as batches, 0 left to per-piece re-certification (66s)
+  residue 8: 264 batches, 264 certified as batches, 0 left to per-piece re-certification (94s)
+  residue 9: 266 batches, 266 certified as batches, 0 left to per-piece re-certification (97s)
+  residue 10: 265 batches, 264 certified as batches, 1 left to per-piece re-certification (98s)
+  residue 11: 266 batches, 266 certified as batches, 0 left to per-piece re-certification (99s)
+  residue 12: 264 batches, 264 certified as batches, 0 left to per-piece re-certification (127s)
+  residue 13: 266 batches, 266 certified as batches, 0 left to per-piece re-certification (129s)
+  residue 14: 265 batches, 265 certified as batches, 0 left to per-piece re-certification (130s)
+  residue 15: 265 batches, 265 certified as batches, 0 left to per-piece re-certification (132s)
+atmost: 4240 batches; 4239 certified as whole batches (records match the regenerated CNF, checker ACCEPT, final UNSAT, 0 structures)
+atmost: 1 batches re-certified per piece: 50 pieces, 50 with matching regenerated CNF (count, variables, SHA-256) and ACCEPT
+atmost: pieces with structures, blocked and passed to the algebra step: 222442 (1)
+atmost: covered pieces 211659 of 211659 kept; covered twice 0, not covered 0, outside the kept set 0
+atmost: AUDIT OK (170s)

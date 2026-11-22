@@ -96,6 +96,9 @@ regular m-gon Q_k = β^{2k}, where β = e^{iπ/m}. Then P is bi-regular.
 - Local symmetry with gaps 1 and 2, chained around the polygon (this works because gcd(2, N) = 1), makes all sides
   equal and all gap-2 chords equal.
 - So the triangles P_{k−1}P_kP_{k+1} are congruent, and all interior angles are equal.
+- Strict convexity, with the counterclockwise labelling, makes every exterior angle lie in (0, π), and the exterior
+  angles sum to 2π (the boundary turns once). With equal interior angles each exterior angle is therefore 2π/N. This
+  rules out the equilateral, equiangular star polygons, whose boundary turns more than once.
 - Hence P is regular.
 
 (b) N = 2m, by induction on N.

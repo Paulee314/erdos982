@@ -1,0 +1,24 @@
+n=10 K=4 cover exact: 7770 pieces generated, 3930 kept (residues all); W=6 batch size 50
+  residue 1: 13 batches, 13 certified as batches, 0 left to per-piece re-certification (20s)
+  residue 0: 14 batches, 14 certified as batches, 0 left to per-piece re-certification (21s)
+  residue 2: 14 batches, 14 certified as batches, 0 left to per-piece re-certification (21s)
+  residue 3: 14 batches, 14 certified as batches, 0 left to per-piece re-certification (42s)
+  residue 5: 14 batches, 14 certified as batches, 0 left to per-piece re-certification (43s)
+  residue 4: 14 batches, 14 certified as batches, 0 left to per-piece re-certification (43s)
+exact: 83 batches; 83 certified as whole batches (records match the regenerated CNF, checker ACCEPT, final UNSAT, 0 structures)
+exact: 0 batches re-certified per piece: 0 pieces, 0 with matching regenerated CNF (count, variables, SHA-256) and ACCEPT
+exact: kept proofs matching the manifest hash: 83; checker logs with both verdicts: 83; re-checked now with drat-trim + cake_lpr: 83
+exact: covered pieces 3930 of 3930 kept; covered twice 0, not covered 0, outside the kept set 0
+exact: AUDIT OK (43s)
+n=10 K=4 cover below: 3281 pieces generated, 1681 kept (residues all); W=6 batch size 50
+  residue 1: 6 batches, 6 certified as batches, 0 left to per-piece re-certification (8s)
+  residue 0: 6 batches, 6 certified as batches, 0 left to per-piece re-certification (8s)
+  residue 2: 6 batches, 6 certified as batches, 0 left to per-piece re-certification (8s)
+  residue 3: 6 batches, 6 certified as batches, 0 left to per-piece re-certification (15s)
+  residue 4: 6 batches, 6 certified as batches, 0 left to per-piece re-certification (15s)
+  residue 5: 6 batches, 6 certified as batches, 0 left to per-piece re-certification (16s)
+below: 36 batches; 36 certified as whole batches (records match the regenerated CNF, checker ACCEPT, final UNSAT, 0 structures)
+below: 0 batches re-certified per piece: 0 pieces, 0 with matching regenerated CNF (count, variables, SHA-256) and ACCEPT
+below: kept proofs matching the manifest hash: 36; checker logs with both verdicts: 36; re-checked now with drat-trim + cake_lpr: 36
+below: covered pieces 1681 of 1681 kept; covered twice 0, not covered 0, outside the kept set 0
+below: AUDIT OK (16s)

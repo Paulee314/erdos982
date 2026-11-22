@@ -6,6 +6,10 @@
 
 **Correction, 5 Nov 2026:** the n = 8 case was already settled in print by Fishburn (see below); an earlier version of this page said otherwise.
 
+**Update, 21 Nov 2026:** after an outside review, a stronger cover audit that checks the run records
+([Cover audit](#cover-audit-21-nov-2026)), a guide to reading the n = 12 candidate pattern, a sentence added to the proof
+of Theorem 2(a) in `theory/`, and two caveats added to the results table. No search was re-run and no result changed.
+
 **Update, 7 Nov 2026:** results from the week of 3–7 Nov have been added in new folders: Fishburn's sum conjecture C4 at
 n = 9–11 (`c4/`), the window property S′ at n = 13 together with the earlier n = 8, 10, 11 records (`sprime/`),
 Conjecture T\* at n = 12 and T at n = 11 (`conjT/`), the exact values of I_conv(n) for n = 5–10 (`iconv/`), and two
@@ -48,13 +52,13 @@ the problem.
 |---|---|---|---|
 | **#982:** f(n) = ⌊n/2⌋ | n ≤ 13 (new: 10–13) | n = 8, 10, 12: cake_lpr; at n = 12 one surviving pattern by exact algebra, also a hand proof; n = 9, 11, 13 follow by monotonicity | `n8/`, `n10/`, `n12/` (proofs on Zenodo), `theory/` |
 | **Fishburn's C4:** Σ_x t(x) ≥ C(n, 2) | n = 9, 10, 11 (n ≤ 8 in print) | n = 11: cake_lpr for 95 of 100 sub-cases, drat-trim for 5; n = 9: drat-trim; n = 10: drat-trim + 25 exact Farkas certificates. C4 at n implies #982 at n by averaging, so this is a second, independent route to n = 9–11 | `c4/` |
-| **S′** (some vertex has distinct distances to one of its two half-windows) | new: n = 8, 10, 11, 13; n ≤ 7, 9 in print; **n = 12 open** | n = 13: cake_lpr (on a cleaned, equivalent CNF) + 105,990 exact Farkas certificates; n = 10: drat-trim + 113 exact certificates; n = 8, 11: drat-trim | `sprime/` |
+| **S′** (some vertex has distinct distances to one of its two half-windows) | new: n = 8, 10, 11, 13; n ≤ 7, 9 in print; **n = 12 open** | n = 13: cake_lpr (on a cleaned, equivalent CNF) + 105,990 exact Farkas certificates; n = 10: drat-trim + 113 exact certificates; n = 8: drat-trim; n = 11: drat-trim, but the proof file was not archived, so only the checker's log remains | `sprime/` |
 | **Conjecture T** (some vertex is the apex of ≤ ⌊(n−1)/2⌋ isosceles triangles) | n = 11 | solver-only + exact algebra for the 178 blocked patterns; independent re-check | `conjT/` |
 | **Conjecture T\*** (the weaker form: ≤ n/2 at some vertex, n even) | n = 12 | solver-only + exact algebra for the 4 blocked patterns; independent re-check | `conjT/` |
 | **I_conv(n)** = max Σ_p (isosceles apex count) = 12, 20, 29, 38, 50, 64 | n = 5–10 | lower bounds exact (60° fan); upper bounds: n ≤ 9 cake_lpr, **n = 10 solver-only** | `iconv/` |
 | max number of isosceles triangles (Aggarwal's convention) = 14, 21, 32, 40 | n = 6–9 | n = 8: cake_lpr (the √7 octagon attains 32); n = 6, 7: solver-only; **n = 9: solver-only with an unreviewed symmetry cover** | `iconv/` |
 | Kite bound for Z (Computation C) | — | analysis note: lemmas checked by the agent, one theorem modulo a cited result, several refutations; no human referee | `compC/` |
-| NPPZ Problem 3: B(n) = ⌊3n²/5⌋ | n ≤ 5 | computed: CEGAR with 132 certified infeasible cores; the asymptotics were already in print (Lev–Pinchasi 2014) | `notes/` |
+| NPPZ Problem 3: B(n) = ⌊3n²/5⌋ | n ≤ 5 | computed: CEGAR over a 0/1 MIP; the 132 infeasible cores are certified exactly (rational Stiemke vectors), but the MIP infeasibility is the solver's answer (HiGHS, re-run with CBC), with no proof log; the asymptotics were already in print (Lev–Pinchasi 2014) | `notes/` |
 
 Trust base, in one sentence: everything above is relative to the soundness of the geometric clause families (proved by
 hand, reviewed by independent readings, tested on real polygons), and the SAT side is proof-logged only where the table
@@ -160,13 +164,50 @@ checked by an independent script. Each folder's README states its own trust base
   - Each batch has a CNF file and a DRUP proof.
   - drat-trim checks each proof and emits LRAT; cake_lpr, a formally verified checker, checks the LRAT.
   - A batch whose proof did not pass both checkers was re-run one piece at a time, each with a fresh solver and its own proof. This affected 23 below-5 batches, plus the batch containing the candidate in each of runs C and D.
-  - A script confirms that every piece of each cover is certified exactly once.
+  - An audit against the run records confirms that every kept piece of each cover is certified exactly once; see
+    [Cover audit](#cover-audit-21-nov-2026).
 - **The candidate pattern.**
   - The vertices' equal-distance partitions are
     `01123432110 00123424321 01100234320 01221034043 01122110343 01234432102 01233443321 01021344312 01210334433 01202103443 00123210044 01234243210`.
+  - How to read it: the k-th string belongs to vertex k (k = 0, …, 11). Its characters list the other eleven vertices
+    in increasing order, skipping vertex k itself, and give each one's distance class from vertex k. Classes are
+    numbered in order of first appearance, so 0 is the class of the first vertex listed. For example, the first
+    string, `01123432110`, says that from vertex 0 the vertices 1 and 11 are at one distance (class 0), the vertices
+    2, 3, 9 and 10 at another (class 1), 4 and 8 at a third, 5 and 7 at a fourth, and 6 alone at the fifth.
+    This is the output format of `structure()` in `code/e982lib.py`.
   - Every vertex has exactly 5 classes.
   - Its equations have Gröbner basis {1}, so it has no solution even over ℂ. The certificate has 2,355 cofactor terms and was verified exactly.
 - **Compute.** About two hours of wall-clock time on 16 cores of a Mac Studio (M3 Ultra) for run C, including proof checking.
+
+## Cover audit (21 Nov 2026)
+
+An outside review pointed out that the summary line of `code/c_cover_check.py` ("duplicates 0, missing 0") is true by
+construction: it counts pieces from batches the script generates itself, not from the run records. The new script
+`code/cover_audit2.py` checks the records. For each cover it regenerates every batch CNF with the published code, in the
+solver's order (so the variable numbering is the same), and requires:
+- the solver's record (`w*.done`) and the checker's record (`manifest_w*.txt`) give the same piece range, piece count,
+  clause count and variable count as the regenerated CNF;
+- the checker said ACCEPT, the solve ended UNSAT, and no structure was found; or else
+- every piece of that batch has an ACCEPT re-certification whose recorded CNF hash equals the SHA-256 of the
+  regenerated piece CNF, and each blocking clause excludes exactly the structure recorded for that piece.
+
+A piece counts as covered only through a record that passes. Where the proofs are in the repository (n = 8 and 10), the
+audit also matches every proof against its manifest hash and runs drat-trim and cake_lpr on it again.
+
+| n | Cover | Kept pieces | Batches | Batch proofs that pass | Batches re-certified per piece | Pieces with a structure | Covered exactly once |
+|---|---|---|---|---|---|---|---|
+| 8 | exactly 3 classes | 160 | 4 | 4 (all re-checked 21 Nov) | 0 | 0 | 160 of 160 |
+| 8 | fewer than 3 | 36 | 2 | 2 (all re-checked 21 Nov) | 0 | 0 | 36 of 36 |
+| 10 | exactly 4 | 3,930 | 83 | 83 (all re-checked 21 Nov) | 0 | 0 | 3,930 of 3,930 |
+| 10 | fewer than 4 | 1,681 | 36 | 36 (all re-checked 21 Nov) | 0 | 0 | 1,681 of 1,681 |
+| 12 | exactly 5 (run C) | 123,680 | 2,481 | 2,480 | 1 (50 pieces) | 1: the candidate | 123,680 of 123,680 |
+| 12 | fewer than 5 (run C) | 87,979 | 1,767 | 1,744 | 23 (1,150 pieces) | 0 | 87,979 of 87,979 |
+| 12 | at most 5 (run D) | 211,659 | 4,240 | 4,239 | 1 (50 pieces) | 1: the candidate | 211,659 of 211,659 |
+
+The n = 8 and n = 10 rows are the 196 and 5,611 pieces of the Results table. The structure found in run C (piece
+112,703) and in run D (piece 222,442) is the same candidate pattern shown above. The audit's output is in `audit/`.
+What the audit does not check is that the code's list of pieces covers every case; like the clause families, that rests
+on the hand proofs and the review.
 
 ## What has and has not been checked
 
@@ -187,7 +228,8 @@ checked by an independent script. Each folder's README states its own trust base
 
 - `code/`: the encoding (`e982lib.py`), the incremental search (`cube982o.py`), the batched proof-producing search
   (`cube982p.py`), the proof check (`checkproofs.py`, `chk.sh`), per-piece re-certification (`recert.py`,
-  `recert_jobs.py`) and the cover checks (`c_cover_check.py`, `cover_check.py`).
+  `recert_jobs.py`), the original cover checks (`c_cover_check.py`, `cover_check.py`) and the record audit
+  (`cover_audit2.py`, added 21 Nov 2026; output in `audit/`).
 - `runs/`: the shell drivers used on the Mac Studio.
 - `n8/`, `n10/`: certified runs. For each cover, `w*.done` records each batch, `manifest_w*.txt` gives the proof SHA-256
   and checker verdict, and `*.drup.gz` holds the proofs.

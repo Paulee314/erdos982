@@ -1,0 +1,22 @@
+n=12 K=5 cover exact: 246730 pieces generated, 123680 kept (residues all); W=16 batch size 50
+  residue 1: 154 batches, 154 certified as batches, 0 left to per-piece re-certification (20s)
+  residue 3: 155 batches, 155 certified as batches, 0 left to per-piece re-certification (20s)
+  residue 0: 155 batches, 155 certified as batches, 0 left to per-piece re-certification (20s)
+  residue 2: 155 batches, 155 certified as batches, 0 left to per-piece re-certification (20s)
+  residue 6: 156 batches, 156 certified as batches, 0 left to per-piece re-certification (39s)
+  residue 5: 155 batches, 155 certified as batches, 0 left to per-piece re-certification (39s)
+  residue 7: 155 batches, 155 certified as batches, 0 left to per-piece re-certification (40s)
+  residue 4: 155 batches, 155 certified as batches, 0 left to per-piece re-certification (40s)
+  residue 8: 155 batches, 155 certified as batches, 0 left to per-piece re-certification (58s)
+  residue 9: 154 batches, 154 certified as batches, 0 left to per-piece re-certification (58s)
+  residue 10: 155 batches, 155 certified as batches, 0 left to per-piece re-certification (59s)
+  residue 11: 155 batches, 155 certified as batches, 0 left to per-piece re-certification (60s)
+  residue 12: 156 batches, 156 certified as batches, 0 left to per-piece re-certification (77s)
+  residue 13: 155 batches, 155 certified as batches, 0 left to per-piece re-certification (77s)
+  residue 15: 156 batches, 155 certified as batches, 1 left to per-piece re-certification (78s)
+  residue 14: 155 batches, 155 certified as batches, 0 left to per-piece re-certification (78s)
+exact: 2481 batches; 2480 certified as whole batches (records match the regenerated CNF, checker ACCEPT, final UNSAT, 0 structures)
+exact: 1 batches re-certified per piece: 50 pieces, 50 with matching regenerated CNF (count, variables, SHA-256) and ACCEPT
+exact: pieces with structures, blocked and passed to the algebra step: 112703 (1)
+exact: covered pieces 123680 of 123680 kept; covered twice 0, not covered 0, outside the kept set 0
+exact: AUDIT OK (110s)
