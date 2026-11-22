@@ -1,6 +1,6 @@
 # Erdős Problem #982 for small n: a computer verification up to n = 13
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23880465.svg)](https://doi.org/10.5281/zenodo.23880465) (n = 12 proofs)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23880465.svg)](https://doi.org/10.5281/zenodo.23880465) (n = 12 proofs) [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24443675.svg)](https://doi.org/10.5281/zenodo.24443675) (code and write-up)
 
 **Status, 2 Nov 2026:** the computations are complete and checked. This write-up is a first version; corrections are welcome.
 
