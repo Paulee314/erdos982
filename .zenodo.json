@@ -2,7 +2,7 @@
   "title": "Erdős Problem #982 for small n: a computer verification up to n = 13 (code, manifests and write-up)",
   "upload_type": "software",
   "description": "Code, run manifests, audit reports and write-up for a computer verification of Erdős Problem #982 for small n: every strictly convex n-gon with n ≤ 13 has a vertex from which there are at least ⌊n/2⌋ distinct distances to the other vertices. Includes the SAT encodings and drivers, the cover audit of 21 Nov 2026, example polygons, and the theory note on two-ring polygons. The n = 12 DRUP proofs are archived separately (doi:10.5281/zenodo.23880465). AI tools were used for the computations, code, reviews and drafting; see the 'Credits and AI use' section of the README.",
-  "creators": [{"name": "Lee, Paul J."}],
+  "creators": [{"name": "Lee, Paul J.", "orcid": "0009-0009-4808-6177"}],
   "keywords": ["Erdős problems", "distinct distances", "convex polygons", "SAT", "proof certificates"],
   "license": "cc-by-4.0",
   "related_identifiers": [
